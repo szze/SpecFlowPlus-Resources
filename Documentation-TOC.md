@@ -1,5 +1,5 @@
-* SpecFlow+ Runner
-* SpecFlow+ Excel
+* [[SpecFlow+ Runner]]
+* [[SpecFlow+ Excel]]
   * Excel Features
     * [[Excel feature file format]]
   * Excel Examples
