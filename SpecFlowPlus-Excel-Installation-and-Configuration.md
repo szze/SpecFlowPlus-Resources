@@ -1,6 +1,6 @@
 ## Installation
 
-The plugin can be installed from NuGet. 
+The plugin can be installed from [NuGet](http://www.nuget.org/packages/SpecFlow.Plus.Excel). 
 ```
 Install-Package SpecFlow.Plus.Excel -ProjectName myproject
 ```
