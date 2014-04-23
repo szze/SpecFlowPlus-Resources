@@ -1,0 +1,1 @@
+The SpecFlow+ Excel plugin allows you to extend scenario outline examples of normal plain-text feature files with Excel tables. The related Excel examples files can also be added to the project so that all of its examples can be used as an executable test. See [SpecFlow+ Excel Getting Started](http://www.specflow.org/plus/excel/getting-started/) for a quick introduction.
