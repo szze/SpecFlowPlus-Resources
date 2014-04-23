@@ -9,6 +9,6 @@
     * [[Excel examples file format]]
   * [[Converting Excel Cells]]
   * [[Using SpecFlow+ Excel with Cucumber-family tools|Using SpecFlowPlus Excel with Cucumber family tools]]
-    * Cucumber configuration with Rake
-    * Cucumber.JVM configuration with Maven
+    * [[Cucumber configuration with Rake|SpecFlowPlus Excel Cucumber configuration with Rake]]
+    * [[Cucumber.JVM configuration with Maven|SpecFlowPlus Excel Cucumber.JVM configuration with Maven]]
   * [[Command-line tool reference|SpecFlowPlus Excel Command Line Tool Reference]]
