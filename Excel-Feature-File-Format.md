@@ -2,14 +2,19 @@
 
 _Note:_ The rule descriptions use English Gherkin keywords, but the SpecFlow+ Excel plugin supports all 50+ languages supported by Gherkin itself. You can also use the different keyword variations as well (like `Scenario Outline` and `Scenario Template`).
 
+We recommend checking out our [sample Excel feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelFeature.feature.xlsx) before studying the detailed rules.
+
 * The Excel feature file has to use `.feature.xlsx` extension, e.g. `Calculator.feature.xlsx`. The [[build-time generation|Working with Generated files (SpecFlowPlus Excel)]] of SpecFlow will only convert Excel files in the project with this extension.
 * Consider the [[general cell conversion rules|Converting Excel Cells]], especially for non-string cell values.
 * You can use the Excel worksheets and cells for helper calculations and comments that should not be part of the feature file. SpecFlow+ Excel will ignore
   * the hidden sheets or the sheets with name prefixed with underscore (`_`)
   * the cell values that you put on the right side (separated by at least two empty cells)
+  * the rows where the first two cell is empty
 *  The step text can be split into multiple cells. The cells are merged with a single space during processing.
 * You can use Excel formulas anywhere in the document. The plugin processes the formula result.
 * Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "indented" by one column, ie. the first cell has to be left empty.
+* The empty Excel rows are ignored.
+* Merged cells: Gherkin tables do not support merged cells, so merged cells are converted without merging, ie. the first cell will contain the value and the other cells will be empty.
 
 ## Excel features matching to the Gherkin feature file structure
 
@@ -50,6 +55,19 @@ _Note:_ The rule descriptions use English Gherkin keywords, but the SpecFlow+ Ex
 <td>One ore more lines in the tip of the sheet with cells containing tags, including the leading `@`. The tags can be split to multiple cells or separated with whitespace.</td>
 </tr>
 <tr>
+<td>Scenario steps (Given/When/Then)</td>
+<td>Rows in the scenario sheet. The step text can be split to multiple cells, but this is optional. The entire step, including the step keyword can be placed into a single cell. By splitting the step text to multiple cells, you can better use formulas inside the step and you can format the scenario better.</td>
+</tr>
+<tr>
+<td>DataTable step argument</td>
+<td>You can easily provide a table argument (called DataTable in Gherkin) to your steps. To describe the DataTable cells, just add rows after the step row and use the Excel cells. The cells used as DataTable need to be "indented" by one column, ie. the first cell has to be left empty.
+</td>
+</tr>
+<tr>
+<td>DocString step argument</td>
+<td>You can add multi-line text argument (called DocString in Gherkin) to your steps. For that, leave the first cell empty in the row below the step row, and include the DocString parameter in the second cell (including newlines). The DocString argument cannot be split to multiple cells currently.</td>
+</tr>
+<tr>
 <td>Background</td>
 <td>A sheet named `Background`.</td>
 </tr>
@@ -59,17 +77,13 @@ _Note:_ The rule descriptions use English Gherkin keywords, but the SpecFlow+ Ex
 </tr>
 <tr>
 <td>Scenario Outline Examples</td>
-<td>Start a line with a cell containing `Examples:`. You can use the next cell to specify a title for the examples block (optional). You can also add lines with tags directly before this line. The examples table can be specified as Excel cells, but they need to be "indented" by one column, ie. the first cell has to be left empty.
+<td>Start a line with a cell containing `Examples:`. You can use the next cell to specify a title for the examples block (optional). You can also add lines with tags directly before this line. The examples table can be specified as Excel cells, but they need to be "indented" by one column, ie. the first cell has to be left empty. You can specify multiple examples block for a scenario outline.
 ![Scenario Outline Examples](http://www.specflow.org/media/sfp_excel/excel-feature-examples.png)
 </td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
+<td>Comments</td>
+<td>Although you can put helper calculations and comments to multiple places and sheets (see above), you can also mark an Excel row explicitly as comment, by starting the first non-empty cell with `#`.</td>
 </tr>
 </tbody>
 </table>
