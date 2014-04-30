@@ -1,6 +1,6 @@
 The SpecFlow+ Excel plugin allows you to extend scenario outline examples of normal plain-text feature files with Excel tables. The related Excel examples files can also be added to the project so that all of its examples can be used as an executable test. See [SpecFlow+ Excel Getting Started](http://www.specflow.org/plus/excel/getting-started/) for a quick introduction.
 
-See also an example with the [feature file](http://www.specflow.org/media/sfp_exel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_exel/Sample-ExcelExamples.xlsx) with the additional examples.
+See also an example with the [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) with the additional examples.
 
 ## Using the same Excel file for describing multiple example sets
 
