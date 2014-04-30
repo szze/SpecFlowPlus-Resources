@@ -1,6 +1,6 @@
 ## General rules
 
-We recommend checking out our example with the [feature file](http://www.specflow.org/media/sfp_exel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_exel/Sample-ExcelExamples.xlsx) with the additional examples before studying the detailed rules.
+We recommend checking out our example with the [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) with the additional examples before studying the detailed rules.
 
 * Consider the [[general cell conversion rules|Converting Excel Cells]], especially for non-string cell values.
 * You can use Excel formulas anywhere in the document. The plugin processes the formula result.
