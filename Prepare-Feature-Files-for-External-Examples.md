@@ -12,7 +12,7 @@ The `Examples` block has to contain a header row. The header row in the feature 
 
 You can also define concrete examples in the feature file too. In this case, the examples from the Excel file will be merged to the examples defined in the feature file.
 
-See also an example with the [feature file](http://www.specflow.org/media/sfp_exel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_exel/Sample-ExcelExamples.xlsx) with the additional examples.
+See also an example with the [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) with the additional examples.
 
 ```gherkin
 Feature: Calculator
