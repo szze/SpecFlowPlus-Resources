@@ -1,3 +1,4 @@
+* [[FAQ]]
 * [[SpecFlow+ Runner|SpecFlowPlus Runner]]
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
