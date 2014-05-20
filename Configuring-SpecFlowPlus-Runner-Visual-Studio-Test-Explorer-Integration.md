@@ -30,9 +30,9 @@ In order to specify a custom configuration, you need to use a combination of [Vi
 
 SpecFlow+ Runner uses the following Visual Studio general settings. You can find details about these settings on [MSDN](http://msdn.microsoft.com/en-us/library/jj635153.aspx).
 
-* Results directory
-* Default target framework version (for testing with the .NET 3.5 framework, set the `TargetFrameworkVersion` to `Framework40` and use the SpecFlow+ Runner profile to specify .NET 3.5)
-* Default processor architecture (can be overridden from SpecFlow+ Runner profile)
+* `ResultsDirectory` - The directory where test results will be placed.
+* `TargetFrameworkVersion` - Default target framework version (for testing with the .NET 3.5 framework, set the `TargetFrameworkVersion` to `Framework40` and use the SpecFlow+ Runner profile to specify .NET 3.5)
+* `TargetPlatform` - Default processor architecture (can be overridden from SpecFlow+ Runner profile)
 
 Sample run settings file with general settings:
 
