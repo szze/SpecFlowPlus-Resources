@@ -1,5 +1,6 @@
 * [[FAQ]]
 * [[SpecFlow+ Runner|SpecFlowPlus Runner]]
+    * [[Configuring Visual Studio Test Explorer Integration|Configuring SpecFlowPlus Runner Visual Studio Test Explorer Integration]]
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
     * [[Working with Generated files (SpecFlowPlus Excel)]]
