@@ -1,5 +1,7 @@
 SpecFlow+ Runner provides advanced integration with Visual Studio Test Explorer. After building the solution, the business readable scenario titles will show up in Visual Studio Test Explorer.
 
+Among others, you can configure the [[SpecFlow+ Runner test profile|SpecFlowPlus Runner Test Profiles]] to be used, the generated report file name and also apply additional traits to be applied to SpecFlow+ Runner tests.
+
 ## Execution defaults
 
 When running the tests from the Test Explorer window, the tests are executed according the following defaults.
