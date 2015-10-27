@@ -2,7 +2,7 @@ The SpecFlow+ Runner server collects execution statistics for your tests at a ce
 
 To install the SpecFlow+ Runner server:
 
-1. Before proceeding, install SpecFlow+ Runner from within Visual Studio (for details, see the start of the [[Getting Started|http://www.specflow.org/getting-started/]] guide for SpecFlow. You will need to transfer the contents of the `Server` directory to your server.
+1. Before proceeding, install SpecFlow+ Runner from within Visual Studio (for details, see the start of the [[Getting Started|http://www.specflow.org/getting-started/]] guide for SpecFlow). You will need to transfer the contents of the `Server` directory to your server.
 1. Create a new SQL database instance used to store the execution statistics.
 1. Copy the contents of the “server” directory to the server.
 1. Enter your database connection string in the <Connection Strings> element of the SpecRun.Server.exe.config file.
