@@ -10,4 +10,4 @@ In some cases the cache folder of Visual Studio Test Adapter gets corrupted. You
 
 ### I'm trying to use 32-bit assemblies on a 64-bit machine and receive a System.BadImageFormatException despite setting the environment to x86 in my .srprofile
 This is a known issue. As a workaround, you need to set SpecRun.exe to run as a 32-bit process. Do this via the [[Visual Studio/Developer Command Prompt|https://msdn.microsoft.com/en-us/library/ms229859%28v=vs.110%29.aspx]] as follows:
-corflags YourFolder\SpecRun.exe /32BIT+.
+corflags <YourFolder>\SpecRun.exe /32BIT+.
