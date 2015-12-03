@@ -8,7 +8,7 @@ SpecFlow+ Excel's command line tool allows you to generate an initial Excel file
 
 ## Converting Excel Cell Values
 
-Cell values, in particular non-string values like dates or numbers, are converted using a specific culture when extuing tests. Cell formatting options in Excel (e.g. number of decimal places, rounding, currency signs, date formats) are ignored. See [[Converting Excel Cells]] for more details.
+Cell values, in particular non-string values like dates or numbers, are converted using a specific culture when executing tests. Cell formatting options in Excel (e.g. number of decimal places, rounding, currency signs, date formats) are ignored. See [[Converting Excel Cells]] for more details.
 
 ## Multi-language Support
 
