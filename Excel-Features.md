@@ -1,18 +1,15 @@
-The SpecFlow+ Excel plugin allows you to describe your features in Excel files instead of the normal, plain-text Gherkin feature files. Just like the normal feature files, these Excel feature files can also be added to the project so that all of its scenarios can be used as an executable test. See [SpecFlow+ Excel Getting Started](http://www.specflow.org/plus/excel/getting-started/) for a quick introduction.
+The SpecFlow+ Excel plugin allows you to describe your features in Excel files instead of plain text Gherkin feature files. Just like normal feature files, these Excel feature files can be added to your project, allowing you to execute all its scenarios as executable tests. Refer to [SpecFlow+ Excel Getting Started](http://www.specflow.org/plus/excel/getting-started/) for a quick introduction.
 
-As the Excel feature file has to represent the structure of the normal pain-text feature files, you have to follow some rules when editing these Excel files. These rules are designed in a way, that they should not restrict you much of the normal Excel working, because the tool uses the matching Excel concepts wherever possible (e.g. you can use the worksheets as scenarios or scenario outlines). See the [[Excel feature file format]] page for the detailed description of the rules. 
+As the Excel feature file has to represent the same structure as a pain text feature file, you have to follow some rules when editing these Excel files. These rules are designed so as not to be too restrictive and conform to the normal way of working in Excel (e.g. you can worksheets to represent scenarios or scenario outlines). For a more detailed breakdown of these rules, see [[Excel feature file format]]. You may also want to take a look at this [sample Excel feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelFeature.feature.xlsx).
 
-See also our [sample Excel feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelFeature.feature.xlsx).
+## Converting Plain Text Feature Files to Excel Files
 
-## Converting plain-text feature files to Excel
+SpecFlow+ Excel's command line tool allows you to generate an initial Excel file from an existing feature file. You can also use this to experiment with how the different Gherkin elements are represented in Excel. For more details, see [[Command-line tool reference|SpecFlowPlus Excel Command Line Tool Reference]].
 
-The command line tool of SpecFlow+ Excel allows you to generate an initial Excel file from an existing feature file. This can also be used to experiment how the different Gherkin elements are represented in Excel. See [[Command-line tool reference|SpecFlowPlus Excel Command Line Tool Reference]] for details.
+## Converting Excel Cell Values
 
-## Converting Excel cell values.
+Cell values, in particular non-string values like dates or numbers, are converted using a specific culture when extuing tests. Cell formatting options in Excel (e.g. number of decimal places, rounding, currency signs, date formats) are ignored. See [[Converting Excel Cells]] for more details.
 
-The cell values, especially the non-string cell values, like dates or numbers are converted to test using a specific culture. The cell formatting (like display rounding, currency signs, date formats) are not kept. See [[Converting Excel Cells]] for details.
+## Multi-language Support
 
-## Multi-language support
-
-In the documentation we use the English Gherkin keywords (like Given, When, Then or Scenario Outline), but the SpecFlow+ Excel plugin supports all 50+ languages supported by Gherkin itself. So you can create your Excel feature file in the language of your own domain!
-
+This documentation uses the English Gherkin keywords (e.g. `Given`, `When`, `Then` and `Scenario Outline`), but SpecFlow+ Excel supports all 50+ languages supported by Gherkin itself. You can therefore create Excel feature files in the language of your own domain!
