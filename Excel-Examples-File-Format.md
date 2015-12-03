@@ -1,12 +1,12 @@
-## General rules
+## General Rules
 
-We recommend checking out our example with the [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) with the additional examples before studying the detailed rules.
+We recommend that you take a look at this sample [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and its related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx), which includes additional examples for the feature file, before studying rules in detail.
 
-* Consider the [[general cell conversion rules|Converting Excel Cells]], especially for non-string cell values.
-* You can use Excel formulas anywhere in the document. The plugin processes the formula result.
-* The empty Excel rows are ignored.
-* Merged cells: Gherkin tables do not support merged cells, so merged cells are converted without merging, ie. the first cell will contain the value and the other cells will be empty.
-* The first row in the sheet is the examples header row. It has to match to the header row [[specified in the feature file|Prepare Feature Files for External Examples]] (same columns, same order).
+* Values (in particular non-string values) entered in cells are converted according to the [[general cell conversion rules|Converting Excel Cells]].
+* You can use Excel formulas in the Excel file. The plugin uses the result of the formula result to execute your tests.
+* Empty Excel rows are ignored.
+* Merged cells: Gherkin tables do not support merged cells, so merged cells are converted so that the first cell contains the value and the other cells are empty.
+* The first row in the sheet is the examples header row, and must match to the header row [[specified in the feature file|Prepare Feature Files for External Examples]] (same columns, same order).
 
 ## Excel examples matching to the Gherkin scenario outline examples
 
@@ -24,11 +24,11 @@ We recommend checking out our example with the [feature file](http://www.specflo
 </tr>
 <tr>
 <td>Worksheet</td>
-<td>Scenario Outline Examples</td>
+<td>Scenario Outline examples</td>
 </tr>
 <tr>
 <td>Worksheet first row</td>
-<td>Examples header. The header row in the feature file and the Excel file has to match (same columns, same order).</td>
+<td>Examples header. The header row in the feature file and the Excel file must match (same columns, same order).</td>
 </tr>
 <tr>
 <td>Worksheet further rows</td>
