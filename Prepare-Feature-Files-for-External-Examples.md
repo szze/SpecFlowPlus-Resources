@@ -1,18 +1,15 @@
-In order to use SpecFlow+ Excel to extend your scenario outlines with additional examples, you need to decorate the scenario outline examples blocks with a special `@source` tag.
-
+In order to use SpecFlow+ Excel to extend your scenario outlines with additional examples, you need to extend the scenario outline examples blocks with a special `@source` tag as follows:
 ```
 @source:excel-file-path[:sheet-name]
 ```
 
-The `excel-file-path` is a path to the Excel file, relative to the feature file itself. 
+The `excel-file-path` is the path to the Excel file, relative to the feature file itself. 
 
-You can optionally specify the `sheet-name`. If worksheet name is not specified, the plugin tries to use a sheet named like the scenario outline or uses the first worksheet if there is no match.
+The `sheet-name` is optional. If no worksheet name is specified, the plugin uses the Excel sheet with the same name as the scenario outline, or the first worksheet in the file if there is no worksheet with a matching name.
 
-The `Examples` block has to contain a header row. The header row in the feature file and the Excel file has to match (same columns, same order).
+The `Examples` block must contain a header row. The header row needs to match in both the feature file and the Excel file (same columns, same order).
 
-You can also define concrete examples in the feature file too. In this case, the examples from the Excel file will be merged to the examples defined in the feature file.
-
-See also an example with the [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) with the additional examples.
+You can also define concrete examples in the feature file. In this case, the examples from the Excel file are merged with the examples defined in the feature file. This sample [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) is extended with additional examples by this [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx).
 
 ```gherkin
 Feature: Calculator
@@ -27,4 +24,3 @@ Scenario Outline: Add two numbers
 Examples:
 	| case | a | b | result |
 ```
-
