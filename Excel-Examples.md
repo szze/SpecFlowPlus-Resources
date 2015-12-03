@@ -1,11 +1,11 @@
-The SpecFlow+ Excel plugin allows you to extend scenario outline examples of normal plain-text feature files with Excel tables. The related Excel examples files can also be added to the project so that all of its examples can be used as an executable test. See [SpecFlow+ Excel Getting Started](http://www.specflow.org/plus/excel/getting-started/) for a quick introduction.
+The SpecFlow+ Excel plugin allows you to extend scenario outline in plain text with Excel tables. Add the Excel files containing these test examples to your project so that the examples can be used by your executable tests. See [SpecFlow+ Excel Getting Started](http://www.specflow.org/plus/excel/getting-started/) for a quick introduction.
 
-See also an example with the [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) with the additional examples.
+The sample [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.feature) and the related [Excel file](http://www.specflow.org/media/sfp_excel/Sample-ExcelExamples.xlsx) include additional examples.
 
-## Using the same Excel file for describing multiple example sets
+## Using the Same Excel File to Describe Multiple Example Sets
 
-One Excel examples file can be used to describe multiple example sets of even multiple scenario outlines. In this case each worksheet contains an example set. Typically an Excel examples file is created per feature file. In the feature file, you can specify the sheet name explicitly but if you name the sheets as the scenario outline titles, this is not necessary. See [[Prepare Feature Files for External Examples]] for details.
+One Excel examples file can be used to describe multiple example sets of even multiple scenario outlines. In this case, each worksheet should contain a single example set. In general, you should create an Excel examples file for each feature file. You can specify the name of the Excel sheet explicitly in the feature file, but this is not necessary if you name your sheets the same as your scenario outline titles. For more details, see [[Prepare Feature Files for External Examples]].
 
-## Converting Excel cell values.
+## Converting Excel Cell Values
 
-The cell values, especially the non-string cell values, like dates or numbers are converted to test using a specific culture. The cell formatting (like display rounding, currency signs, date formats) are not kept. See [[Converting Excel Cells]] for details.
+Cell values, in particular non-string values like dates or numbers, are converted using a specific culture when executing tests. Cell formatting options in Excel (e.g. number of decimal places, rounding, currency signs, date formats) are ignored. See [[Converting Excel Cells]] for more details.
