@@ -3,4 +3,4 @@ The SpecFlow+ Excel NuGet package configures the project to use SpecFlow's build
 * `*.feature.cs`
 * `*.feature.xlsx.*`
 
-_Note:_ The current version of SpecFlow+ Excel uses an updated version of the [SpecFlow MsBuild integration](http://www.specflow.org/documentation/Generate-Tests-from-MsBuild/). This updated version is included in the `SpecFlow.Plus.Excel` NuGet package and configures the project to use this updated version. If you previously enabled build time generation with SpecFlow, update the referenced target file to point to the one from this package.
+**Note:** The current version of SpecFlow+ Excel uses an updated version of the [SpecFlow MsBuild integration](http://www.specflow.org/documentation/Generate-Tests-from-MsBuild/). This updated version is included in the `SpecFlow.Plus.Excel` NuGet package and configures the project to use this updated version. If you previously enabled build time generation with SpecFlow, update the referenced target file to point to the one from this package.
