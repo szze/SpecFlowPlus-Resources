@@ -4,7 +4,7 @@ Start SpecRun.exe without any parameters to display an overview of the available
 
 The following commands and options are available from the command line:
 
-##run
+###run
 Use `SpecRun.exe run` to run your tests using the following parameters:
 
 |Parameter/option       |Required/optional|Description|
@@ -18,7 +18,11 @@ Use `SpecRun.exe run` to run your tests using the following parameters:
 |`/toolIntegration:`value|Optional        | |
 |`/debug`                |Optional        | |
 
-##buildserverrun
+**Example:**  
+`SpecRun.exe default.srprofile /basefolder:c:\MyProjectFolder /outputfolder:output /report:MyReport.html`  
+Executes your tests using the `default.srprofile` file. The base folder is set to `C:/MyProjectFolder` while the output folder is set to `C:\MyProjectFolder\output` (the `output` folder is relative to the base folder). The generated report is output to `C:\MyProjectFolder\output\MyReport.html`.
+
+###buildserverrun
 Use `SpecRun.exe buildserverrun` to execute your tests in build server mode using the following paramters:
 
 |Parameter/option       |Required/optional|Description|
@@ -31,7 +35,7 @@ Use `SpecRun.exe buildserverrun` to execute your tests in build server mode usin
 |`filter:`filter        |Optional         |Applies a filter to your tests and only executes those that match your expression. This overrides the `filter` entry in your `.srprofile` file.|
 |`/buildsever:`name     |Optional         |The build servers' product name (TFS, TeamCity) for specialised trace output.|
 
-##register
+###register
 Use `SpecRun.exe register` to register your SpecFlow+ license. You only need to register your license once per user per machine. The license is valid for all SpecFlow+ components.
 
 |Parameter/option       |Required/optional|Description|
@@ -39,7 +43,7 @@ Use `SpecRun.exe register` to register your SpecFlow+ license. You only need to 
 |licenseKey             |Required         |The license key you received when you purchased SpecFlow+|
 |issuedTo               |Required         |The name of the licensee. If you purchased your SpecFlow+ license online via SWREG, this is the email address you used to purchase the license. If you purchased SpecFlow+ directly from TechTalk, this is the value in the email you received containing your license information.<br>**Note:** If the name of the licensee contains spaces, enclose the value in quotation marks, e.g. `SpecRun.exe register IDK23032JASKWPCXMQL1IDPAKX== "John Smith"`.|
 
-##unregister
+###unregister
 Use `SpecRun.exe unregister` to unregister your SpecFlow+ license.
 
 
