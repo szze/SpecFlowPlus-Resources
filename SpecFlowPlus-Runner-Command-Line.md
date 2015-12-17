@@ -15,8 +15,8 @@ Use `SpecRun.exe run` to run your tests using the following parameters:
 |`/log:`file            |Optional         |Specifies the target log file. This path is relative to your output folder.|
 |`/report:`file         |Optional         |Specifies the target report file. This path is relative to your output folder.|
 |`filter:`filter        |Optional         |Applies a filter to your tests and only executes those that match your expression. This overrides the `filter` entry in your `.srprofile` file.|
-|`/toolIntegration:`value|Optional        | |
-|`/debug`                |Optional        | |
+|`/toolIntegration:`value|Optional        |Supported values: `None, VS2010, VS2012, VS2013, TeamCity, TFS`|
+|`/debug`                |Optional        |Default: false |
 
 **Example:**  
 `SpecRun.exe run default.srprofile /basefolder:c:\MyProjectFolder /outputfolder:output /report:MyReport.html`  
