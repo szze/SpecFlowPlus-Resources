@@ -47,6 +47,6 @@ Use `SpecRun.exe register` to register your SpecFlow+ license. You only need to 
 Use `SpecRun.exe unregister` to unregister your SpecFlow+ license.
 
 
-##about
+###about
 Use `SpecRun.exe about` to display information on the command line tool including the version, build date and licensee.
 
