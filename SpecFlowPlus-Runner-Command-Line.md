@@ -19,7 +19,7 @@ Use `SpecRun.exe run` to run your tests using the following parameters:
 |`/debug`                |Optional        | |
 
 **Example:**  
-`SpecRun.exe default.srprofile /basefolder:c:\MyProjectFolder /outputfolder:output /report:MyReport.html`  
+`SpecRun.exe run default.srprofile /basefolder:c:\MyProjectFolder /outputfolder:output /report:MyReport.html`  
 Executes your tests using the `default.srprofile` file. The base folder is set to `C:/MyProjectFolder` while the output folder is set to `C:\MyProjectFolder\output` (the `output` folder is relative to the base folder). The generated report is output to `C:\MyProjectFolder\output\MyReport.html`.
 
 ###buildserverrun
