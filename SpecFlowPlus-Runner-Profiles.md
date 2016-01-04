@@ -1,8 +1,8 @@
-SpecFlow+ Runner profiles (.srprofile file extension) are XML files that determine how SpecFlow+ Runner executes your tests. This includes the behaviour when tests fail (e.g. repeat the test, abort after X failed tests), defining various target environments for your tests (e.g. different web browsers or x64/x86), enabling multi-threading, configuring folder and file paths and applying transformations to your default configuration file in order to change the transform the configuration file for different target environments. 
+SpecFlow+ Runner profiles (`.srprofile` file extension) are XML files that determine how SpecFlow+ Runner executes your tests. This includes the behaviour when tests fail (e.g. repeat the test, abort after X failed tests), defining various target environments for your tests (e.g. different web browsers or x64/x86), enabling multi-threading, configuring folder and file paths and applying transformations to your default configuration file in order to change the transform the configuration file for different target environments. 
 
-A file named Default.srprofile is automatically added to your Visual Studio project when you add the NuGet package to your solution. This profile is relatively basic, and includes your project name, ID and various default settings. It also includes a commented out section that you can use to transform the database connection string in your configuration file in order to access a different database instance. 
+A file named `Default.srprofile` is automatically added to your Visual Studio project when you add the NuGet package to your solution. This profile is relatively basic, and includes your project name, ID and various default settings. It also includes a commented out section that you can use to transform the database connection string in your configuration file in order to access a different database instance. 
 
-The name of the profile file used by your project is defined using the <Profile> tag in your .runsettings file.
+The name of the profile file used by your project is defined using the `<Profile>` tag in your `.runsettings` file.
 
 #SpecFlow+ Runner Profile Elements and Attributes
 The following XML elements and attributes are available:
@@ -42,7 +42,7 @@ The `<Execution>` element defines how your tests are executed. The following att
 
 |Attribute         |Required/Optional|Description|
 |------------------|-----------------|-----------|
-|stopAfterFailures |Optional         |The number of failed tests after which the execution of all tests is stopped. Set this to 0 (zero) to execute all tests, irrespective of the number of failures. If not specified, this defaults to 10. **Note:** The value in the default .srprofile shipped with the NuGet package is 3.| 
+|stopAfterFailures |Optional         |The number of failed tests after which the execution of all tests is stopped. Set this to 0 (zero) to execute all tests, irrespective of the number of failures. If not specified, this defaults to 10. **Note:** The value in the default `.srprofile` shipped with the NuGet package is 3.| 
 |testSchedulingMode|Optional         |Determines the order in which SpecRun executes your tests:<br>`Sequential`: Tests are always executed in the same order (default). The order in which tests are executed is predictable and always the same, but cannot be influenced manually.<br>`Random`: The order of tests is randomised. This can be useful to detect flickering scenarios that may pass/fail depending on the order in which the other tests area executed.<br>`Adaptive`: SpecRun uses the statistics available on the pass/fail history to determine which tests to run first. Previously failing tests and new tests are executed before successful and stable tests.|
 |testThreadCount  |Optional          |The number of tests threads used to execute tests (default=1).<br>**Note:** Just increasing the number of threads may cause issues, e.g. if the threads access the same database. It thus makes sense to combine this with a relocation and transformation of the .config file using the {TestThreadId} placeholder in the name of the new file and database instances (see <DeploymentTransformation> below).|
 |retryFor         |Optional          |Determines which tests should be retried based on their status. Available options:<br>`None`: No tests are retried<br>`Failing`: Failing test are retried (default)<br>`All`: All tests are retried, including those that pass|
@@ -92,7 +92,7 @@ The following attributes are available for the `<Target>` element:
 ```
 
 ###<DeploymentTransformation> 
-This element is used to define transformation that are applied to your configuration file. You can nest this element within a <Target> element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use {Target} as a placeholder for this value, in which case the placeholder is replaced with the target name.  
+This element is used to define transformation that are applied to your configuration file. You can nest this element within a `<Target>` element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use `{Target}` as a placeholder for this value, in which case the placeholder is replaced with the target name.  
 
 The following elements and attributes are available:
 
@@ -125,7 +125,7 @@ The following elements and attributes are available:
 ```
 
 ##<TestThreads> 
-The '<TestThreads>' element is a container for <TestThread> elements. The following attributes are availble for `<TestThread>` elements: 
+The '<TestThreads>' element is a container for <TestThread> elements. The following attributes are available for `<TestThread>` elements: 
 
 
 |Element/Attribute  |Required/Optional|Description|
@@ -133,11 +133,11 @@ The '<TestThreads>' element is a container for <TestThread> elements. The follow
 |name               |     |Integer ID of the test thread (zero-indexed). This value can be accessed using the {TestThreadId} placholder. |
 |TestAffinity       |Optional         | Defines a filter applied to tests run in this thread. Only tests containing with the specified tag are executed in the thread.<br>**Example:** `<TestAffinity>testpath:Target:FireFox</TestAffinity>` only executes tests with the `FireFox` tag in the thread.|
 
-You can use the {TestThreadId} as a placeholder to reference the thread ID, e.g. to transform the name of the database instance you are accessing based on the thread ID, ensuring that each thread accesses a separate instance of the database. This prevents the threads from conflicting with one another when accessing the database, as thread 0 may manipulate data that is required by thread 1 otherwise.
+You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.g. to transform the name of the database instance you are accessing based on the thread ID, ensuring that each thread accesses a separate instance of the database. This prevents the threads from conflicting with one another when accessing the database, as thread 0 may manipulate data that is required by thread 1 otherwise.
 
 
 ##Placeholders 
-There are placeholders available for the elements defined in your profile. You can use these placeholders in your configuration file. This allows you to use the same configuration file for various target environments, e.g. you could use the {TestThreadId} placeholder in the name of your database instance to ensure that each thread accesses a different instance of your database (Instance0, Instance1 etc.) . 
+There are placeholders available for the elements defined in your profile. You can use these placeholders in your configuration file. This allows you to use the same configuration file for various target environments, e.g. you could use the `{TestThreadId}` placeholder in the name of your database instance to ensure that each thread accesses a different instance of your database (Instance0, Instance1 etc.) . 
 
 The following placeholders are available:
 
