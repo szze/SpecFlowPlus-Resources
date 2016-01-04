@@ -7,10 +7,10 @@ The name of the profile file used by your project is defined using the `<Profile
 #SpecFlow+ Runner Profile Elements and Attributes
 The following XML elements and attributes are available:
 
-##<TestProfile>
+## \<TestProfile>
 The `<TestProfile>` element is a container for the remaining elements.
 
-##<Settings> 
+## \<Settings> 
 The `<Settings>` element defines general settings for your project. The following attributes are available:
 
 |Attribute     |Required/Optional|Description|
@@ -22,7 +22,7 @@ The `<Settings>` element defines general settings for your project. The followin
 |outputFolder  |Optional         |Output folder for reports and log files, relative to the base folder, when running tests from the command line. The default path is the value of baseFolder.|
 |reportTemplate|Optional         |The report template used to output the results of your tests (relative to the base folder).<br>**NOTE:** If you add this file to your VS project, you can set **Copy to Output Directory** to "Copy always" to ensure the file is always copied to the \bin directory when running your tests.|
 
-##<Server> 
+## \<Server> 
 You can publish the results of your tests to a SpecFlow+ Runner server. Details on setting up the server can be found [[here|Setting-up-the-SpecFlowPlus-Runner-Server]].
 
 The following attributes are available:
@@ -37,7 +37,7 @@ The following attributes are available:
 <Server serverUrl="http://specrun.server:6365" publishResults="true" />
 ```
 
-##<Execution> 
+## \<Execution> 
 The `<Execution>` element defines how your tests are executed. The following attributes are available:
 
 |Attribute         |Required/Optional|Description|
@@ -49,7 +49,7 @@ The `<Execution>` element defines how your tests are executed. The following att
 |retryCount       |Optional          |The number of times tests whose execution status matches the value defined in `<retryFor>` are retried (default = 2).| 
 |apartmentState   |Optional          |Sets the apartment state used to execute the tests. Possible values:<br>`STA`: Single Threaded Apartment. Use this if your application is not thread-safe<br>`MTA`: Multi-Threaded Apartment<br>`Unknown`: The ApartmentState is not set (default); tests run in same thread as SpecFlow+|
      
-##<Environment> 
+## \<Environment> 
 The `<Environment>` element defines your target platform environment. The following attributes are available:
 
 |Attribute          |Required/Optional|Description|
@@ -59,7 +59,7 @@ The `<Environment>` element defines your target platform environment. The follow
 |testThreadIsolation|Optional         |Determines the level of thread isolation. Possible values: “AppDomain” (default) or “Process”.|
 |apartmentState     |Optional         |Sets the apartment state used to execute the tests. Possible values:<br>`STA`: Single Threaded Apartment. Use this if your application is not thread-safe<br>`MTA`: Multi-Threaded Apartment<br>`Unknown\: The ApartmentState is not set (default); tests run in same thread as SpecFlow+|
 
-##<TestAssemblyPaths> 
+## \<TestAssemblyPaths> 
 The `<TestAssemblyPaths>` element is a container for `<TestAssemblyPath>` elements, which define your assembly paths when executing tests from the command line. Paths in `<TestAssemblyPath>` elements are relative to the base folder.
 
 **Example:** 
@@ -69,7 +69,7 @@ The `<TestAssemblyPaths>` element is a container for `<TestAssemblyPath>` elemen
 </TestAssemblyPaths>
 ```
 
-##<Targets> 
+## \<Targets> 
 The '<Targets>' element is a container element for `<Target>` elements. Each `<Target>` element defines a test target. Tests are executed for each target, and you can define different target environments for your test. For example, you can define a target for x64 and x86 environments. You can also apply filters to each target, e.g. to only tests tagged with `@cloud` in browser environments. Tests that are executed for multiple targets are listed multiple times in the Test Explorer window, once for each target. 
 
 The following attributes are available for the `<Target>` element:
@@ -91,7 +91,7 @@ The following attributes are available for the `<Target>` element:
 </Targets> 
 ```
 
-###<DeploymentTransformation> 
+### \<DeploymentTransformation> 
 This element is used to define transformation that are applied to your configuration file. You can nest this element within a `<Target>` element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use `{Target}` as a placeholder for this value, in which case the placeholder is replaced with the target name.  
 
 The following elements and attributes are available:
@@ -124,7 +124,7 @@ The following elements and attributes are available:
 </DeploymentTransformation>
 ```
 
-##<TestThreads> 
+## \<TestThreads> 
 The '<TestThreads>' element is a container for <TestThread> elements. The following attributes are available for `<TestThread>` elements: 
 
 
