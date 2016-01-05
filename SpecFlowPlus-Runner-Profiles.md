@@ -124,7 +124,7 @@ The following elements and attributes are available:
 ```
 
 ## \<TestThreads> 
-The '<TestThreads>' element is a container for <TestThread> elements. The following attributes are available for `<TestThread>` elements: 
+The `<TestThreads>` element is a container for `<TestThread>` elements. The following attributes are available for `<TestThread>` elements: 
 
 
 |Element/Attribute  |Required/Optional|Description|
