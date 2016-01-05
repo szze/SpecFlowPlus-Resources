@@ -2,6 +2,7 @@
 * [[SpecFlow+ Runner|SpecFlowPlus Runner]]
     * [[Configuring Visual Studio Test Explorer Integration|Configuring SpecFlowPlus Runner Visual Studio Test Explorer Integration]]
     * [[Setting Up the SpecFlow+ Server|Setting-up-the-SpecFlowPlus-Runner-Server]]
+    * [[SpecFlow+ Runner Profiles|SpecFlowPlus-Runner-Profiles]]
     * [[SpecFlow+ Runner Command Line|SpecFlowPlus-Runner-Command-Line]]
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
