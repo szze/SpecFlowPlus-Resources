@@ -11,3 +11,9 @@ To install the SpecFlow+ Runner server:
 1. The connection to the server takes place via port 6365; ensure that your firewall on the server allows connections via this port.
 1. Enter the server’s URL in the `.srprofile` file in your Visual Studio project (`<Server ServerURL =”http://MyServer:6365” publishResults=”true”>`).
 1. Rebuild your solution and run your tests. You can verify that you have set up everything correctly by checking if records have been added to the database on the server.
+
+You can use these statistics to determine how your tests are executed by setting the `testSchedulingMode` attribute in the `<Execution>` element of your `.srprofile` file to one of the following values:  
+* `Sequential`: Tests are always executed in the same order (default). The order in which tests are executed is predictable and always the same, but cannot be influenced manually.
+* `Random`: The order of tests is randomised. This can be useful to detect flickering scenarios that may pass/fail depending on the order in which the other tests area executed.
+* `Adaptive`: SpecRun uses the statistics available on the pass/fail history to determine which tests to run first. Previously failing tests and new tests are executed before successful and stable tests.
+
