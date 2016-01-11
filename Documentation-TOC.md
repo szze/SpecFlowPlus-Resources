@@ -1,4 +1,3 @@
-* [[FAQ]]
 * [[SpecFlow+ Runner|SpecFlowPlus Runner]]
     * [[Configuring Visual Studio Test Explorer Integration|Configuring SpecFlowPlus Runner Visual Studio Test Explorer Integration]]
     * [[Setting Up the SpecFlow+ Server|Setting-up-the-SpecFlowPlus-Runner-Server]]
@@ -18,3 +17,4 @@
         * [[Cucumber configuration with Rake|SpecFlowPlus Excel Cucumber configuration with Rake]]
         * [[Cucumber.JVM configuration with Maven|SpecFlowPlus Excel Cucumber.JVM configuration with Maven]]
     * [[Command-line tool reference|SpecFlowPlus Excel Command Line Tool Reference]]
+* [[FAQ]]
