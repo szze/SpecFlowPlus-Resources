@@ -81,7 +81,7 @@ The following filter types can be defined:
 |Prefix    |Type      |Description|
 |----------|----------|-----------|
 |@         |Tag       |Matches a tag exactly, e.g. '@MyTag' only returns those tests with the '@MyTag' tag.|
-|tagmatch: |Tag       |Matches tags by regular expression, e.g. 'tagmatch:Tag[1-3]' matches tests with the tags 'Tag1', "tag2' or 'Tag3'.|
+|tagmatch: |Tag       |Matches tags by regular expression, e.g. 'tagmatch:Tag[1-3]' matches tests with the tags 'Tag1', "Tag2' or 'Tag3'.|
 |testpath:Feature: |Test      |Matches tests by feature name. You can use the `*` wildcard in feature names, e.g. `testpath:"Feature:Calcu*" matches the features "Calculator" and "Calculus".|
 |testpath:Scenario:|Test      |Matches tests by scenario name. You can use the `*` wildcard in scenario names, e.g. `testpath:"Scenario:* two numbers" matches the scenarios "Add two numbers", "Subtract two numbers" and "Multiply two numbers".|
 
