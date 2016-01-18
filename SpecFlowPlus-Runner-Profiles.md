@@ -69,6 +69,30 @@ The `<TestAssemblyPaths>` element is a container for `<TestAssemblyPath>` elemen
 </TestAssemblyPaths>
 ```
 
+## &lt;Filter>
+The `<Filter>` element allows you to define filters that are applied to your tests, allowing you to determine which tests to execute. Filters can also be defined in `<Target>` elements, in which case the filter only applies to that target. Filters defined outside of a `<Target>` element are applied globally.
+
+Filters can be applied to tests based on tags or the test's path, and filters can be applied to tags using regular expressions.
+
+**Note:** Tags and filters are **case-sensitive**.
+
+The following filter types can be defined:
+
+|Prefix    |Type      |Description|
+|----------|----------|-----------|
+|@         |Tag       |Matches a tag exactly, e.g. '@MyTag' only returns those tests with the '@MyTag' tag.|
+|tagmatch: |Tag       |Matches tags by regular expression, e.g. 'tagmatch:Tag[1-3]' matches tests with the tags 'Tag1', "tag2' or 'Tag3'.|
+
+You can combine filters using logical operators. The following operators are supported:
+* |: OR
+* &: AND (however you need to use `&amp;` instead in the profile, as it is an XML file)
+* !: NOT
+
+**Examples:**  
+`<Filter>@MyTag &amp; @YourTag</Filter>` executes all tests with both the `@MyTag` and `@YourTag` tags.  
+`<Filter>tagmatch:Tag[1-9]</Filter>` executes all tests tagged with `@Tag1` to `@Tag9`.  
+<`Filter>@MyTag | tagmatch:tag[1-9]</Filter>` executes all tests with either the `@MyTag` tag or tags `@Tag1` to `@Tag9`.
+
 ## &lt;Targets> 
 The `<Targets>` element is a container element for `<Target>` elements. Each `<Target>` element defines a test target. Tests are executed for each target, and you can define different target environments for your test. For example, you can define a target for x64 and x86 environments. You can also apply filters to each target, e.g. to only execute tests tagged with `@cloud` in browser environments. Tests that are executed for multiple targets are listed multiple times in the Test Explorer window, once for each target. 
 
