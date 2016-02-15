@@ -21,6 +21,18 @@ The `<Settings>` element defines general settings for your project. The followin
 |baseFolder    |Optional         |The folder where SpecFlow+ searches for assemblies that contains the tests to execute when running tests from the [[command line|SpecFlowPlus-Runner-Command-Line]]. This is `\bin\*` by default. Other paths specified in the profile are relative to this path, e.g. the location of report templates (see below).|
 |outputFolder  |Optional         |Output folder for reports and log files, relative to the base folder, when running tests from the command line. The default path is the value of `baseFolder`.|
 |reportTemplate|Optional         |The report template used to output the results of your tests (relative to the base folder).<br>**NOTE:** If you add this file to your VS project, you can set **Copy to Output Directory** to "Copy always" to ensure the file is always copied to the `\bin` directory when running your tests.|
+|licenseKey    |Optional         |Location of the license key for project or OEM licenses.|
+
+**Example:**  
+```xml
+<Settings
+    name="MySettings"
+    projectName="MyProject"
+    projectId="{7B359152-D36D-4D5A-BFDB-ED78B094D619}"
+    baseFolder="C:\MyBaseFolder"
+    outputFolder="..\OutputFolder"
+    reportTemplate="MyTemplate.cshtml"/>
+```
 
 ## &lt;Server> 
 You can publish the results of your tests to a SpecFlow+ Runner server. Details on setting up the server can be found [[here|Setting-up-the-SpecFlowPlus-Runner-Server]].
