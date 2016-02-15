@@ -183,3 +183,22 @@ The following placeholders are available:
 
 * `{TestThreadId}`: The ID of the current thread (integer)
 * `{Target}`: The name of the current target (string)
+* `{UniqueId}`: The unique ID entered in the profile
+* `{BaseFolder}`: The base folder
+* `{OutputFolder}`: The output folder for test results and reports
+* All environment variables
+
+Placeholders can be used in the following elements:
+
+* ConfigFileTransformation/Transformation 
+* CopyFile/target
+* CopyFile/source 
+* CopyFile/targetFolder
+* CopyFolder/source 
+* CopyFolder/target 
+* CustomDeploystep/type (in the assembly path) 
+* IISExpress/Port 
+* IISExpress/webAppFolder 
+* IISExpress/iisExpressPath 
+* RelocateConfigurationFile/target 
+* Relocate/targetFolder
