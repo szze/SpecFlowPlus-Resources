@@ -123,6 +123,7 @@ The following attributes are available for the `<Target>` element:
 ```xml
 <Targets> 
    <Target name="32bit"> 
+      <Filter>@32bit</Filter>
       <Environment platform="x86" apartmentState="STA" testThreadIsolation="Process"/> 
    </Target> 
 </Targets> 
