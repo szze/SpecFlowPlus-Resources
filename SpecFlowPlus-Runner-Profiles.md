@@ -7,7 +7,8 @@ The name of the profile file used by your project is defined using the `<Profile
 #SpecFlow+ Runner Profile Elements and Attributes
 The following XML elements and attributes are available:
 
-## &lt;TestProfile>
+<h2 id="TestProfile">&lt;TestProfile></h2>
+
 The `<TestProfile>` element is a container for the remaining elements.
 
 ## &lt;Settings> 
