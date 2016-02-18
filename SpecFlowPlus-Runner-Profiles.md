@@ -11,7 +11,7 @@ The following XML elements and attributes are available:
 
 The `<TestProfile>` element is a container for the remaining elements.
 
-## &lt;Settings> 
+<h2 id="Settings">&lt;Settings> </h2>
 The `<Settings>` element defines general settings for your project. The following attributes are available:
 
 |Attribute     |Required/Optional|Description|
@@ -35,7 +35,8 @@ The `<Settings>` element defines general settings for your project. The followin
     reportTemplate="MyTemplate.cshtml"/>
 ```
 
-## &lt;Server> 
+<h2 id="Server">&lt;Server> </h2>
+
 You can publish the results of your tests to a SpecFlow+ Runner server. Details on setting up the server can be found [[here|Setting-up-the-SpecFlowPlus-Runner-Server]].
 
 The following attributes are available:
@@ -50,7 +51,8 @@ The following attributes are available:
 <Server serverUrl="http://specrun.server:6365" publishResults="true" />
 ```
 
-## &lt;Execution> 
+<h2 id="Execution">&lt;Execution> </h2>
+
 The `<Execution>` element defines how your tests are executed. The following attributes are available:
 
 |Attribute         |Required/Optional|Description|
@@ -62,7 +64,8 @@ The `<Execution>` element defines how your tests are executed. The following att
 |retryCount       |Optional          |The number of times tests whose execution status matches the value defined in `<retryFor>` are retried (default = 2).| 
 |apartmentState   |Optional          |Sets the apartment state used to execute the tests. Possible values:<br>`STA`: Single Threaded Apartment. Use this if your application is not thread-safe<br>`MTA`: Multi-Threaded Apartment<br>`Unknown`: The ApartmentState is not set (default); tests run in same thread as SpecFlow+|
      
-## &lt;Environment> 
+<h2 id="Environment">&lt;Environment> </h2>
+
 The `<Environment>` element defines your target platform environment. The following attributes are available:
 
 |Attribute          |Required/Optional|Description|
@@ -72,7 +75,8 @@ The `<Environment>` element defines your target platform environment. The follow
 |testThreadIsolation|Optional         |Determines the level of thread isolation. Possible values: `AppDomain` (default) or `Process`.|
 |apartmentState     |Optional         |Sets the apartment state used to execute the tests. Possible values:<br>`STA`: Single Threaded Apartment. Use this if your application is not thread-safe<br>`MTA`: Multi-Threaded Apartment<br>`Unknown`: The ApartmentState is not set (default); tests run in same thread as SpecFlow+|
 
-## &lt;TestAssemblyPaths> 
+<h2 id="TestAssemblyPaths">&lt;TestAssemblyPaths> </h2>
+
 The `<TestAssemblyPaths>` element is a container for `<TestAssemblyPath>` elements, which define your assembly paths when executing tests from the command line. Paths in `<TestAssemblyPath>` elements are relative to the base folder.
 
 **Example:** 
@@ -82,7 +86,8 @@ The `<TestAssemblyPaths>` element is a container for `<TestAssemblyPath>` elemen
 </TestAssemblyPaths>
 ```
 
-## &lt;Filter>
+<h2 id="Filter">&lt;Filter> </h2>
+
 The `<Filter>` element allows you to define filters that are applied to your tests, allowing you to determine which tests to execute. Filters can also be defined in `<Target>` elements, in which case the filter only applies to that target. Filters defined outside of a `<Target>` element are applied globally. The **Test Explorer** window in Visual Studio only lists those tests that meet your filter criteria (after rebuilding your project). Note that global filters also apply when running tests by right-clicking on a feature file and selecting **Run SpecFlow Scenarios**.
 
 Filters can be applied to tests based on tags (including regular expressions), or the scenario or feature name.
@@ -108,7 +113,8 @@ You can combine filters using logical operators. The following operators are sup
 `<Filter>tagmatch:!Tag[1-9]</Filter>` executes all tests that are not tagged with any of  `@Tag1` to `@Tag9`.  
 <`Filter>@MyTag | tagmatch:tag[1-9]</Filter>` executes all tests with either the `@MyTag` tag or tags `@Tag1` to `@Tag9`.
 
-## &lt;Targets> 
+<h2 id="Targets">&lt;Targets> </h2>
+ 
 The `<Targets>` element is a container element for `<Target>` elements. Each `<Target>` element defines a test target. Tests are executed for each target, and you can define different target environments for your test. For example, you can define a target for x64 and x86 environments. You can also apply filters to each target, e.g. to only execute tests tagged with `@cloud` in browser environments. Tests that are executed for multiple targets are listed multiple times in the Test Explorer window, once for each target. 
 
 The following attributes are available for the `<Target>` element:
@@ -129,8 +135,8 @@ The following attributes are available for the `<Target>` element:
    </Target> 
 </Targets> 
 ```
+<h2 id="DeploymentTransformation">&lt;DeploymentTransformation> </h2>
 
-### &lt;DeploymentTransformation> 
 This element is used to define transformations that are applied to your configuration file. You can nest this element within a `<Target>` element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use `{Target}` as a placeholder for this value, in which case the placeholder is replaced with the target name.  
 
 The following elements and attributes are available:
@@ -165,7 +171,8 @@ The following elements and attributes are available:
 </DeploymentTransformation>
 ```
 
-## &lt;TestThreads> 
+<h2 id="TestThreads">&lt;TestThreads> </h2>
+
 The `<TestThreads>` element is a container for `<TestThread>` elements. The following attributes are available for `<TestThread>` elements: 
 
 
@@ -176,8 +183,8 @@ The `<TestThreads>` element is a container for `<TestThread>` elements. The foll
 
 You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.g. to transform the name of the database instance you are accessing based on the thread ID, ensuring that each thread accesses a separate instance of the database. This prevents the threads from conflicting with one another when accessing the database, as thread 0 may manipulate data that is required by thread 1 otherwise.
 
+<h2 id="Placeholders">&lt;Placeholders> </h2>
 
-##Placeholders 
 There are placeholders available for the elements defined in your profile. You can use these placeholders in your configuration file. This allows you to use the same configuration file for various target environments, e.g. you could use the `{TestThreadId}` placeholder in the name of your database instance to ensure that each thread accesses a different instance of your database (Instance0, Instance1 etc.) . 
 
 The following placeholders are available:
