@@ -4,6 +4,7 @@
     * [[Setting Up the SpecFlow+ Server|Setting-up-the-SpecFlowPlus-Runner-Server]]
     * [[SpecFlow+ Runner Profiles|SpecFlowPlus-Runner-Profiles]]
     * [[SpecFlow+ Runner Command Line|SpecFlowPlus-Runner-Command-Line]]
+    * [[Reports]]
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
