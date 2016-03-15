@@ -22,7 +22,7 @@ mono SpecFlow.Plus.Excel.Converter.exe
 
 * `convert`: Converts an Excel feature file (.feature.xlsx) to a plain text Gherkin file
 * `initialize`: Initializes an Excel feature file (.feature.xlsx) based on a plain-text Gherkin file (one-time conversion)
-* `about`: Displays information about the tool and your license
+* `about`: Displays information about the tool and your license, including the licensee, expiry date and the date until which upgrades are included
 * `register`: Registers a license
 * `unregister`: Unregisters the license
 
