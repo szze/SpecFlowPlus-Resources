@@ -7,7 +7,7 @@ You can set up SpecFlow+ Runner to execute your tests whenever a build is create
 To configure your build process in TFS 2015 to execute tests using SpecFlow+ Runner:
 
 1. Open TFS and switch to your build definition.
-2. Click on **Add build step** to add a new step to the build definition. Click on **Test** in the navigation pane on the left and click on **Add** next to "Visual Studio Test".
+2. Click on **Add build step** to add a new step to the build definition. Click on **Test** in the list of categories and click on **Add** next to "Visual Studio Test".
 3. Configure the build step as follows:  
   * Enter the path to your **Test Assembly**
   * If you are using both MSTest and SpecFlow+ Runner, enter the path to SpecRun.exe in the **Path to Custom Test Adapters** field. If you do not enter the path here, only your MSTest tests will be executed as TFS cannot find SpecRun.exe.
