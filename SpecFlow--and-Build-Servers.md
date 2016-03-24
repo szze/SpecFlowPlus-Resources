@@ -1,4 +1,4 @@
-You can set up SpecFlow+ Runner to execute your tests whenever a build is created on your build server. The following covers the settings necessary to use SpecFlow+ with either TFS 2015 or TeamCity. For more information on the build settings in either TFS or TeamCity, please refer to the repsective documentation.
+You can set up SpecFlow+ Runner to execute your tests whenever a build is created on your build server. The following covers the settings necessary to use SpecFlow+ with either TFS 2015 or TeamCity. For more information on the build settings in either TFS or TeamCity, please refer to the respective documentation.
 
 #TFS 2015
 
