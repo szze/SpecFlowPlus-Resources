@@ -4,7 +4,7 @@ Among others options, you can configure which [[SpecFlow+ Runner test profile|Sp
 
 ## Execution defaults
 
-When running tests from the Test Explorer window, the tests are executed using the following defaults.
+When running tests from the Test Explorer window, tests are executed using the following defaults.
 
 ### Profile
 
