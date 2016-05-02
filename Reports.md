@@ -1,4 +1,6 @@
-SpecFlow generates a report once your tests have finished executing that includes a breakdown of the results of your tests. The default report includes a statistical overview of the status of all tests, as well as information on individual scenarios, including Gherkin test cases, statistics on the total number and percentage of successful tests, and the execution time for each step. When running tests from within Visual Studio, a link to the generated report is included in the **Output** window once the tests have completed. 
+SpecFlow generates a report once your tests have finished executing that includes a breakdown of the results of your tests. 
+
+The default report includes a statistical overview of the status of all tests, as well as information on individual scenarios, including Gherkin test cases, statistics on the total number and percentage of successful tests, and the execution time for each step. When running tests from within Visual Studio, a link to the generated report is included in the **Output** window once the tests have completed. 
 
 The report is output to your output folder (configured in your [[profile|SpecFlowPlus-Runner-Profiles]]) and the name of the report is generated using the `projectName` and `name` defined in your profile plus a time stamp:
 `<projectName>_<name>_YYYY-MM-DDTHHMMSS`
