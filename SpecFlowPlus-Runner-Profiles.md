@@ -194,7 +194,7 @@ The following placeholders are available:
 * `{UniqueId}`: The unique ID entered in the profile
 * `{BaseFolder}`: The base folder
 * `{OutputFolder}`: The output folder for test results and reports
-* All environment variables
+* All environment variables (specified using the standard format, i.e. preceded by a percentage sign ('%'))
 
 Placeholders can be used in the following elements:
 
