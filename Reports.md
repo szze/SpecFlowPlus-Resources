@@ -30,6 +30,6 @@ If you are using Resharper, referencing the DLLs is all that is necessary. If yo
 A SpecFlow+ report is generated for the `.srprofile` file used to execute the tests from the command line. You can add multiple assemblies to your `.srprofile` file, in which case the report will combine the results of the assemblies in a single report.
 
 To generate a single report for multiple assemblies:  
-1. Open the profile you want to edit and locate the `<TestAssemblyPaths>` section. This should already contain the path to the assembly linked to the project the profile belongs to.
-1. Add the test assemblies you want to include in the report as <TestAssemblyPath> elements. You need to specify the paths as relative to the location of the assembly associated with the profile's project. If all your projects are located in the same root folder, the path should be `../../../<ProjectDirectory>/bin/debug/<ProjectSpecificationAssembly>.dll`.
-1. Start `runtests.cmd` located in the directory of your edited profile. Your tests are executed and the report is generated.
+1. Open the profile you want to edit and locate the `<TestAssemblyPaths>` section. This should already contain the path to the assembly linked to the project the profile belongs to.  
+1. Add the test assemblies you want to include in the report as <TestAssemblyPath> elements. You need to specify the paths as relative to the location of the assembly associated with the profile's project. If all your projects are located in the same root folder, the path should be `../../../<ProjectDirectory>/bin/debug/<ProjectSpecificationAssembly>.dll`.  
+1. Start `runtests.cmd` located in the directory of your edited profile. Your tests are executed and the report is generated.  
