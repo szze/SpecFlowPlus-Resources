@@ -7,6 +7,8 @@ A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet
 
 ## Defining Your Own Template
 
+Please review the [SpecFlow+ Runner Report API Documentation](http://www.specflow.org/api/report/docs/) to find out about the classes and properties of the reporting model that can be referred in the reporting template.
+
 To define your own report template:
 
 1. Create a copy of `ReportTemplate.cshtml` (in `\packages\[SpecRun.Runner]\templates`) and rename it accordingly.
