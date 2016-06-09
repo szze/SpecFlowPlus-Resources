@@ -3,7 +3,7 @@ SpecFlow generates a report once your tests have finished executing that include
 The report is output to your output folder (configured in your [[profile|SpecFlowPlus-Runner-Profiles]]) and the name of the report is generated using the `projectName` and `name` defined in your profile plus a time stamp:
 `<projectName>_<name>_YYYY-MM-DDTHHMMSS`
 
-A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet package includes a default report template named ` ReportTemplate.cshtml` located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio project. You can customise this template to meet your needs. If you customise the template, we recommend renaming the template file as well.
+A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet package includes a default report template named ` ReportTemplate.cshtml` located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio project. You can customise this template to meet your needs. If you customise the template, we recommend renaming the template file as well. The data available to your reports is accessible using SpecFlow+'s report API. If you edit the .cshtml template in Visual Studio, Intellisense will display a short description of the available properties and methods. You can also reference them in the [[online report API documentation|http://www.specflow.org/api/report/docs/]].
 
 ## Defining Your Own Template
 
@@ -26,7 +26,7 @@ If you edit the template `.cshtml` file in Visual Studio, you can use Intellisen
 * TechTalk.SpecRun.Framework.Interfaces.dll
 
 These files are all included in the SpecFlow+ Runner NuGet package and are located in the `\packages\[SpecRun.Runner]` directory once you have added the NuGet package to your solution.
-If you are using Resharper, referencing the DLLs is all that is necessary. If you care not using ReSharper, you will also need to follow the steps outlined [[here| http://thetoeb.de/2014/01/05/enabling-mvc5-intellisense-in-a-classlibrary-project/]]
+If you are using Resharper, referencing the DLLs is all that is necessary. If you care not using ReSharper, you will also need to follow the steps outlined [[here| http://thetoeb.de/2014/01/05/enabling-mvc5-intellisense-in-a-classlibrary-project/]].
 
 ## Generating a Single Report for Multiple Specification Projects
 A SpecFlow+ report is generated for the `.srprofile` file used to execute the tests from the command line. You can add multiple assemblies to your `.srprofile` file, in which case the report will combine the results of the assemblies in a single report.
