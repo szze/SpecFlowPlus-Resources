@@ -6,6 +6,7 @@
     * [[SpecFlow+ Runner Profiles|SpecFlowPlus-Runner-Profiles]]
     * [[SpecFlow+ Runner Command Line|SpecFlowPlus-Runner-Command-Line]]
     * [[Reports]]
+      * [[Online Report API|http://specflow.org/api/report/docs/]]
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
