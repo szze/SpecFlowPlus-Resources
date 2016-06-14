@@ -183,6 +183,14 @@ The `<TestThreads>` element is a container for `<TestThread>` elements. The foll
 
 You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.g. to transform the name of the database instance you are accessing based on the thread ID, ensuring that each thread accesses a separate instance of the database. This prevents the threads from conflicting with one another when accessing the database, as thread 0 may manipulate data that is required by thread 1 otherwise.
 
+<h2 id="Report">&lt;Report></h2>
+|Attribute     |Required/Optional|Description|
+|--------------|-----------------|-----------|
+|disable       |Optional         |Set this attribute to true to disable the report generation|
+|copyAlsoToBaseFolder|Optional   |Set this to true to also copy the generated reports to the base folder|
+|Template      |Optional         |Use this element to define the template(s) used to generate reports. You can specify any number of templates; a report will be generated using each template specified. The following attributes are available for this element:<br>`name`: The path to the template .cshtml file, relative to the base folder<br>`outputName`: The path of the generated report, relative to the base folder|
+
+
 <h2 id="Placeholders">Placeholders</h2>
 
 There are placeholders available for the elements defined in your profile. You can use these placeholders in your configuration file. This allows you to use the same configuration file for various target environments, e.g. you could use the `{TestThreadId}` placeholder in the name of your database instance to ensure that each thread accesses a different instance of your database (Instance0, Instance1 etc.) . 
