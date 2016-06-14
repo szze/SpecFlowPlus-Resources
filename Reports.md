@@ -40,3 +40,4 @@ To generate a single report for multiple assemblies:
 1. Start `runtests.cmd` located in the directory of your edited profile. Your tests are executed and the report is generated.  
 
 ## Generating Multiple Reports in a Single Test Run
+You can generate multiple reports from a single test run. To do so, you also need to modify your `.srprofile` file to reference the .cshtml templates and output paths for each reports. The settings for multiple reports are defined in the [[&lt;Report> element|SpecFlowPlus-Runner-Profiles#report]] of your profile.
