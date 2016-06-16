@@ -28,7 +28,7 @@ If you edit the template `.cshtml` file in Visual Studio, you can use Intellisen
 * TechTalk.SpecRun.Framework.Interfaces.dll
 
 These files are all included in the SpecFlow+ Runner NuGet package and are located in the `\packages\[SpecRun.Runner]` directory once you have added the NuGet package to your solution.
-If you are using Resharper, referencing the DLLs is all that is necessary. If you care not using ReSharper, you will also need to follow the steps outlined [[here| http://thetoeb.de/2014/01/05/enabling-mvc5-intellisense-in-a-classlibrary-project/]].
+If you are using Resharper, referencing the DLLs is all that is necessary. If you are not using ReSharper, you will also need to follow the steps outlined [[here| http://thetoeb.de/2014/01/05/enabling-mvc5-intellisense-in-a-classlibrary-project/]].
 
 ## Generating a Single Report for Multiple Specification Projects
 A SpecFlow+ report is generated for the `.srprofile` file used to execute the tests from the command line. You can add multiple assemblies to your `.srprofile` file, in which case the report will combine the results of the assemblies in a single report.
