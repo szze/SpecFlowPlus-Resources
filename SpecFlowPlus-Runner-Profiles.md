@@ -21,7 +21,7 @@ The `<Settings>` element defines general settings for your project. The followin
 |projectID     |Optional         |The GUID of the project. Entered automatically when adding the NuGet package to your project.|
 |baseFolder    |Optional         |The folder where SpecFlow+ searches for assemblies that contains the tests to execute when running tests from the [[command line|SpecFlowPlus-Runner-Command-Line]]. This is `\bin\*` by default. Other paths specified in the profile are relative to this path, e.g. the location of report templates (see below).|
 |outputFolder  |Optional         |Output folder for reports and log files, relative to the base folder, when running tests from the command line. The default path is the value of `baseFolder`.|
-|reportTemplate|Optional         |The report template used to output the results of your tests (relative to the base folder).<br>**NOTE:** If you add this file to your VS project, you can set **Copy to Output Directory** to "Copy always" to ensure the file is always copied to the `\bin` directory when running your tests.|
+|reportTemplate|Optional         |The report template used to output the results of your tests (relative to the base folder).<br>**NOTE:** If you add this file to your VS project, you can set **Copy to Output Directory** to "Copy always" to ensure the file is always copied to the `\bin` directory when running your tests.<br>You can specify additional reports in the `<Report>` element if you want to output more than one report per test run.|
 |licenseKey    |Optional         |Location of the license key for project or OEM licenses.|
 
 **Example:**  
