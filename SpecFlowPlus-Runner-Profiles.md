@@ -186,9 +186,39 @@ You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.
 <h2 id="Report">&lt;Report></h2>
 |Attribute     |Required/Optional|Description|
 |--------------|-----------------|-----------|
-|disable       |Optional         |Set this attribute to true to disable the report generation|
-|copyAlsoToBaseFolder|Optional   |Set this to true to also copy the generated reports to the base folder|
+|disable       |Optional         |Set this attribute to true to disable the report generation (default: `false`)|
+|copyAlsoToBaseFolder|Optional   |Set this to true to also copy the generated reports to the base folder (default: `false`)|
 |Template      |Optional         |Use this element to define the template(s) used to generate reports. You can specify any number of templates; a report will be generated using each template specified. The following attributes are available for this element:<br>`name`: The path to the template .cshtml file, relative to the base folder<br>`outputName`: The path of the generated report, relative to the base folder|
+
+**Note:** The report template specified in the `<Settings>` element (`reportTemplate`) is used in addition to the templates specified in the `<Report>` element.
+
+**Examples:**
+
+To disable the report generation:
+
+```xml
+<TestProfile xmlns="http://www.specrun.com/schemas/2011/09/TestProfile">
+    <Settings name="Disable Reports" projectName="SpecRun Test Project" />
+    <Report disable="true"/>
+    <TestAssemblyPaths>
+        <TestAssemblyPath>SpecRun.TestProject.dll</TestAssemblyPath>
+    </TestAssemblyPaths>
+</TestProfile>
+```
+To output 2 additional reports and copy the reports to the base folder:
+
+```xml
+<TestProfile xmlns="http://www.specrun.com/schemas/2011/09/TestProfile">
+    <Settings name="Multiple Reports" projectName="SpecRun Test Project" />
+    <Report>
+        <Template name="CustomReportTemplate_1.cshtml" outputName="Report1.html" copyAlsoToBaseFolder="true"/>
+        <Template name="CustomReportTemplate_2.cshtml" outputName="Report2.html" copyAlsoToBaseFolder="true"/>
+    </Report>
+    <TestAssemblyPaths>
+        <TestAssemblyPath>SpecRun.TestProject.dll</TestAssemblyPath>
+    </TestAssemblyPaths>
+</TestProfile>
+```
 
 
 <h2 id="Placeholders">Placeholders</h2>
