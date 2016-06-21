@@ -5,7 +5,7 @@
         * [[SpecFlow+ and Build Servers|SpecFlowPlus-and-Build-Servers]]
     * [[SpecFlow+ Runner Profiles|SpecFlowPlus-Runner-Profiles]]
     * [[SpecFlow+ Runner Command Line|SpecFlowPlus-Runner-Command-Line]]
-    * [[Migrating to SpecFlow-Runner]]
+    * [[Migrating to SpecFlow+ Runner]]
     * [[Reports]]
       * [[Online Report API Documentation|http://specflow.org/api/report/docs/]]
 
