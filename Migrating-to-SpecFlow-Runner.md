@@ -11,7 +11,7 @@ Once you have completed these steps, you can run your tests with SpecFlow+Runner
 ##MSTest
 1. Remove the `SpecFlow.MsTest` NuGet package from your project, if present.
 1. Add the `SpecRun.SpecFlow` NuGet package to your project.
-1. Update the `unitTestProvider` element your `app.config` file as follows:
+1. Update the `unitTestProvider` element in your `app.config` file as follows:
 
   ```xml
   <specFlow>
