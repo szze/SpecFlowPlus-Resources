@@ -1,6 +1,6 @@
 SpecFlow+ Runner works with any assertions API, which means that switching from another test runner to SpecFlow+ Runner is easy. To switch, you will need to:
 
-1. Install a NuGet package.
+1. Install the `SpecRun.SpecFlow` NuGet package.
 1. Configure your [unitTestProvider](http://www.specflow.org/documentation/Configuration/) for SpecFlow+ Runner.
 1. Regenerate your feature files.
 
