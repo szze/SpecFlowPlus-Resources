@@ -33,7 +33,7 @@ Use `SpecRun.exe buildserverrun` to execute your tests in build server mode usin
 |`/log:`file            |Optional         |Specifies the target log file. This path is relative to your output folder.|
 |`/report:`file         |Optional         |Specifies the target report file. This path is relative to your output folder.|
 |`filter:`filter        |Optional         |Applies a filter to your tests and only executes those that match your expression. This overrides the `filter` entry in your `.srprofile` file.|
-|`/buildsever:`name     |Optional         |The build servers' product name (TFS, TeamCity) for specialised trace output.|
+|`/buildserver:`name     |Optional         |The build servers' product name (TFS, TeamCity) for specialised trace output.|
 
 ##register
 Use `SpecRun.exe register` to register your SpecFlow+ license. You only need to register your license once per user per machine. The license is valid for all SpecFlow+ components.
