@@ -29,4 +29,18 @@ If cleaning your solution and rebuilding does not fix this issue, try deleting t
 ### My tests are not displayed in the Test Explorer in Visual Studio 2015.
 This is an issue caused by a change in how Visual Studio handles solution-level packages. You can fix this issue by reinstalling the SpecFlow+ Runner NuGet packages or by adding the dependency on the `SpecRun.Runner` package to `packages.config` (`<package id="SpecRun.Runner" version="1.2.0" />`).
 
- 
+### I have updated SpecFlow+ and my test are no longer running
+
+If you have updated SpecFlow+ with a new NuGet package, and are having issues, please check whether the previous versions have been removed completely. Visual Studio does not always remove previous packages when updating. If this happens, the wrong (earlier) version of SpecFlow+ may be used by Visual Studio which can cause version conflicts.
+
+1. Switch to the folder containing your solution in Windows Explorer.
+1. Open the `packages` directory.
+1. If you see directories with an older version number in the name, delete those directories until you only have 1 directory for each NuGet package.
+1. If you are using Visual Studio 2013 or earlier, remove any references to older packages in `packages.config` in your solution. **Note:** This file is not present in Visual Studio 2015.
+
+### I receive a message that I do not have permission to execute install.ps1 when installing SpecFlow+
+
+The installation executes a powershell script. If you do not have permission to execute this script on the machine, the installation will fail. If you do not have the necessary privileges, try entering the following command in the NuGet console:  
+`PM> Set-ExecutionPolicy RemoteSigned`  
+
+Once the command has executed, restart the installation process.
