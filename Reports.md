@@ -27,7 +27,7 @@ If you edit the template `.cshtml` file in Visual Studio, you can use Intellisen
 * TechTalk.SpecRun.Framework.dll
 * TechTalk.SpecRun.Framework.Interfaces.dll
 
-These files are all included in the SpecFlow+ Runner NuGet package and are located in the `\packages\[SpecRun.Runner]` directory once you have added the NuGet package to your solution.
+These files are all included in the SpecFlow+ Runner NuGet package and are located in the `\packages\[SpecRun.Runner]\tools` directory once you have added the NuGet package to your solution.
 If you are using Resharper, referencing the DLLs is all that is necessary. If you are not using ReSharper, you will also need to follow the steps outlined [[here| http://thetoeb.de/2014/01/05/enabling-mvc5-intellisense-in-a-classlibrary-project/]].
 
 ## Generating a Single Report for Multiple Specification Projects
