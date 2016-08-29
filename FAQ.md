@@ -44,3 +44,15 @@ The installation executes a powershell script. If you do not have permission to 
 `PM> Set-ExecutionPolicy RemoteSigned`  
 
 Once the command has executed, restart the installation process.
+
+<h2 id="upgrades">Upgrading</h2>
+### I am having trouble upgrading from SpecFlow+ 1.3 (or earlier) to a newer version with SpecFlow 2 support
+Make sure you follow the steps out lined in the guide on [[updating to SpecFlow 2|http://www.specflow.org/updating-to-specflow-2/]].  
+In particular:  
+* Make sure you restart Visual Studio as described in the link! You need to do this to flush Visual Studio's cache and ensure the correct version of SpecFlow+ is loaded.
+* If you use Visual Studio 2013 (or earlier) make sure you have removed any references to older versions of SpecFlow+ from you 'packages.config' file.
+
+### I have multiple solutions with different versions of SpecFlow+ installed and am observing weird behaviour when switching between solutions. Why?
+When loading a solution containing SpecFlow+, Visual Studio caches the SpecFlow+ components. If you open a new solution containing a SpecFlow+ project, Visual Studio will retained the cached version of the SpecFlow+ components in memory. If the version used by the two projects is different, this means that there will be a version mismatch.
+
+You can avoid this issue by either upgrading all your solutions to the same version of SpecFlow+, or by restarting Visual Studio to flush the cache before opening the new solution.
