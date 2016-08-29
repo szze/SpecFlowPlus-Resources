@@ -215,7 +215,7 @@ name: 'Skipped',
 The main things to note in this code:
 * “#chart” refers to the ID of the `<div>` element that will contain the chart.
 * The names of the individual slices are hard-coded as “Succeeded”, “Failures” etc.
-* The data (`series`) used by the chart is specified using @Model.Summary.XYZ, where XYZ is the value for each slice of the pie chart. You can obviously pass other numeric data from SpecFlow+ (e.g. execution times).
+* The data (`series`) used by the chart is specified using `@Model.Summary.XYZ`, where XYZ is the value for each slice of the pie chart. You can obviously pass other numeric data from SpecFlow+ (e.g. execution times).
 
 ### Rendering the Chart
 We still need to render the chart by calling the renderPieChart function once the document is ready. Locate `$(document).ready(function ()`, and add the following line at the end of the function:
