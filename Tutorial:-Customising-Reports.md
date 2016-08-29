@@ -232,3 +232,5 @@ The final step is to include the chart in your report at the appropriate positio
 ```
 
 Note that the ID of the div element is “chart”, which matches the value defined in `renderPieChart`. You can move the script references to elsewhere in the document, but make sure they are included!
+
+**Note:** Because the referenced JavaScript files are available online, you do not need to copy the files to your output directory.
