@@ -15,7 +15,7 @@ The following initial steps are optional but highly recommended:
 
 XXX SCREENSHOT OF COPY ALWAYS? XXX
 
-## Configuring SpecFlow to use your Template
+### Configuring SpecFlow to use your Template
 Before you can use your new template, you need to tell SpecFlow+ Runner where to find the template. You can also determine the name of the HTML report file that is generated. To do so:
 
 1. Open your project in Visual Studio.
@@ -30,3 +30,31 @@ Before you can use your new template, you need to tell SpecFlow+ Runner where to
 1. Run your tests and click on the link to the generated report in the **Output** window in Visual Studio to ensure that your report template can be located and a report is generated.
 
 **Note:** You can generate multiple reports from the same test run. To generate additional reports, use the `<Report>` element as described [[here|SpecFlowPlus-Runner-Profiles#report]].
+
+## From Template to Report
+The .cshtml Razor template determines the output of the final HTML report. The template can include both static HTML and dynamically generated content. You therefore have access to all the formatting options HTML provides, and you can use C# to dynamically determine the contents of the report.
+
+If you open the default template or your renamed copy of it, you will notice it contains a series of helper functions, and an HTML section (starting from “<html>”). We will be extending both the helper functions to implement additional logic (e.g. to populate statistical charts) and the HTML to include additional information (e.g. embed the chart) in the output.
+
+### Referencing Test Data from SpecFlow+
+You can reference the [[properties|http://specflow.org/api/report/docs/]] by SpecFlow+ to perform calculations and output information on the test run you are interested in. Use the '@' character as a prefix to reference these properties, e.g. `@Model.Configuration.ProjectName` returns the name of your project. 
+
+You can see this in action for yourself. Search for “&lt;body>” in your template to locate the start of the HTML report’s body:
+```xml
+<body>
+        <h1>@Model.Configuration.ProjectName Test Execution Report</h1>
+```
+The second line defines the top level heading (h1 element) at the start of the report. [[@Model.Configuration.ProjectName|http://specflow.org/api/report/docs/class_tech_talk_1_1_spec_run_1_1_framework_1_1_configuration_1_1_test_profile_settings.html#a6c54a15903a60ea12189a42731ee2961]] accesses the name of your project while “Test Execution Report” is plain (static) text. As mentioned before, the ‘@’ character is used to denote code sections or variables to embed in your HTML.
+
+Let's make a minor change to the report's heading:
+
+1. Change “@Model.Configuration.ProjectName” to “[[@Model.Configuration.TestProfileSettings.ReportTemplate|http://specflow.org/api/report/docs/class_tech_talk_1_1_spec_run_1_1_framework_1_1_configuration_1_1_test_profile_settings.html#a25b29cff361f816a64c67800199c560e]]”
+1. Change “Test Execution Report” to “is my new Test Execution Report template”.  
+  The content should look like this:  
+	&lt;body>  
+        &lt;h1>@Model.Configuration.TestProfileSettings.ReportTemplate is my new Test Execution Report template&lt;/h1>  
+2. Run your tests and click on the link to the report to view the output. The header should now be similar to the following:
+
+XXX SCREENSHOT XXX
+
+While this is a trivial example, it demonstrates how to integrate information passed by SpecFlow+ in your report and how to include it in the HTML output.
