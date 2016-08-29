@@ -149,3 +149,86 @@ While you can now run your tests and generate the report, you still need to ensu
 
 XXX EMBED HTML XXX
 
+## Including Charts
+By default, the SpecFlow+ results output information on the number of tests that were successful, failed, are pending etc. In this example, we are going to display this information as a pie chart as well:
+
+XXX SCREENSHOT XXX
+
+To do so, we are going to use [[Highcharts|www.highcharts.com]] to display a [[pie chart|https://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/pie-basic/]]. Other types of charts are also supported by Highcharts, and integrating them is very similar.
+
+### Implementing a Render Function
+
+We will implement a function to render the pie chart that is very similar to the pie chart [[sample code|https://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/pie-basic/]], but we are going to populate the chart with the results data from SpecFlow+. Add the following function to your template – preferably with the other functions. I have added the function after the doSetHeights function and before $(document).ready:
+
+```
+function renderPieChart() {
+  $('#chart').highcharts({
+    chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie'
+    },
+    title: {
+      text: ''
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+      pie: {
+        allowPointSelect: true,
+        cursor: 'pointer',
+        dataLabels: {
+          enabled: true,
+          format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+          }
+        }
+      }
+    },
+    series: [{
+      name: 'Brands',
+      colorByPoint: true,
+      data: [{
+        name: 'Succeeded',
+        y: @Model.Summary.Succeeded @*Number of successful tests*@
+      }, {
+        name: 'Failures',
+        y: @Model.Summary.TotalFailure,   @*Number of failed tests*@
+          }, {
+        name: 'Pending',
+        y: @Model.Summary.TotalPending  @*Number of pending tests*@
+      }, {
+        name: 'Ignored',
+        y: @Model.Summary.Ignored   @*Number of ignored tests*@
+  }, {
+name: 'Skipped',
+  y: @Model.Summary.Skipped   @*Number of skipped tests*@
+  }]
+  }]
+  });
+}
+```
+
+The main things to note in this code:
+* “#chart” refers to the ID of the div element that will contain the chart.
+* The names of the individual slices are hard-coded as “Succeeded”, “Failures” etc.
+* The data (`series`) used by the chart is specified using @Model.Summary.XYZ, where XYZ is the value for each slice of the pie chart. You can obviously pass other numeric data from SpecFlow+ (e.g. execution times).
+
+### Rendering the Chart
+We still need to render the chart by calling the renderPieChart function once the document is ready. Locate `$(document).ready(function ()`, and add the following line at the end of the function:
+
+`renderPieChart();`
+
+### Including the Chart in the Report
+The final step is to include the chart in your report at the appropriate position. In this case, we want to display the pie chart immediately after the overall summary of the test results. Search for `<h2>Result: @Model.Summary.ConcludedResultMessage</h2>` and add the following code after the `</table>` tag:
+
+```
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <div id="chart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+```
+
+Note that the ID of the div element is “chart”, which matches the value defined in `renderPieChart`. You can move the script references to elsewhere in the document, but make sure they are included!
