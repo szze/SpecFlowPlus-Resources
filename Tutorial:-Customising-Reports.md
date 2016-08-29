@@ -34,7 +34,7 @@ Before you can use your new template, you need to tell SpecFlow+ Runner where to
 ## From Template to Report
 The .cshtml Razor template determines the output of the final HTML report. The template can include both static HTML and dynamically generated content. You therefore have access to all the formatting options HTML provides, and you can use C# to dynamically determine the contents of the report.
 
-If you open the default template or your renamed copy of it, you will notice it contains a series of helper functions, and an HTML section (starting from “<html>”). We will be extending both the helper functions to implement additional logic (e.g. to populate statistical charts) and the HTML to include additional information (e.g. embed the chart) in the output.
+If you open the default template or your renamed copy of it, you will notice it contains a series of helper functions, and an HTML section (starting from “&lt;html>”). We will be extending both the helper functions to implement additional logic (e.g. to populate statistical charts) and the HTML to include additional information (e.g. embed the chart) in the output.
 
 ### Referencing Test Data from SpecFlow+
 You can reference the [[properties|http://specflow.org/api/report/docs/]] by SpecFlow+ to perform calculations and output information on the test run you are interested in. Use the '@' character as a prefix to reference these properties, e.g. `@Model.Configuration.ProjectName` returns the name of your project. 
