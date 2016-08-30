@@ -18,12 +18,12 @@ Before you can use your new template, you need to tell SpecFlow+ Runner where to
 
 1. Open your project in Visual Studio.
 1. Open your `.srprofile` file (the default name is `Default.srprofile`).
-1. Edit the `Settings` element as required:
+1. Edit the `Settings` [[element|https://github.com/techtalk/SpecFlowPlus-Resources/wiki/SpecFlowPlus-Runner-Profiles#settings-]] as required:
     1.	`projectName`: The name of your project and the first portion of the name of the report.
     1.	`name`: The name of your settings and the second portion of the report’s name.
     1.	`outputFolder`: The folder the report is output to, relative to your base folder (`baseFolder` attribute).
     1.	`reportTemplate`: The location of the report template used to generate the report, relative to your base folder. Enter the name of the template you created earlier here.
-1. A time stamp (date in YYYY-MM-DD format ant time in HHMMSS format) is appended to the generated report. The final name of the generated report is composed as follows:
+1. A time stamp (date in YYYY-MM-DD format and time in HHMMSS format) is appended to the generated report. The final name of the generated report is composed as follows:
 `<projectName>_<name>_YYYY-MM-DDTHHMMSS`
 1. Run your tests and click on the link to the generated report in the **Output** window in Visual Studio to ensure that your report template can be located and a report is generated.
 
@@ -32,7 +32,7 @@ Before you can use your new template, you need to tell SpecFlow+ Runner where to
 ## From Template to Report
 The .cshtml Razor template determines the output of the final HTML report. The template can include both static HTML and dynamically generated content. You therefore have access to all the formatting options HTML provides, and you can use C# to dynamically determine the contents of the report.
 
-If you open the default template or your renamed copy of it, you will notice it contains a series of helper functions, and an HTML section (starting from “&lt;html>”). We will be extending both the helper functions to implement additional logic (e.g. to populate statistical charts) and the HTML to include additional information (e.g. embed the chart) in the output.
+If you open the default template or your renamed copy of it, you will notice it contains a series of helper functions, and an HTML section (starting from `<html>`). We will be extending both the helper functions to implement additional logic (e.g. to populate statistical charts) and the HTML to include additional information (e.g. embed the chart) in the output.
 
 ### Referencing Test Data from SpecFlow+
 You can reference the [[properties|http://specflow.org/api/report/docs/]] by SpecFlow+ to perform calculations and output information on the test run you are interested in. Use the '@' character as a prefix to reference these properties, e.g. `@Model.Configuration.ProjectName` returns the name of your project. 
@@ -43,11 +43,11 @@ You can see this in action for yourself. Search for “&lt;body>” in your temp
 <body>
         <h1>@Model.Configuration.ProjectName Test Execution Report</h1>
 ```
-The second line defines the top level heading (h1 element) at the start of the report. [[@Model.Configuration.ProjectName|http://specflow.org/api/report/docs/class_tech_talk_1_1_spec_run_1_1_framework_1_1_configuration_1_1_test_profile_settings.html#a6c54a15903a60ea12189a42731ee2961]] accesses the name of your project while “Test Execution Report” is plain (static) text. As mentioned before, the ‘@’ character is used to denote code sections or variables to embed in your HTML.
+The second line defines the top level heading (`h1` element) at the start of the report. [[@Model.Configuration.ProjectName|http://specflow.org/api/report/docs/class_tech_talk_1_1_spec_run_1_1_framework_1_1_configuration_1_1_test_profile_settings.html#a6c54a15903a60ea12189a42731ee2961]] accesses the name of your project while “Test Execution Report” is plain (static) text. As mentioned before, the ‘@’ character is used to denote code sections or variables to embed in your HTML.
 
 Let's make a minor change to the report's heading:
 
-1. Change “@Model.Configuration.ProjectName” to “[[@Model.Configuration.TestProfileSettings.ReportTemplate|http://specflow.org/api/report/docs/class_tech_talk_1_1_spec_run_1_1_framework_1_1_configuration_1_1_test_profile_settings.html#a25b29cff361f816a64c67800199c560e]]”
+1. Change `@Model.Configuration.ProjectName` to `[[@Model.Configuration.TestProfileSettings.ReportTemplate|http://specflow.org/api/report/docs/class_tech_talk_1_1_spec_run_1_1_framework_1_1_configuration_1_1_test_profile_settings.html#a25b29cff361f816a64c67800199c560e]]`
 1. Change “Test Execution Report” to “is my new Test Execution Report template”.  
   The content should look like this:  
 	&lt;body>  
@@ -178,8 +178,6 @@ Click in the header again to change between ascending/descending order:
 Click on the Index column's header to return to the default sort order:
 <img src="http://www.specflow.org/media/DefaultOrder.png">
 
-
-
 ## Including Charts
 By default, the SpecFlow+ results output information on the number of tests that were successful, failed, are pending etc. In this example, we are going to display this information as a pie chart as well:
 
@@ -189,7 +187,7 @@ To do so, we are going to use [[Highcharts|http://www.highcharts.com]] to displa
 
 ### Implementing a Render Function
 
-We will implement a function to render the pie chart that is very similar to the pie chart [[sample code|https://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/pie-basic/]], but we are going to populate the chart with the results data from SpecFlow+. Add the following function to your template – preferably with the other functions. I have added the function after the doSetHeights function and before $(document).ready:
+We will implement a function to render the pie chart that is very similar to the pie chart [[sample code|https://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/pie-basic/]], but we are going to populate the chart with the results data from SpecFlow+. Add the following function to your template – preferably with the other functions. I have added the function after the `doSetHeights` function and before `$(document).ready`:
 
 ```
 function renderPieChart() {
@@ -246,7 +244,7 @@ name: 'Skipped',
 The main things to note in this code:
 * “#chart” refers to the ID of the `<div>` element that will contain the chart.
 * The names of the individual slices are hard-coded as “Succeeded”, “Failures” etc.
-* The data (`series`) used by the chart is specified using `@Model.Summary.XYZ`, where XYZ is the value for each slice of the pie chart. You can obviously pass other numeric data from SpecFlow+ (e.g. execution times).
+* The data (`series`) used by the chart is specified using `@Model.Summary.XYZ`, where `XYZ` is the value for each slice of the pie chart. You can obviously pass other numeric data from SpecFlow+ (e.g. execution times).
 
 ### Rendering the Chart
 We still need to render the chart by calling the renderPieChart function once the document is ready. Locate `$(document).ready(function ()`, and add the following line at the end of the function:
@@ -262,6 +260,6 @@ The final step is to include the chart in your report at the appropriate positio
     <div id="chart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
 ```
 
-Note that the ID of the div element is “chart”, which matches the value defined in `renderPieChart`. You can move the script references to elsewhere in the document, but make sure they are included!
+Note that the ID of the `div` element is “chart”, which matches the value defined in `renderPieChart`. You can move the script references to elsewhere in the document, but make sure they are included!
 
 **Note:** Because the referenced JavaScript files are available online, you do not need to copy the files to your output directory.
