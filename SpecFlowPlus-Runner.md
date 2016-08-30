@@ -10,4 +10,4 @@ SpecFlow+ include the following features:
 * Advanced test execution scheduling (run previously failing tests first, retry scenarios, execution history available as OData)
 * Customisable HTML reports (Razor templates)
 
-If you are new to SpecFlow+, we recommend you follow the [[Getting Started|http://www.specflow.org/getting-started/]] guide that covers installing SpecFlow+ and setting up your first project..
+If you are new to SpecFlow+, we recommend you follow the [[Getting Started|http://www.specflow.org/getting-started/]] guide that covers installing SpecFlow+ and setting up your first project.
