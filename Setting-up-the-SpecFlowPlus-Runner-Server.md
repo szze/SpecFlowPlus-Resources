@@ -1,8 +1,12 @@
 The SpecFlow+ Runner server collects execution statistics for your tests at a central location and uses this data to improve the efficiency of your test execution. For example, you can determine which tests are executed first based on the previous execution results, e.g. execute failing tests first.
 
+#Prerequisites
+
+Before you can set up the server, **you need to install the SpecFlow+ Runner NuGet packages** that contain the server components. Information on installing the NuGet packages can be found [[here|SpecFlow--Runner-Installation]].
+
+#Installing the Server
 To install the SpecFlow+ Runner server:
 
-1. Before proceeding, install SpecFlow+ Runner from within Visual Studio, as you will need to copy the contents of the `Server` directory to your server. For details on installing SpecFlow+ Runner, refer to the beginning of the [[Getting Started|http://www.specflow.org/getting-started/]] guide for SpecFlow.
 1. Create a new SQL database instance used to store the execution statistics.
 1. Copy the contents of the “server” directory to the server.
 1. Enter your database connection string in the `<Connection Strings>` element of the SpecRun.Server.exe.config file.
@@ -13,4 +17,3 @@ To install the SpecFlow+ Runner server:
 1. Rebuild your solution and run your tests. You can verify that you have set up everything correctly by checking if records have been added to the database on the server.
 
 You can use these statistics to execute failing and new tests first. To do so, set the `testSchedulingMode` attribute in the `<Execution>` element of your `.srprofile` file to `Adaptive`. SpecRun then uses the statistics in the pass/fail history to determine which tests to run first. Previously failing tests and new tests are executed before successful and stable tests.
-
