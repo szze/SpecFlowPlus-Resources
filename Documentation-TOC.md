@@ -7,6 +7,7 @@
     * [[SpecFlow+ Runner Command Line|SpecFlowPlus-Runner-Command-Line]]
     * [[Migrating to SpecFlow+ Runner|Migrating to SpecFlow Runner]]
     * [[Reports]]
+      * [[Tutorial: Customising Reports]]
       * [[Online Report API Documentation|http://specflow.org/api/report/docs/]]
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
