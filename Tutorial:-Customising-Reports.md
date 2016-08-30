@@ -152,7 +152,7 @@ XXX EMBED HTML XXX
 ## Including Charts
 By default, the SpecFlow+ results output information on the number of tests that were successful, failed, are pending etc. In this example, we are going to display this information as a pie chart as well:
 
-XXX SCREENSHOT XXX
+<img src="http://www.specflow.org/media/PieChart.png">
 
 To do so, we are going to use [[Highcharts|http://www.highcharts.com]] to display a [[pie chart|https://jsfiddle.net/gh/get/jquery/1.9.1/highslide-software/highcharts.com/tree/master/samples/highcharts/demo/pie-basic/]]. Other types of charts are also supported by Highcharts, and integrating them is very similar.
 
