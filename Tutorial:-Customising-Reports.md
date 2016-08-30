@@ -53,7 +53,7 @@ Let's make a minor change to the report's heading:
         &lt;h1>@Model.Configuration.TestProfileSettings.ReportTemplate is my new Test Execution Report template&lt;/h1>  
 2. Run your tests and click on the link to the report to view the output. The header should now be similar to the following:
 
-XXX SCREENSHOT XXX
+<img src="http://www.specflow.org/media/EditedHeader.png">
 
 While this is a trivial example, it demonstrates how to integrate information passed by SpecFlow+ in your report and how to include it in the HTML output. The examples below include some more interesting customisations that you can use as the basis for your own templates.
 
