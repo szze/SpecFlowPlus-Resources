@@ -88,7 +88,7 @@ Once you have downloaded the JavaScript source, open your CSHTML template file a
 Defining a sortable table using sortable.js is easy: just start your HTML table declaration with the following element:  
 `<table class="sortable">`
 
-The remaining definition of the table is standard HTML using <tr> and <td> elements. We will also need to define an “Index” column to ensure that we can revert the table to the default sort order at any time. The following code initialises the index to 0 (you can obviously start counting from 1 if you prefer) and defines the column headers for each of the columns for our test results:
+The remaining definition of the table is standard HTML using `<tr>` and `<td>` elements. We will also need to define an “Index” column to ensure that we can revert the table to the default sort order at any time. The following code initialises the index to 0 (you can obviously start counting from 1 if you prefer) and defines the column headers for each of the columns for our test results:
 
 ```
 int Index = 0;
