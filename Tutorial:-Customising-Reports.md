@@ -142,6 +142,28 @@ Finally, we need to increment the Index by one before looping through the next e
 </table>
 ```
 
+### Making Things Pretty
+You can customise the colours used by the table in the CSS section of the template. Search for `<style type="text/css">` to locate this section. I have used the following settings, setting the header to light grey (#e8eef4) with a black font (#000000), and using alternating blues (#66aaee and #99ccf1) for the table rows:
+
+```
+        /* Sortable tables */
+table.sortable thead {
+    background-color:#e8eef4;   /*header bg color*/
+    color:#000000;              /*Header font color*/
+    font-weight: bold;
+    font-size:large;
+    cursor: default;
+}
+
+table.sortable tbody tr:nth-child(2n) td {
+  background: #66aaee;
+}
+table.sortable tbody tr:nth-child(2n+1) td {
+  background: #99ccf1;
+}
+/* SORTABLE END*/
+```
+
 ### Final Steps
 While you can now run your tests and generate the report, you still need to ensure that the HTML output can access `sorttable.js`. For now, the just copy the file to your report’s output directory. In a real-life scenario you will probably want to ensure that this file is automatically deployed to this directory whenever you run your tests.
 
