@@ -146,8 +146,19 @@ Finally, we need to increment the Index by one before looping through the next e
 While you can now run your tests and generate the report, you still need to ensure that the HTML output can access `sorttable.js`. For now, the just copy the file to your report’s output directory. In a real-life scenario you will probably want to ensure that this file is automatically deployed to this directory whenever you run your tests.
 
 ### The Final Output
+Once you have copied the JavaScript file to your output directory and run your tests, open the resulting HTML file.
 
-XXX EMBED HTML XXX
+Click on a column header to sort the entries in that column:
+
+<img src="http://www.specflow.org/media/AscendingOrder.png">
+
+Click in the header again to change between ascending/descending order:
+<img src="http://www.specflow.org/media/DescendingOrder.png">
+
+Click on the Index column's header to return to the default sort order:
+<img src="http://www.specflow.org/media/DefaultOrder.png">
+
+
 
 ## Including Charts
 By default, the SpecFlow+ results output information on the number of tests that were successful, failed, are pending etc. In this example, we are going to display this information as a pie chart as well:
