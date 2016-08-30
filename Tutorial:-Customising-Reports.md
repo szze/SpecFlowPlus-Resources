@@ -60,10 +60,6 @@ While this is a trivial example, it demonstrates how to integrate information pa
 #Examples
 The following examples are intended to get you started and give you some ideas for how to customise your own reports.
 
-##Screenshots
-A common requirement is to include screenshots in the report to document errors. 
-XXX INCOMPLETE XXX
-
 ##Sortable Lists
 By default, the tables in the report are static and the columns cannot be sorted. However you can easily make your tables sortable using JavaScript. This can be particularly useful for sorting tests by execution time, for example, in order to determine which tests take a long time to execute and may therefore require optimisation.
 
@@ -135,8 +131,6 @@ To populate the table with data, we are going to iterate through all the trace e
     <td>@GetSeconds(Math.Round(traceEvent.Duration.TotalSeconds, 3))s</td>
 </tr>
 ```
-
-XXX CHECK ERRORS IN CODE XXX
 
 Finally, we need to increment the Index by one before looping through the next entry:
 ```
