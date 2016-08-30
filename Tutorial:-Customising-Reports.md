@@ -85,6 +85,8 @@ Once you have downloaded the JavaScript source, open your CSHTML template file a
 ```
 
 ###Adding a Sortable Table
+We are going to add a sortable table to display information on the individual steps in a feature file. You can either replace the final table in the default template (`<table class="testEvents">`), or simply add this table to the end of the report (within the `<body>` section). We will include the time taken by each step in the table so we can sort the table by step duration. This makes it easy to identify any steps that are taking a long time to execute and possibly optimise them.
+
 Defining a sortable table using sortable.js is easy: just start your HTML table declaration with the following element:  
 `<table class="sortable">`
 
