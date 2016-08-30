@@ -7,6 +7,8 @@ If you want to generate multiple reports from a single test run, you also need t
 
 A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet package includes a default report template named ` ReportTemplate.cshtml` located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio project. You can customise this template to meet your needs. If you customise the template, we recommend renaming the template file as well. The data available to your reports is accessible using SpecFlow+'s report API. If you edit the .cshtml template in Visual Studio, Intellisense will display a short description of the available properties and methods. You can also reference them in the [[online report API documentation|http://www.specflow.org/api/report/docs/]].
 
+For some examples of how you can customise your reports, refer to the [[Customising Reports tutorial|Tutorial:-Customising-Reports]].
+
 ## Defining Your Own Template
 
 Please review the [SpecFlow+ Runner Report API Documentation](http://www.specflow.org/api/report/docs/) to find out about the classes and properties of the reporting model that can be referred in the reporting template.
