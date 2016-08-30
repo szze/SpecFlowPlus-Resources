@@ -1,6 +1,7 @@
 SpecFlow+ Runner is a dedicated test runner for SpecFlow that integrates directly with Visual Studio. You can also execute tests from the [[command line|SpecFlowPlus-Runner-Command-Line]].
 
 SpecFlow+ include the following features:
+
 * Visual Studio integration (syntax coloring, auto completion, navigation, skeleton generation, Gherkin table formatting)
 * Visual Studio Test Explorer integration (business readable scenario names, run/debug from feature file)
 * Advanced test runner features: [[execution profiles|SpecFlowPlus-Runner-Profiles]], [[target environments|SpecFlowPlus-Runner-Profiles#environment-]], attach artifacts to test execution reports, TFS integration, TeamCity integration, [[complex scenario filter expressions|SpecFlowPlus-Runner-Profiles#filter-]]
