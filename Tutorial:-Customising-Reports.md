@@ -124,9 +124,12 @@ To populate the table with data, we are going to iterate through all the trace e
         <pre class="log">@(traceEvent.BusinessMessages.TrimEnd())</pre>
     </td>
     <td>
-                    <!-- [@traceEvent.Type: @relatedNode.Type - @relatedNode.Title] -->
-                    <!-- Deleted due to errors -->
-
+        <pre class="log">@Raw(FormatTechMessages(traceEvent.TechMessages.TrimEnd()))</pre>
+        @if (!string.IsNullOrEmpty(traceEvent.Error))
+        {
+          <div class="errorMessage">@Raw(FormatTechMessages(traceEvent.Error))</div>
+           <pre class="stackTrace">@Raw(FormatTechMessages(traceEvent.StackTrace.TrimEnd()))</pre>
+         }
     </td>
     <td>@traceEvent.ResultType</td>
     <td>@GetSeconds(Math.Round(traceEvent.Duration.TotalSeconds, 3))s</td>
