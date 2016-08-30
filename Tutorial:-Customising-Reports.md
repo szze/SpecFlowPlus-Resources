@@ -3,7 +3,7 @@
 # Customising Reports
 You can output HTML reports after each test execution run that include information on the tests in the test run, e.g. their status (passed/failed), the number of retries, execution time etc. SpecFlow+ Runner includes a default report template (`ReportTemplate.cshtml`) that you can use as the basis for customising your own reports. This tutorial will take you through the process of customising the default report template to include sortable lists, a graphical representation of statistical data and more.
 
-The default template is located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio projects. **We recommend making a copy of this template, rather than editing it directly**.
+The default template (`ReportTemplate.cshtml`) is located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio projects. **We recommend making a copy of this template, rather than editing it directly**.
 
 ## Initial Setup
 The following initial steps are optional but highly recommended:  
@@ -38,6 +38,7 @@ If you open the default template or your renamed copy of it, you will notice it 
 You can reference the [[properties|http://specflow.org/api/report/docs/]] by SpecFlow+ to perform calculations and output information on the test run you are interested in. Use the '@' character as a prefix to reference these properties, e.g. `@Model.Configuration.ProjectName` returns the name of your project. 
 
 You can see this in action for yourself. Search for “&lt;body>” in your template to locate the start of the HTML report’s body:
+
 ```xml
 <body>
         <h1>@Model.Configuration.ProjectName Test Execution Report</h1>
