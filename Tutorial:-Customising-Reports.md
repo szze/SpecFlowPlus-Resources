@@ -13,8 +13,6 @@ The following initial steps are optional but highly recommended:
 3. Set the template file’s **Copy to Output Directory** property to “Copy always” to ensure that the up-to-date template is available when executing your tests.
 4. Add the necessary DLLs to your project as references to [[enable Intellisense|Reports#using-intellisense]].
 
-XXX SCREENSHOT OF COPY ALWAYS? XXX
-
 ### Configuring SpecFlow to use your Template
 Before you can use your new template, you need to tell SpecFlow+ Runner where to find the template. You can also determine the name of the HTML report file that is generated. To do so:
 
