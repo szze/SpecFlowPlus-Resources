@@ -169,15 +169,19 @@ While you can now run your tests and generate the report, you still need to ensu
 Once you have copied the JavaScript file to your output directory and run your tests, open the resulting HTML file.
 
 Click on a column header to sort the entries in that column:
-
+<a href="http://www.specflow.org/media/AscendingOrder.png">
 <img src="http://www.specflow.org/media/AscendingOrder.png">
+</a>
 
 Click in the header again to change between ascending/descending order:
+<a href="http://www.specflow.org/media/DescendingOrder.png">
 <img src="http://www.specflow.org/media/DescendingOrder.png">
+</a>
 
 Click on the Index column's header to return to the default sort order:
+<a href="http://www.specflow.org/media/DefaultOrder.png">
 <img src="http://www.specflow.org/media/DefaultOrder.png">
-
+</a>
 ## Including Charts
 By default, the SpecFlow+ results output information on the number of tests that were successful, failed, are pending etc. In this example, we are going to display this information as a pie chart as well:
 
