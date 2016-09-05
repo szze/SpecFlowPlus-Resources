@@ -41,7 +41,7 @@ The method used to install the IDE Integration packages depends on your IDE:
 </ol>
 
 
-<h2>Registering SpecFlow+</h2.
+<h2>Registering SpecFlow+</h2>.
 <p>Installing the NuGet packages installs SpecFlow and SpecFlow+ to the /packagesfolder of your Visual Studio solution. After installing the packages, register your license by starting SpecRun.exe (in /packages/SpecRun.Runner.1.x.y/tools) from the command line using the following syntax</p>
 
 <code>SpecRun.exe register &lt;LicenseKey> "&lt;Licensee>"</code>
