@@ -9,6 +9,7 @@
     * [[Reports]]
       * [[Tutorial: Customising Reports]]
       * [[Online Report API Documentation|http://specflow.org/api/report/docs/]]
+    * [[SpecFlow+ Version 1.3 Upgrade Notes]]
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
