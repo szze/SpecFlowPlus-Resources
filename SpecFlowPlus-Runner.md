@@ -8,6 +8,6 @@ SpecFlow+ include the following features:
 * Dedicated support for integration test execution ([[config file transformation and deployment steps|https://github.com/techtalk/SpecFlowPlus-Resources/wiki/SpecFlowPlus-Runner-Profiles#deploymenttransformation-]], test targets: re-run tests for different environments and configurations, detect flickering scenarios)
 * Parallel test execution (app domain isolation, process isolation, execution results consolidation)
 * Advanced test execution scheduling (run previously failing tests first, retry scenarios, execution history available as OData)
-* Customisable HTML reports (Razor templates)
+* Customisable HTML [[reports]] (Razor templates)
 
 If you are new to SpecFlow+, we recommend you follow the [[Getting Started|http://www.specflow.org/getting-started/]] guide that covers installing SpecFlow+ and setting up your first project.
