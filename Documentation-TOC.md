@@ -14,6 +14,7 @@
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
+    * [[Getting Started|http://www.specflow.org/plus/excel/getting-started/]]
     * [[Working with Generated files (SpecFlowPlus Excel)]]
     * [[Excel Features]]
         * [[Excel feature file format]]
