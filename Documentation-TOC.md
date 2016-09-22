@@ -26,4 +26,5 @@
         * [[Cucumber configuration with Rake|SpecFlowPlus Excel Cucumber configuration with Rake]]
         * [[Cucumber.JVM configuration with Maven|SpecFlowPlus Excel Cucumber.JVM configuration with Maven]]
     * [[Command-line tool reference|SpecFlowPlus Excel Command Line Tool Reference]]
+* [[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]
 * [[FAQ]]
