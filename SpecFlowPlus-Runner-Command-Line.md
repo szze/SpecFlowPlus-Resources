@@ -1,4 +1,4 @@
-You can run your SpecFlow tests via SpecFlow+ Runner from the command line. Use `SpecRun.exe` located in the `..\packages\SpecRun.Runner.{version}\tools\` directory of your Visual Studio project to run your tests.
+You can run your SpecFlow tests via SpecFlow+ Runner from the command line. Your specification project's directory contains a batch file, `runtests.cmd` that you can start to run your tests. You can also use `SpecRun.exe` located in the `..\packages\SpecRun.Runner.{version}\tools\` directory of your Visual Studio project to run your tests.
 
 Start `SpecRun.exe` without any parameters to display an overview of the available commands. Use the `help` command to display information on a specific command, e.g. `SpecRun.exe help run`.
 
