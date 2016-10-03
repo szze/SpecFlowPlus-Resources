@@ -59,7 +59,11 @@ Let's make a minor change to the report's heading:
 While this is a trivial example, it demonstrates how to integrate information passed by SpecFlow+ in your report and how to include it in the HTML output. The examples below include some more interesting customisations that you can use as the basis for your own templates.
 
 #Examples
-The following examples are intended to get you started and give you some ideas for how to customise your own reports.
+The following examples are intended to get you started and give you some ideas for how to customise your own reports:
+
+* [[Sortable lists|https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Tutorial:-Customising-Reports#sortable-lists]]: Adds tables to the report that can be sorted by clicking in the header.
+* [[Including Charts|https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Tutorial:-Customising-Reports#including-charts]]: Add charts (pie charts etc.) to your reports to visualise the test execution statistics
+* [[Include Screenshots from your test run|https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Tutorial:-Customising-Reports#including-screenshots]]: Covers the process of embedding screenshots taking during the test run in the HTML report. 
 
 ##Sortable Lists
 By default, the tables in the report are static and the columns cannot be sorted. However you can easily make your tables sortable using JavaScript. This can be particularly useful for sorting tests by execution time, for example, in order to determine which tests take a long time to execute and may therefore require optimisation.
