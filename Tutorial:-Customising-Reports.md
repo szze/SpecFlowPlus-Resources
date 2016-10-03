@@ -276,10 +276,10 @@ A common requirement is to include screenshots in the report. SpecFlow+ Runner d
 1. Pass the screenshot's file path to the report using Console.Write()
 1. Parse the information received by the report to strip out the information relating to the screenshot, and embed the screenshot in the HTML.
 
-**Note:** In order to run Selenium tests with FireFox, you may need to [[download the gecko driver|https://github.com/mozilla/geckodriver/releases]]. Copy geckodriver.exe to your SpecFlow.Plus.Examples\SeleniumWebTest\TestApplication.UiTests\bin\Debug directory or add it to your system’s PATH environment settings.
+**Note:** In order to run Selenium tests with FireFox, you may need to [[download the gecko driver|https://github.com/mozilla/geckodriver/releases]]. Copy `geckodriver.exe` to your `SpecFlow.Plus.Examples\SeleniumWebTest\TestApplication.UiTests\bin\Debug` directory or add it to your system’s PATH environment settings.
 
 Once you have downloaded the solution and installed the gecko driver:
-1. Open the solution (TestApplication.sln) in Visual Studio.
+1. Open the solution (`TestApplication.sln`) in Visual Studio.
 1. Visual Studio will download the NuGet packages required by the solution.
 1. Once the solution has finished loading and installing the packages, build the solution.
 1. Switch to the Test Explorer in Visual Studio. You should have 7 tests:  
