@@ -336,15 +336,15 @@ Passing the file path to the report is handled using the console. Any data writt
 
 The path passed to the report template needs to be processed by the report template so that we can embed the specified image. Open `ReportTemplate.cshtml` (in the `Report` folder of the `TestApplication.UiTests` project). Scroll down to the bottom of the file. The following code is responsible for the content of the **Trace** column in the table:
 ```
-<td>
-                            <!-- [@traceEvent.Type: @relatedNode.Type - @relatedNode.Title] -->
-                            <pre class="log">@Raw(FormatTechMessages(traceEvent.TechMessages.TrimEnd()).Replace("SCREENSHOT[ <a href=", "<img width='1000' src=").Replace("</a> ]SCREENSHOT", "</img>"))</pre>
-                            @if (!string.IsNullOrEmpty(traceEvent.Error))
-                            {
-                                <div class="errorMessage">@Raw(FormatTechMessages(traceEvent.Error))</div>
-                                <pre class="stackTrace">@Raw(FormatTechMessages(traceEvent.StackTrace.TrimEnd()))</pre>
-                            }
-                        </td>
+<td>   
+   <!-- [@traceEvent.Type: @relatedNode.Type - @relatedNode.Title] -->
+   <pre class="log">@Raw(FormatTechMessages(traceEvent.TechMessages.TrimEnd()).Replace("SCREENSHOT[ <a href=", "<img width='1000' src=").Replace("</a> ]SCREENSHOT", "</img>"))</pre>
+   @if (!string.IsNullOrEmpty(traceEvent.Error))
+   {
+      <div class="errorMessage">@Raw(FormatTechMessages(traceEvent.Error))</div>
+      <pre class="stackTrace">@Raw(FormatTechMessages(traceEvent.StackTrace.TrimEnd()))</pre>
+   }
+</td>
 ```
 
 By default, the file path is passed to the report as a hyperlink (`<a href>`). We want to embed the image in the document (using an `<img>` tag), and remove the padding used to identify the screenshot path (`SCREENSHOT [<PATH>] SCREENSHOT`).
