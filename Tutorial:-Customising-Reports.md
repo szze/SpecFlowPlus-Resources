@@ -279,6 +279,7 @@ A common requirement is to include screenshots in the report. SpecFlow+ Runner d
 **Note:** In order to run Selenium tests with FireFox, you may need to [[download the gecko driver|https://github.com/mozilla/geckodriver/releases]]. Copy `geckodriver.exe` to your `SpecFlow.Plus.Examples\SeleniumWebTest\TestApplication.UiTests\bin\Debug` directory or add it to your system’s PATH environment settings.
 
 Once you have downloaded the solution and installed the gecko driver:
+
 1. Open the solution (`TestApplication.sln`) in Visual Studio.
 1. Visual Studio will download the NuGet packages required by the solution.
 1. Once the solution has finished loading and installing the packages, build the solution.
