@@ -267,3 +267,94 @@ The final step is to include the chart in your report at the appropriate positio
 Note that the ID of the `div` element is “chart”, which matches the value defined in `renderPieChart`. You can move the script references to elsewhere in the document, but make sure they are included!
 
 **Note:** Because the referenced JavaScript files are available online, you do not need to copy the files to your output directory.
+
+##Including Screenshots
+A common requirement is to include screenshots in the report. SpecFlow+ Runner does not currently include functions for taking an embedding screenshots. However, you can still include screenshots in your report. The process is a little complicated, and involves passing information on the screenshot to the report using `Console.Write()`. The easiest way to understand how the process works is to look at an existing example. You can download a sample project [[here|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/SeleniumWebTest]]. In this project, a screenshot is taken after each step. While this project uses Selenium as the testing framework, the principle is the same for other frameworks as well:
+
+1. Take a screenshot at the right moment during your test run.
+1. Save the screenshot to file.
+1. Pass the screenshot's file path to the report using Console.Write()
+1. Parse the information received by the report to strip out the information relating to the screenshot, and embed the screenshot in the HTML.
+
+**Note:** In order to run Selenium tests with FireFox, you may need to [[download the gecko driver|https://github.com/mozilla/geckodriver/releases]]. Copy geckodriver.exe to your SpecFlow.Plus.Examples\SeleniumWebTest\TestApplication.UiTests\bin\Debug directory or add it to your system’s PATH environment settings.
+
+Once you have downloaded the solution and installed the gecko driver:
+1. Open the solution (TestApplication.sln) in Visual Studio.
+1. Visual Studio will download the NuGet packages required by the solution.
+1. Once the solution has finished loading and installing the packages, build the solution.
+1. Switch to the Test Explorer in Visual Studio. You should have 7 tests:  
+  XXX SCREENSHOT XXX
+1. Run the tests to verify that everything is set up correctly. 
+1. Once the tests have completed, open the report file (the link is in the **Output** pane in Visual Studio).
+
+###The Report
+Scroll down in the report until you reach a **Steps** section. For each successfully completed step, you should see a screenshot in the **Trace** column:  
+XXX SCREENSHOT XXX
+
+###How it Works
+Taking screenshots is handled in `Screenshots.cs` in the `TestApplication.UiTests` project’s Support folder:
+
+```
+    [Binding]
+    class Screenshots
+    {
+        private readonly WebDriver _webDriver;
+
+        public Screenshots(WebDriver webDriver)
+        {
+            _webDriver = webDriver;
+        }
+
+        [AfterStep()]
+        public void MakeScreenshotAfterStep()
+        {
+            var takesScreenshot = _webDriver.Current as ITakesScreenshot;
+            if (takesScreenshot != null)
+            {
+                var screenshot = takesScreenshot.GetScreenshot();
+                var tempFileName = Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileNameWithoutExtension(Path.GetTempFileName())) + ".jpg";
+                screenshot.SaveAsFile(tempFileName, ImageFormat.Jpeg);
+
+                Console.WriteLine($"SCREENSHOT[ file:///{tempFileName} ]SCREENSHOT");
+            }
+        }
+    }    
+```
+
+The function `MakeScreenshotAfterStep()` is responsible for taking a screenshot once each step is completed. The `[AfterStep()]` [[hook|http://www.specflow.org/documentation/Hooks/]] before the function declaration ensures that this function is executed once each scenario step has been completed.
+
+In this case, the screenshot is taken using the Selenium API: 
+```
+var screenshot = takesScreenshot.GetScreenshot(); 
+```
+**Note:** If you are using a different testing framework, replace this with the appropriate screenshot function for your framework.
+
+Once the screenshot has been taken, we need to save the screenshot to the current directory. The file name is stored in `tempFileName`, and used to both save the image file (as a JPG) and to pass the path to the screenshot to the report.
+
+Passing the file path to the report is handled using the console. Any data written to the console is available to the report template. In this case, we are writing the file name with some extra padding (`SCREENSHOT[ <PATH>] SCREENSHOT`) to allow us to uniquely identify file paths in the report template.
+
+The path passed to the report template needs to be processed by the report template so that we can embed the specified image. Open `ReportTemplate.cshtml` (in the `Report` folder of the `TestApplication.UiTests` project). Scroll down to the bottom of the file. The following code is responsible for the content of the **Trace** column in the table:
+```
+<td>
+                            <!-- [@traceEvent.Type: @relatedNode.Type - @relatedNode.Title] -->
+                            <pre class="log">@Raw(FormatTechMessages(traceEvent.TechMessages.TrimEnd()).Replace("SCREENSHOT[ <a href=", "<img width='1000' src=").Replace("</a> ]SCREENSHOT", "</img>"))</pre>
+                            @if (!string.IsNullOrEmpty(traceEvent.Error))
+                            {
+                                <div class="errorMessage">@Raw(FormatTechMessages(traceEvent.Error))</div>
+                                <pre class="stackTrace">@Raw(FormatTechMessages(traceEvent.StackTrace.TrimEnd()))</pre>
+                            }
+                        </td>
+```
+
+By default, the file path is passed to the report as a hyperlink (`<a href>`). We want to embed the image in the document (using an `<img>` tag), and remove the padding used to identify the screenshot path (`SCREENSHOT [<PATH>] SCREENSHOT`).
+
+This is handled by the following line:
+```
+class="log">@Raw(FormatTechMessages(traceEvent.TechMessages.TrimEnd()).Replace("SCREENSHOT[ <a href=", "<img width='1000' src=").Replace("</a> ]SCREENSHOT", "</img>"))</pre>
+```
+
+The `SCREENSHOT [` opening padding and the opening hyperlink tag are replaced by the HTML image tag including formatting. The file name is left unchanged. The closing hyperlink tag and `] SCREENSHOT` padding is replaced by a closing image tag. The result is to embed the image in the generated report using the file path passed to the report via the console.
+
+
+###Other Environments
+While this example uses Selenium, it should be easy to edit the function that takes a screenshot after each step to use the appropriate screenshot function for you target environment. What is important to remember is that you can abuse the console to pass extra information to your reports. However, be aware that by default, the console output is simply written to your report “as is”. You will need to parse the data passed by the console in your report template, and remove any information (such as padding) that should not appear in the report. This trick can be used to pass any kind of information, not just paths to screenshots.
