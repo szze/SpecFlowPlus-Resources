@@ -39,7 +39,7 @@ Once you have completed these steps, you can run your tests with SpecFlow+Runner
 
 1. Right-click on your specifications project in the Solution Explorer, and select **Regenerate Feature Files** from the menu to regenerate the feature files.
 
-#XUnit
+##XUnit
 1. Add the `SpecRun.SpecFlow` NuGet package to your project.
 1. Update the `unitTestProvider` element in your `app.config` file, which may contain multiple `unitTestProvider` entries:
   
