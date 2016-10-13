@@ -1,6 +1,6 @@
 **Note:** This tutorial assumes that you have already set up a Visual Studio project with SpecFlow+ Runner and have several tests that are executed. If you have not yet set up a project, refer to the [[Getting Started|http://www.specflow.org/getting-started]] guide first.
 
-This section also includes a couple of [[examples|https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Tutorial:-Customising-Reports#examples]] of customising reports.
+This section also includes a couple of <a href="#Examples">examples</a> of customising reports.
 
 # Customising Reports
 You can output HTML reports after each test execution run that include information on the tests in the test run, e.g. their status (passed/failed), the number of retries, execution time etc. SpecFlow+ Runner includes a default report template (`ReportTemplate.cshtml`) that you can use as the basis for customising your own reports. This tutorial will take you through the process of customising the default report template to include sortable lists, a graphical representation of statistical data and more.
@@ -60,6 +60,7 @@ Let's make a minor change to the report's heading:
 
 While this is a trivial example, it demonstrates how to integrate information passed by SpecFlow+ in your report and how to include it in the HTML output. The examples below include some more interesting customisations that you can use as the basis for your own templates.
 
+<id="Examples">
 #Examples
 The following examples are intended to get you started and give you some ideas for how to customise your own reports:
 
