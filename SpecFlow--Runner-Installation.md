@@ -2,7 +2,7 @@ The components in SpecFlow+ are distributed as NuGet package. There is a separat
 
 The installation of SpecFlow and SpecFlow+ Runner is described in detail in the [[Getting Started|http://www.specflow.org/getting-started]] guide for SpecFlow. The installation of the SpecFlow components is also covered in the [[SpecFlow documentation|http://www.specflow.org/documentation/Installation/]]. 
 
-Details on installing SpecFlow+ Excel can be found [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Installation-and-Configuration/]]
+Details on installing SpecFlow+ Excel can be found [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Installation-and-Configuration/]].
 
 <h2>Installation and Setup</h2>
 Installing SpecFlow consists of two steps:
