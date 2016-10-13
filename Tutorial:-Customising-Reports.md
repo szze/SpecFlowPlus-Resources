@@ -287,13 +287,14 @@ Once you have downloaded the solution and installed the gecko driver:
 1. Visual Studio will download the NuGet packages required by the solution.
 1. Once the solution has finished loading and installing the packages, build the solution.
 1. Switch to the Test Explorer in Visual Studio. You should have 7 tests:  
-  [[http://www.specflow.org/media/Screenshots_in_reports_test_explorer.png]]
+  <img src="http://www.specflow.org/media/Screenshots_in_reports_test_explorer.png">
 1. Run the tests to verify that everything is set up correctly. 
 1. Once the tests have completed, open the report file (the link is in the **Output** pane in Visual Studio).
 
 ###The Report
 Scroll down in the report until you reach a **Steps** section. For each successfully completed step, you should see a screenshot in the **Trace** column:  
-[[http://www.specflow.org/media/Screenshots_in_reports_output.png]]
+<img src="http://www.specflow.org/media/Screenshots_in_reports_output.png">
+
 
 ###How it Works
 Taking screenshots is handled in `Screenshots.cs` in the `TestApplication.UiTests` project’s Support folder:
