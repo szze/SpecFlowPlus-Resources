@@ -187,7 +187,7 @@ You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.
 |Attribute     |Required/Optional|Description|
 |--------------|-----------------|-----------|
 |disable       |Optional         |Set this attribute to true to disable the report generation (default: `false`)|
-|copyAlsoToBaseFolder|Optional   |Set this to true to also copy the generated reports to the base folder (default: `false`)|
+|copyAlsoToBaseFolder|Optional   |Set this to true to also copy all the generated reports to the base folder (default: `false`)|
 |Template      |Optional         |Use this element to define the template(s) used to generate reports. You can specify any number of templates; a report will be generated using each template specified. The following attributes are available for this element:<br>`name`: The path to the template .cshtml file, relative to the base folder<br>`outputName`: The path of the generated report, relative to the base folder|
 
 **Note:** The report template specified in the `<Settings>` element (`reportTemplate`) is used in addition to the templates specified in the `<Report>` element.
