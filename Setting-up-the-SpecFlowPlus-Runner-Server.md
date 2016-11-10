@@ -1,7 +1,6 @@
 The SpecFlow+ Runner server collects execution statistics for your tests at a central location and uses this data to improve the efficiency of your test execution. For example, you can determine which tests are executed first based on the previous execution results, e.g. execute failing tests first.
 
 #Prerequisites
-
 Before you can set up the server, **you need to install the SpecFlow+ Runner NuGet packages** that contain the server components. Information on installing the NuGet packages can be found [[here|SpecFlow--Runner-Installation]].
 
 #Installing the Server
