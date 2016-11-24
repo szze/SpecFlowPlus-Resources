@@ -10,7 +10,7 @@ Use `SpecRun.exe run` to run your tests using the following parameters:
 |Parameter/option       |Required/optional|Description|
 |-----------------------|-----------------|-----------|
 |target                 |**Required**     |The assembly or test profile (`.srprofile` file) to be tested.|
-|`/basefolder:`folder   |Optional         |Specifies the base folder for executing tests. All paths are relative to this path. This overrides the `baseFolder` entry in your `.srprofile` file.|
+|`/basefolder:`folder   |Assembly: **Required**<br>Profile: Optional         |Specifies the base folder for executing tests. All paths are relative to this path. <br>If you have specified an **assembly** as your `target`, you need to define the base folder as the path to the directory containing your assembly.<br>If you have specified a **test profile** (.srprofile) as your target, this overrides the `baseFolder` entry in your `.srprofile` file.|
 |`/outputfolder:`folder |Optional         |Specifies the output folder for your logs and report file. All paths are relative to this path. This overrides the `outputFolder` entry in your `.srprofile` file.<br>**Note:** If you have not specified an output folder in your .srprofile, the output folder defaults to the base folder if not specified from the command line.|
 |`/log:`file            |Optional         |Specifies the target log file. This path is relative to your output folder.|
 |`/report:`file         |Optional         |Specifies the target report file. This path is relative to your output folder.|
