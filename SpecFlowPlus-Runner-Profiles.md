@@ -103,8 +103,8 @@ The following filter types can be defined:
 |testpath:Feature: |Test      |Matches tests by feature name. You can use the `*` wildcard in feature names, e.g. `testpath:"Feature:Calcu*" matches the features "Calculator" and "Calculus".|
 |testpath:Scenario:|Test      |Matches tests by scenario name. You can use the `*` wildcard in scenario names, e.g. `testpath:"Scenario:* two numbers" matches the scenarios "Add two numbers", "Subtract two numbers" and "Multiply two numbers".|
 
-You can combine filters using logical operators. The following operators are supported:
-* |: OR
+You can combine filters using logical operators. The following operators are supported:  
+* &#124;: OR
 * &: AND (however you need to use `&amp;` instead in the profile, as it is an XML file)
 * !: NOT
 
