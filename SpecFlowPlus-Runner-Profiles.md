@@ -105,7 +105,7 @@ The following filter types can be defined:
 
 You can combine filters using logical operators. The following operators are supported:  
 * &#124;: OR
-* &: AND (however you need to use `&amp;` instead in the profile, as it is an XML file)
+* &amp;: AND (however you need to use `&amp;` instead in the profile, as it is an XML file)
 * !: NOT
 
 **Examples:**  
