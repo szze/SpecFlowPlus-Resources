@@ -104,9 +104,11 @@ The following filter types can be defined:
 |testpath:Scenario:|Test      |Matches tests by scenario name. You can use the `*` wildcard in scenario names, e.g. `testpath:"Scenario:* two numbers" matches the scenarios "Add two numbers", "Subtract two numbers" and "Multiply two numbers".|
 
 You can combine filters using logical operators. The following operators are supported:  
-* &#124;: OR
-* &amp;: AND (however you need to use `&amp;` instead in the profile, as it is an XML file)
-* !: NOT
+<ul>
+<li>|: OR</li>
+<li>&amp;: AND (however you need to use <code>&amp;amp;</code> instead in the profile, as it is an XML file)</li>
+<li>!: NOT</li>
+</ul>
 
 **Examples:**  
 `<Filter>@MyTag &amp; @YourTag</Filter>` executes all tests with both the `@MyTag` and `@YourTag` tags.  
