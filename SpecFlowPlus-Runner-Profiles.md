@@ -117,7 +117,7 @@ You can combine filters using logical operators. The following operators are sup
 
 <h2 id="Targets">&lt;Targets> </h2>
  
-The `<Targets>` element is a container element for `<Target>` elements. Each `<Target>` element defines a test target. Tests are executed for each target, and you can define different target environments for your test. For example, you can define a target for x64 and x86 environments. You can also apply filters to each target, e.g. to only execute tests tagged with `@cloud` in browser environments. Tests that are executed for multiple targets are listed multiple times in the Test Explorer window, once for each target. 
+The `<Targets>` element is a container element for `<Target>` elements. Each `<Target>` element defines a test target. Tests are executed for each target, and you can define different target environments for your test. For example, you can define a target for x64 and x86 environments. You can also apply filters to each target, e.g. to only execute tests tagged with `@cloud` in browser environments. Tests that are executed for multiple targets are listed multiple times in the Test Explorer window, once for each target. See the [[SeleniumWebTest sample project|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/SeleniumWebTest]] for an example of using different targets.  
 
 The following attributes are available for the `<Target>` element:
 
@@ -139,7 +139,7 @@ The following attributes are available for the `<Target>` element:
 ```
 <h2 id="DeploymentTransformation">&lt;DeploymentTransformation> </h2>
 
-This element is used to define transformations that are applied to your configuration file. You can nest this element within a `<Target>` element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use `{Target}` as a placeholder for this value, in which case the placeholder is replaced with the target name. See the [[SeleniumWebTest sample project|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/SeleniumWebTest]] for an example ofusing placeholders to transform a configuration file.
+This element is used to define transformations that are applied to your configuration file. You can nest this element within a `<Target>` element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use `{Target}` as a placeholder for this value, in which case the placeholder is replaced with the target name. See the [[SeleniumWebTest sample project|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/SeleniumWebTest]] for an example of using placeholders to transform a configuration file.
 
 The following elements and attributes are available:
 
