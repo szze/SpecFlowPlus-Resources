@@ -1,20 +1,37 @@
-## General rules
+**Note:** While English Gherkin keywords are used in this documentation, the SpecFlow+ Excel plugin supports all 50+ languages supported by Gherkin itself. You can also use the various variations as well (e.g. `Scenario Outline` and `Scenario Template`).
 
-_Note:_ The rule descriptions use English Gherkin keywords, but the SpecFlow+ Excel plugin supports all 50+ languages supported by Gherkin itself. You can also use the different keyword variations as well (like `Scenario Outline` and `Scenario Template`).
+We recommend checking out our [sample Excel feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelFeature.feature.xlsx) first to get an idea of how the files are structured.
 
-We recommend checking out our [sample Excel feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelFeature.feature.xlsx) before studying the detailed rules.
+##Naming Feature Files
+Excel feature file must have the `.feature.xlsx` extension, e.g. `Calculator.feature.xlsx`. SpecFlow's [[build-time generation|Working with Generated files (SpecFlowPlus Excel)]] can only convert Excel files in your project with this extension.
 
-* The Excel feature file has to use `.feature.xlsx` extension, e.g. `Calculator.feature.xlsx`. The [[build-time generation|Working with Generated files (SpecFlowPlus Excel)]] of SpecFlow will only convert Excel files in the project with this extension.
-* Consider the [[general cell conversion rules|Converting Excel Cells]], especially for non-string cell values.
-* You can use the Excel worksheets and cells for helper calculations and comments that should not be part of the feature file. SpecFlow+ Excel will ignore
-  * the hidden sheets or the sheets with name prefixed with underscore (`_`)
-  * the cell values that you put on the right side (separated by at least two empty cells)
-  * the rows where the first two cell is empty
-*  The step text can be split into multiple cells. The cells are merged with a single space during processing.
+##Cell Content
+Cell content in your Excel files is converted by SpecFlow+ Excel using the following rules:
+* If a cell contains a formula, the result of the formula is used
+* Formatting (e.g. currency or date format) is ignored
+* The binding culture is used to convert cell values to strings for your tests 
+* The binding culture is the default Gherkin language of your project, but can overridden. See [[SpecFlow documentation|http://www.specflow.org/documentation/Feature-Language/]] for more details.
+
+**Note:** Gherkin tables do not support merged cells, so merged cells are converted without merging, i.e. the first cell will contain the value and the other cells will be empty.
+<!-- I don't understand a word of the above sentence -->
+
+###Ignored Content
+Certain content in your Excel files is ignored by SpecFlow+ Excel. You can use this content for comments, helper calculations etc.
+
+The following is ignored:
+  * Data on hidden sheets or sheets whose name begins with an underscore ('_')
+  * Cell values where there are at least 2 empty cells to the immediate left of the cell (i.e. use two empty columns to separate comments from data). This includes rows where the first two cells are empty.
+  * Empty rows
+
+##Defining Steps
+Each step must be defined on a separate row. The step can be split up over multiple cells in the same row, in which case it is treated as though there is a space between the content of neighbouring cells.
+
+##Using Formulas
 * You can use Excel formulas anywhere in the document. The plugin processes the formula result.
+
+##Using Tables
 * Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "indented" by one column, ie. the first cell has to be left empty.
-* The empty Excel rows are ignored.
-* Merged cells: Gherkin tables do not support merged cells, so merged cells are converted without merging, ie. the first cell will contain the value and the other cells will be empty.
+<!-- I have no idea what this means; can't I just define my data in the table? I've never defined a cell range before and it worked fine -->
 
 ## Excel features matching to the Gherkin feature file structure
 
