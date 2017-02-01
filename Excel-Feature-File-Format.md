@@ -27,10 +27,10 @@ The following is ignored:
 Each step must be defined on a separate row. The step can be split up over multiple cells in the same row, in which case it is treated as though there is a space between the content of neighbouring cells.
 
 ##Using Formulas
-* You can use Excel formulas anywhere in the document. The plugin processes the formula result.
+You can use Excel formulas anywhere in the document. The plugin uses the result of the formula.
 
 ##Using Tables
-* Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "indented" by one column, ie. the first cell has to be left empty.
+Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "indented" by one column, ie. the first cell has to be left empty.
 <!-- I have no idea what this means; can't I just define my data in the table? I've never defined a cell range before and it worked fine -->
 
 ## Excel features matching to the Gherkin feature file structure
