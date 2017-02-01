@@ -2,7 +2,7 @@
 
 The SpecFlow+ Excel plugin is available from [NuGet](http://www.nuget.org/packages/SpecFlow.Plus.Excel). 
 
-To install the package for your Visual Studio project:  
+To add the package to your Visual Studio project:  
 1. Right-click on your specification project and select **Manage Nuget Packages for Solution**.  
 2. Search for "SpecFlow Excel" on nuget.org and install the SpecFlow+ Excel plugin
 
