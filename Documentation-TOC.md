@@ -11,6 +11,8 @@
       * [[Tutorial: Customising Reports]]
       * [[Online Report API Documentation|http://specflow.org/api/report/docs/]]
     * [[SpecFlow+ Version 1.3 Upgrade Notes]]
+* Tips & Tricks
+    * [[Sending Reports via Email|http://specflow.org/sending-reports-via-email/]]
 
 * [[SpecFlow+ Excel|SpecFlowPlus Excel]]
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
