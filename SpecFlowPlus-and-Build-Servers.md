@@ -82,11 +82,11 @@ To configure your build process in Jenkins to execute tests using SpecFlow+ Runn
 1. Enter the path to your solution in the **MSBuild Build File** field.
 1. Configure your unit tests to run with VSTest.console:  
   * Select the configuration you defined earlier in the **VStest Version** field.
-  * **Test Files: Enter the path to the assemblies to be tested here.
+  * **Test Files**: Enter the path to the assemblies to be tested here.
   * **Specify a logger for test results**: Select trx.
   * **Command Line Arguments**: Enter `/TestAdapterPath:”C:\PATH\packages”` (replace “C:\PATH\” with the path to your solution’s directory).
 
-** SpecFlow+ Execution Reports (optional)
+## SpecFlow+ Execution Reports (optional)
 The SpecFlow+ execution reports are stored in the TestResults directory of your project. To be able to easily access these reports from the project overview in Jenkins:
 1. Under **Post-build Actions**, click on **Add post-build action** and select “Publish HTML reports”.
 1. Enter the path to your project’s TestResults directory under **HTML dir to archive**.
