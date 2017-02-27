@@ -64,7 +64,7 @@ To configure your build process in Jenkins to execute tests using SpecFlow+ Runn
   1. Choose "Freestyle project" from the list.
 1. On the Jenkins main screen, select **Manage Jenkins** and then **Global Tool Configuration**.
   1. Add a configuration for MSBuild. Give it a meaningful **Name** (e.g. “MSBuild”) and enter the **Path to MSBuild**.
-  1. Add a configuration for VSTest as well. 
+  1. Add a configuration for VSTest as well, including the **Path to VSTest**. 
 1. Select **Configure** From the project's main page.
 1. Enable **Git** under **Source Code Management**.
 1. Enter your **Repository URL**, e.g. “https://github.com/Me/MyProject.git”. You can also enter your login credentials.
