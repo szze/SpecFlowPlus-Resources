@@ -56,6 +56,8 @@ To configure your build process in TeamCity to execute tests using SpecFlow+ Run
 
 The following steps assume that you are using the [[Git plugin|https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin]] to handle your source files. You will also need to install the [[MS Build plugin|https://wiki.jenkins-ci.org/display/JENKINS/MSBuild+Plugin]]. You probably also want to install the [[HTML Publisher plugin|https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin]] to handle reports.
 
+If Visual Studio is not installed on the build server, you will also need to install [[nuget.exe|	https://dist.nuget.org/win-x86-commandline/latest/nuget.exe]] and the [[Agents for Visual Studio|https://www.microsoft.com/en-us/download/details.aspx?id=48152]].
+
 To configure your build process in Jenkins to execute tests using SpecFlow+ Runner:
 
 1. Start the Jenkins web interface.
