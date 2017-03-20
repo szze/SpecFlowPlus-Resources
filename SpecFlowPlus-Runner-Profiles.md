@@ -4,15 +4,16 @@ A file named `Default.srprofile` is automatically added to your Visual Studio pr
 
 The name of the profile file used by your project is defined using the `<Profile>` tag in your `.runsettings` file.
 
-#SpecFlow+ Runner Profile Elements and Attributes
+# SpecFlow+ Runner Profile Elements and Attributes
 The following XML elements and attributes are available:
 
 <h2 id="TestProfile">&lt;TestProfile></h2>
 
 The `<TestProfile>` element is a container for the remaining elements.
-
 <h2 id="Settings">&lt;Settings> </h2>
+
 The `<Settings>` element defines general settings for your project. The following attributes are available:
+`<TestProfile>`
 
 |Attribute     |Required/Optional|Description|
 |--------------|-----------------|-----------|
@@ -152,7 +153,7 @@ The following elements and attributes are available:
 |Relocate            |Optional        |Changes the location where the tests run, allowing you to continue developing while your tests run (as the `bin/debug` folder is no longer used to execute tests).<br>`targetFolder`: The folder the application is moved to for testing. Moving this to another folder than `/bin/debug` means you can continue working in Visual Studio while the tests run.<br>`deleteFolderOnRestore`: Determines whether the folder is deleted if an error occurs during the test run.|
 |RelocateConfigurationFile|Optional    |Used to relocate the configuration file:<br>`target`: The target location of the relocated config file relative to the base folder<br>Relocating your configuration file creates a copy of the test assembly configuration file, allowing each thread to be configured differently. It makes sense to include the `{TestThreadId}` placeholder in the relocated file's name so that a different file is used by each thread. <br>**Note:** Any transformations applied to your default configuration file are also applied to the relocated files.| 
 |Custom              |Optional         |You can write your own deployment steps that are executed. The corresponding class must implement `TechTalk.SpecRun.Framework.IDeploymentTransformationStep`.<br>Add a `<CustomStep>` element for each step containing the following attributes:<br>'Type': The type that implements the custom step, either the name of the corresponding class with its namespace, or the file name and the name of the corresponding class with its namespace.<br>`arguments`: The arguments used by the custom step. If this is a string, the string can be accessed via DeploymentContext.CustomData.|
-|IISExpress          |Optioonal        |Used to test web applications. Atributes:<br>'webAppFolder': The path to the web application you want to test.<br>`iisExpressPath`: The path to IISExpress (default = `%ProgramFiles%\IIS Express\iisexpress.exe`).<br>`port`: The port used by IISExpress to listen for requests (default = 8080).<br>`useShellExecute`: Determines whether to start IISExpress with or without the shell.|
+|IISExpress          |Optional        |Used to test web applications. Atributes:<br>'webAppFolder': The path to the web application you want to test.<br>`iisExpressPath`: The path to IISExpress (default = `%ProgramFiles%\IIS Express\iisexpress.exe`).<br>`port`: The port used by IISExpress to listen for requests (default = 8080).<br>`useShellExecute`: Determines whether to start IISExpress with or without the shell.|
 
 **Example:**
 ```xml
