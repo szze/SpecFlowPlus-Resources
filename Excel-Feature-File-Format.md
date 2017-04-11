@@ -2,11 +2,11 @@
 
 We recommend checking out our [sample Excel feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelFeature.feature.xlsx) first to get an idea of how the files are structured.
 
-##Naming Feature Files
+## Naming Feature Files
 Excel feature file must have the `.feature.xlsx` extension, e.g. `Calculator.feature.xlsx`. SpecFlow's [[build-time generation|Working with Generated files (SpecFlowPlus Excel)]] can only convert Excel files in your project with this extension.
 
-##Cell Content
-Cell content in your Excel files is converted by SpecFlow+ Excel using the following rules:
+## Cell Content
+Cell content in your Excel files is converted by SpecFlow+ Excel using the following rules:  
 * If a cell contains a formula, the result of the formula is used
 * Formatting (e.g. currency or date format) is ignored
 * The binding culture is used to convert cell values to strings for your tests 
@@ -15,7 +15,7 @@ Cell content in your Excel files is converted by SpecFlow+ Excel using the follo
 **Note:** Gherkin tables do not support merged cells, so merged cells are converted without merging, i.e. the first cell will contain the value and the other cells will be empty.
 <!-- I don't understand a word of the above sentence -->
 
-###Ignored Content
+### Ignored Content
 Certain content in your Excel files is ignored by SpecFlow+ Excel. You can use this content for comments, helper calculations etc.
 
 The following is ignored:
@@ -23,13 +23,13 @@ The following is ignored:
   * Cell values where there are at least 2 empty cells to the immediate left of the cell (i.e. use two empty columns to separate comments from data). This includes rows where the first two cells are empty.
   * Empty rows
 
-##Defining Steps
+## Defining Steps
 Each step must be defined on a separate row. The step can be split up over multiple cells in the same row, in which case it is treated as though there is a space between the content of neighbouring cells.
 
-##Using Formulas
+## Using Formulas
 You can use Excel formulas anywhere in the document. The plugin uses the result of the formula.
 
-##Using Tables
+## Using Tables
 Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "indented" by one column, ie. the first cell has to be left empty.
 <!-- I have no idea what this means; can't I just define my data in the table? I've never defined a cell range before and it worked fine -->
 
