@@ -3,7 +3,7 @@ You can set up SpecFlow+ Runner to execute your tests whenever a build is create
 #TFS
 By default, TFS looks for a profile named TFS.srprofile to execute your tests; if none is found, TFS uses default.srprofile instead. If you have changed the name of your profile, you need to enter the name of your profile in your [[run settings|Configuring-SpecFlowPlus-Runner-Visual-Studio-Test-Explorer-Integration#specflow-runner-settings]] (`<Profile>` element) and enter the path to your `.runsettings` file in the **Run Settings File** field.
 
-##TFS 2015
+##TFS 2015 & 2017
 
 *Note: General information on running tests with your builds in TFS can be found [[here|https://msdn.microsoft.com/library/vs/alm/test/continuous-testing/test-build]].*
 
