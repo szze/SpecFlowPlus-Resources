@@ -6,14 +6,14 @@ We recommend checking out our [sample Excel feature file](http://www.specflow.or
 Excel feature file must have the `.feature.xlsx` extension, e.g. `Calculator.feature.xlsx`. SpecFlow's [[build-time generation|Working with Generated files (SpecFlowPlus Excel)]] can only convert Excel files in your project with this extension.
 
 ## Cell Content
-Cell content in your Excel files is converted by SpecFlow+ Excel using the following rules:  
+The content in your Excel files is converted by SpecFlow+ Excel using the following rules:  
 
 * If a cell contains a formula, the result of the formula is used
 * Formatting (e.g. currency or date format) is ignored
 * The binding culture is used to convert cell values to strings for your tests 
 * The binding culture is the default Gherkin language of your project, but can overridden. See [[SpecFlow documentation|http://www.specflow.org/documentation/Feature-Language/]] for more details.
 
-**Note:** Gherkin tables do not support merged cells, so merged cells are converted without merging, i.e. the first cell will contain the value and the other cells will be empty.
+**Note:** Gherkin tables do not support merged cells. If your Excel table contains merged cells, the first of the merged cells will contain the value; the other merged cells will be empty.
 <!-- I don't understand a word of the above sentence -->
 
 ### Ignored Content
@@ -29,13 +29,14 @@ The following is ignored:
 Each step must be defined on a separate row. The step can be split up over multiple cells in the same row, in which case it is treated as though there is a space between the content of neighbouring cells.
 
 ## Using Formulas
-You can use Excel formulas anywhere in the document. The plugin uses the result of the formula.
+You can use Excel formulas anywhere in the document. The plugin uses the result of the formula, so you can use formulas to calculate test data values.
 
 ## Using Tables
-Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "indented" by one column, ie. the first cell has to be left empty.
+Cell ranges can be used to specify Gherkin tables. These cell ranges must to be "indented" by one column, ie. the first cell has to be left empty.
 <!-- I have no idea what this means; can't I just define my data in the table? I've never defined a cell range before and it worked fine -->
 
-## Excel features matching to the Gherkin feature file structure
+## Gherkin Equivalents in Excel
+The contents of an Excel file are converted to the Gherkin syntax automatically. The contents of the Excel file are mapped to the Gherkin syntax as follows:
 
 <table>
 <thead>
@@ -51,15 +52,16 @@ Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "
 </tr>
 <tr>
 <td>Feature title</td>
-<td>`Title` document property, or the file name if empty.</td>
+<td>Defined using the Excel file's `Title` property (<b>File | Info</b>). If no title has been defined, the file name is used instead.</td>
 </tr>
 <tr>
 <td>Feature tags</td>
-<td>`Keywords` document property, separated by whitespace or comma. The `@` prefix is not required.</td>
+<td>Defined using the Excel file's `Keywords` property (<b>File | Info</b>, select <b>Advanced Properties</b> from the <b>Properties</b> drop-down list). Separate keywords using whitespace or a comma. The `@` prefix is not required.</td>
 </tr>
 <tr>
 <td>Feature language</td>
-<td>Put `language:lang-code` into the `Category` document property. For SpecFlow, the project defaults are used.</td>
+<td>Defined using the Excel file's `Categories` property. Enter `language:lang-code` in the field. For SpecFlow, the project defaults are used.
+<!--- What does this last sentence mean? ---></td>
 </tr>
 <tr>
 <td>Scenario or Scenario Outline</td>
@@ -67,24 +69,24 @@ Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "
 </tr>
 <tr>
 <td>Scenario title</td>
-<td>The name of the sheet or a line in the top of the sheet with the first cell as `Scenario:` or `Scenario Outline:` and followed by a cell with the title text. The Excel sheet names can contain maximum 31 characters, so for longer scenario titles, you have to use the second option.</td>
+<td>Taken from either the name of the sheet, or can be defined in the first cell (top left) using `Scenario:` or `Scenario Outline:` followed by the title in the next cell. Excel sheet names can contain a maximum of 31 characters, so for longer scenario titles, you need to use the second option.</td>
 </tr>
 <tr>
 <td>Scenario tags</td>
-<td>One ore more lines in the tip of the sheet with cells containing tags, including the leading `@`. The tags can be split to multiple cells or separated with whitespace.</td>
+<td>Defined in one or more lines at the top of the sheet. Include the leading '@' in your tags. Tags can either be entered in a single cell and separated using whitespace, or entered in multiple cells..</td>
 </tr>
 <tr>
 <td>Scenario steps (Given/When/Then)</td>
-<td>Rows in the scenario sheet. The step text can be split to multiple cells, but this is optional. The entire step, including the step keyword can be placed into a single cell. By splitting the step text to multiple cells, you can better use formulas inside the step and you can format the scenario better.</td>
+<td>Each scenario step must be on a separate row. The step's text can be split over multiple cells or entered in a single cell. Splitting the text over multiple cells allows you to use formulas easily, and generally makes it easier to format the scenario's steps.</td>
 </tr>
 <tr>
 <td>DataTable step argument</td>
-<td>You can easily provide a table argument (called DataTable in Gherkin) to your steps. To describe the DataTable cells, just add rows after the step row and use the Excel cells. The cells used as DataTable need to be "indented" by one column, ie. the first cell has to be left empty.
+<td>You can define a table argument (called DataTable in Gherkin) for your steps. To define a DataTable, add the rows after the step and indent each row of the DataTable by one column (i.e. the first cell must be empty).
 </td>
 </tr>
 <tr>
 <td>DocString step argument</td>
-<td>You can add multi-line text argument (called DocString in Gherkin) to your steps. For that, leave the first cell empty in the row below the step row, and include the DocString parameter in the second cell (including newlines). The DocString argument cannot be split to multiple cells currently.</td>
+<td>You can add multi-line text arguments (called DocString in Gherkin) to your steps. To do so, leave the first cell empty in the row after a step, and include the DocString parameter in the second cell (including newlines). The DocString argument cannot be split over multiple cells.</td>
 </tr>
 <tr>
 <td>Background</td>
@@ -92,17 +94,17 @@ Cell ranges can be used to specify Gherkin tables. These cell ranges has to be "
 </tr>
 <tr>
 <td>Scenario Outline</td>
-<td>A sheet, like for a Scenario, but with an Examples section.</td>
+<td>A sheet (like for a Scenario) but with an Examples section.</td>
 </tr>
 <tr>
 <td>Scenario Outline Examples</td>
-<td>Start a line with a cell containing `Examples:`. You can use the next cell to specify a title for the examples block (optional). You can also add lines with tags directly before this line. The examples table can be specified as Excel cells, but they need to be "indented" by one column, ie. the first cell has to be left empty. You can specify multiple examples block for a scenario outline.
+<td>To define scenario outline examples, start a row with a cell containing `Examples:`. Use the next cell to specify a title for the examples block (optional). If you want to define tags, do so on the previous row.<br>The example data needs to be indented by one column (i.e. the first cell must be empty) and should contain a header with the names of the placeholders. You can define multiple examples block for a scenario outline.
 ![Scenario Outline Examples](http://www.specflow.org/media/sfp_excel/excel-feature-examples.png)
 </td>
 </tr>
 <tr>
 <td>Comments</td>
-<td>Although you can put helper calculations and comments to multiple places and sheets (see above), you can also mark an Excel row explicitly as comment, by starting the first non-empty cell with `#`.</td>
+<td>You can explicitly mark a row as a comment by starting the first non-empty cell with `#`.</td>
 </tr>
 </tbody>
 </table>
