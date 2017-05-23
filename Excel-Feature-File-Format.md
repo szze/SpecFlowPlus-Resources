@@ -7,6 +7,7 @@ Excel feature file must have the `.feature.xlsx` extension, e.g. `Calculator.fea
 
 ## Cell Content
 Cell content in your Excel files is converted by SpecFlow+ Excel using the following rules:  
+
 * If a cell contains a formula, the result of the formula is used
 * Formatting (e.g. currency or date format) is ignored
 * The binding culture is used to convert cell values to strings for your tests 
@@ -19,6 +20,7 @@ Cell content in your Excel files is converted by SpecFlow+ Excel using the follo
 Certain content in your Excel files is ignored by SpecFlow+ Excel. You can use this content for comments, helper calculations etc.
 
 The following is ignored:
+
   * Data on hidden sheets or sheets whose name begins with an underscore ('_')
   * Cell values where there are at least 2 empty cells to the immediate left of the cell (i.e. use two empty columns to separate comments from data). This includes rows where the first two cells are empty.
   * Empty rows
