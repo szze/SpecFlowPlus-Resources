@@ -65,7 +65,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Scenario or Scenario Outline</td>
-<td>Worksheets (except ignored or background)</td>
+<td>Worksheets (except for those that are ignored and your background)</td>
 </tr>
 <tr>
 <td>Scenario title</td>
