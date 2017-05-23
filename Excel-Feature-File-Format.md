@@ -92,7 +92,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Background</td>
-<td>A sheet named <code>Background</code>.</td>
+<td>Add a sheet named <code>Background</code> to define your background.</td>
 </tr>
 <tr>
 <td>Scenario Outline</td>
