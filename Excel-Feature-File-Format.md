@@ -98,8 +98,8 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Scenario Outline Examples</td>
-<td>To define scenario outline examples, start a row with a cell containing `Examples:`. Use the next cell to specify a title for the examples block (optional). If you want to define tags, do so on the previous row.<br>The example data needs to be indented by one column (i.e. the first cell must be empty) and should contain a header with the names of the placeholders. You can define multiple examples block for a scenario outline.
-![Scenario Outline Examples](http://www.specflow.org/media/sfp_excel/excel-feature-examples.png)
+<td>To define scenario outline examples, start a row with a cell containing `Examples:`. Use the next cell to specify a title for the examples block (optional). If you want to define tags, do so on the previous row.<br>The example data needs to be indented by one column (i.e. the first cell must be empty) and should contain a header with the names of the placeholders. You can define multiple examples block for a scenario outline.<br>
+<img src=http://www.specflow.org/media/sfp_excel/excel-feature-examples.png></img>
 </td>
 </tr>
 <tr>
