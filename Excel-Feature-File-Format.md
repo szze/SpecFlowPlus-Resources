@@ -69,11 +69,11 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Scenario title</td>
-<td>Taken from either the name of the sheet, or can be defined in the first cell (top left) using `Scenario:` or `Scenario Outline:` followed by the title in the next cell. Excel sheet names can contain a maximum of 31 characters, so for longer scenario titles, you need to use the second option.</td>
+<td>Taken from either the name of the sheet, or can be defined in the first cell (top left) using <code>Scenario:</code> or <code>Scenario Outline:</code> followed by the title in the next cell. Excel sheet names can contain a maximum of 31 characters, so for longer scenario titles, you need to use the second option.</td>
 </tr>
 <tr>
 <td>Scenario tags</td>
-<td>Defined in one or more lines at the top of the sheet. Include the leading '@' in your tags. Tags can either be entered in a single cell and separated using whitespace, or entered in multiple cells..</td>
+<td>Defined in one or more lines at the top of the sheet. Include the leading '@' in your tags. Tags can either be entered in a single cell and separated using whitespace, or entered in multiple cells.</td>
 </tr>
 <tr>
 <td>Scenario steps (Given/When/Then)</td>
