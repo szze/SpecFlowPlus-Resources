@@ -74,7 +74,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 <tr>
 <td>Scenario tags</td>
 <td>Defined in one or more lines at the top of the sheet. You need to include the leading <code>@</code> in your tags. Tags.<br> <b>Note: Because Excel interprets the '@' character as indicating a formula, you need to add an apostrophe (') to the start of the cell's contents to indicate the contents are plain text (see the screenshot below).</b> Tags can be entered in a single cell and separated using whitespace, or entered in multiple cells.<br>
-<img src="https://lh3.googleusercontent.com/-cml5b4egEsY/WJCV0__32kI/AAAAAAAAAB4/-O6bG-izl8wEqWCcWV7rRtu4TqsFkalzwCLcB/s1600/Tags%2Bin%2BExcel.png"></img>
+<img src="http://specflow.org/screenshots/tags_in_excel.png"></img>
 </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Comments</td>
-<td>You can explicitly mark a row as a comment by starting the first non-empty cell with <code>#</code>.</td>
+<td>You can explicitly mark a row as a comment by starting the first non-empty cell with <code>#</code>.<br><img src="http://specflow.org/screenshots/comment.png"</img></td>
 </tr>
 </tbody>
 </table>
