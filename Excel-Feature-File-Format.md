@@ -73,7 +73,9 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Scenario tags</td>
-<td>Defined in one or more lines at the top of the sheet. Include the leading <code>@</code> in your tags. Tags can either be entered in a single cell and separated using whitespace, or entered in multiple cells.</td>
+<td>Defined in one or more lines at the top of the sheet. You need to include the leading <code>@</code> in your tags. Tags.<br> <b>Note: Because Excel interprets the '@' character as indicating a formula, you need to add an apostrophe (') to the start of the cell's contents to indicate the contents are plain text (see the screenshot below).</b> Tags can be entered in a single cell and separated using whitespace, or entered in multiple cells.<br>
+<img src="https://lh3.googleusercontent.com/-cml5b4egEsY/WJCV0__32kI/AAAAAAAAAB4/-O6bG-izl8wEqWCcWV7rRtu4TqsFkalzwCLcB/s1600/Tags%2Bin%2BExcel.png"></img>
+</td>
 </tr>
 <tr>
 <td>Scenario steps (Given/When/Then)</td>
