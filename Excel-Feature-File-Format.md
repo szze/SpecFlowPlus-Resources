@@ -60,7 +60,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Feature language</td>
-<td>Defined using the Excel file's `Categories` property. Enter `language:lang-code` in the field. For SpecFlow, the project defaults are used.
+<td>Defined using the Excel file's `Categories` property(<b>File | Info</b>). Enter `language:lang-code` in the field. For SpecFlow, the project defaults are used.
 <!--- What does this last sentence mean? ---></td>
 </tr>
 <tr>
