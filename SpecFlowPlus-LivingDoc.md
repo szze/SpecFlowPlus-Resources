@@ -1,0 +1,1 @@
+SpecFlow+ LivingDoc is a VSTS extension for SpecFlow that allows you to view your Gherkin feature files directly in VSTS. The Gherkin files are formatted for readability, including Gherkin syntax highlighting, colour-coding and tables for example data.
