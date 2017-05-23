@@ -48,19 +48,19 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 <tbody>
 <tr>
 <td>Feature</td>
-<td>Workbook (Excel file) with extension `.feature.xlsx`</td>
+<td>Workbook (Excel file) with extension <code>.feature.xlsx</code></td>
 </tr>
 <tr>
 <td>Feature title</td>
-<td>Defined using the Excel file's `Title` property (<b>File | Info</b>). If no title has been defined, the file name is used instead.</td>
+<td>Defined using the Excel file's <b>Title</b> property (<b>File | Info</b>). If no title has been defined, the file name is used instead.</td>
 </tr>
 <tr>
 <td>Feature tags</td>
-<td>Defined using the Excel file's `Keywords` property (<b>File | Info</b>, select <b>Advanced Properties</b> from the <b>Properties</b> drop-down list). Separate keywords using whitespace or a comma. The `@` prefix is not required.</td>
+<td>Defined using the Excel file's <b>Keywords</b> property (<b>File | Info</b>, select <b>Advanced Properties</b> from the <b>Properties</b> drop-down list). Separate keywords using whitespace or a comma. The <code>@</code> prefix is not required.</td>
 </tr>
 <tr>
 <td>Feature language</td>
-<td>Defined using the Excel file's `Categories` property(<b>File | Info</b>). Enter `language:lang-code` in the field. For SpecFlow, the project defaults are used.
+<td>Defined using the Excel file's <b>Categories</b> property(<b>File | Info</b>). Enter <code>language:lang-code</code> in the field. For SpecFlow, the project defaults are used.
 <!--- What does this last sentence mean? ---></td>
 </tr>
 <tr>
@@ -73,7 +73,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Scenario tags</td>
-<td>Defined in one or more lines at the top of the sheet. Include the leading '@' in your tags. Tags can either be entered in a single cell and separated using whitespace, or entered in multiple cells.</td>
+<td>Defined in one or more lines at the top of the sheet. Include the leading <code>@</code> in your tags. Tags can either be entered in a single cell and separated using whitespace, or entered in multiple cells.</td>
 </tr>
 <tr>
 <td>Scenario steps (Given/When/Then)</td>
@@ -90,7 +90,7 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Background</td>
-<td>A sheet named `Background`.</td>
+<td>A sheet named <code>Background</code>.</td>
 </tr>
 <tr>
 <td>Scenario Outline</td>
@@ -98,13 +98,13 @@ The contents of an Excel file are converted to the Gherkin syntax automatically.
 </tr>
 <tr>
 <td>Scenario Outline Examples</td>
-<td>To define scenario outline examples, start a row with a cell containing `Examples:`. Use the next cell to specify a title for the examples block (optional). If you want to define tags, do so on the previous row.<br>The example data needs to be indented by one column (i.e. the first cell must be empty) and should contain a header with the names of the placeholders. You can define multiple examples block for a scenario outline.<br>
+<td>To define scenario outline examples, start a row with a cell containing <code>Examples:</code>. Use the next cell to specify a title for the examples block (optional). If you want to define tags, do so on the previous row.<br>The example data needs to be indented by one column (i.e. the first cell must be empty) and should contain a header with the names of the placeholders. You can define multiple examples block for a scenario outline.<br>
 <img src=http://www.specflow.org/media/sfp_excel/excel-feature-examples.png></img>
 </td>
 </tr>
 <tr>
 <td>Comments</td>
-<td>You can explicitly mark a row as a comment by starting the first non-empty cell with `#`.</td>
+<td>You can explicitly mark a row as a comment by starting the first non-empty cell with <code>#</code>.</td>
 </tr>
 </tbody>
 </table>
