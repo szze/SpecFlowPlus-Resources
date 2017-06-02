@@ -60,8 +60,8 @@ Let's make a minor change to the report's heading:
 
 While this is a trivial example, it demonstrates how to integrate information passed by SpecFlow+ in your report and how to include it in the HTML output. The examples below include some more interesting customisations that you can use as the basis for your own templates.
 
-<id="Examples">
-#Examples
+<h1 id="Examples">Examples</h1>
+
 The following examples are intended to get you started and give you some ideas for how to customise your own reports:
 
 ##Sortable Lists
