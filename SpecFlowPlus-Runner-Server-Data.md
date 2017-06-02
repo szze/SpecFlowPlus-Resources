@@ -16,6 +16,7 @@ The execution statistics are stored in an SQL database. The TestItems store data
 The test results per execution are stored separately (comma-separated). For each test execution, the result of the test and the execution time are stored.
 
 The following result values are used:  
+
 * Unknown = 0
 * Succeeded = 100
 * Ignored = 200
