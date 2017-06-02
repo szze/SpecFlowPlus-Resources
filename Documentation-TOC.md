@@ -25,5 +25,6 @@
         * [[Prepare feature files for external examples]]
         * [[Excel examples file format]]
     * [[Converting Excel Cells]]  
+    * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
 * [[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]
 * [[FAQ]]
