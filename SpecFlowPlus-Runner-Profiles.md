@@ -13,7 +13,6 @@ The `<TestProfile>` element is a container for the remaining elements.
 <h2 id="Settings">&lt;Settings> </h2>
 
 The `<Settings>` element defines general settings for your project. The following attributes are available:
-`<TestProfile>`
 
 |Attribute     |Required/Optional|Description|
 |--------------|-----------------|-----------|
