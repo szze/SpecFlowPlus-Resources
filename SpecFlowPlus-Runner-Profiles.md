@@ -186,7 +186,7 @@ The `<TestThreads>` element is a container for `<TestThread>` elements. The foll
 You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.g. to transform the name of the database instance you are accessing based on the thread ID, ensuring that each thread accesses a separate instance of the database. This prevents the threads from conflicting with one another when accessing the database, as thread 0 may manipulate data that is required by thread 1 otherwise.
 
 <h2 id="Report">&lt;Report></h2>
-<br>
+
 |Attribute     |Required/Optional|Description|
 |--------------|-----------------|-----------|
 |disable       |Optional         |Set this attribute to true to disable the report generation (default: `false`)|
