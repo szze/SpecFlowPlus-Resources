@@ -11,7 +11,7 @@ A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet
 
 * `ReportTemplate.cshtml`: The default report template, this is a standard report that outputs information on the results of the test run as HTML, and is human-readable.
 * `ReportTemplate_Json.cshtml`: Outputs the results of the test run as JSON. This format is intended for post-processing purposes.
-* ReportTemplate_Xml.cshtml: Outputs the results of the test as XML. This format is intended for post-processing purposes.
+* `ReportTemplate_Xml.cshtml`: Outputs the results of the test as XML. This format is intended for post-processing purposes.
 
 You can customise the templates to meet your needs. If you customise a template, we recommend renaming the template file accordingly. For some examples of how you can customise your reports, refer to the [[Customising Reports tutorial|Tutorial:-Customising-Reports]].
 
