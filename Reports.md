@@ -5,7 +5,7 @@ The report is output to your output folder (configured in your [[profile|SpecFlo
 
 If you want to generate multiple reports from a single test run, you also need to modify your profile to include the templates and output paths for these reports. The settings for multiple reports are defined in the [[&lt;Report> element|SpecFlowPlus-Runner-Profiles#Report]].
 
-## Report Tempaltes
+## Report Templates
 
 A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet package includes several report templates. The templates are located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio project and include the following:
 
