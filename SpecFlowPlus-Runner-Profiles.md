@@ -186,11 +186,12 @@ The `<TestThreads>` element is a container for `<TestThread>` elements. The foll
 You can use the `{TestThreadId}` as a placeholder to reference the thread ID, e.g. to transform the name of the database instance you are accessing based on the thread ID, ensuring that each thread accesses a separate instance of the database. This prevents the threads from conflicting with one another when accessing the database, as thread 0 may manipulate data that is required by thread 1 otherwise.
 
 <h2 id="Report">&lt;Report></h2>
+<br>
 |Attribute     |Required/Optional|Description|
 |--------------|-----------------|-----------|
 |disable       |Optional         |Set this attribute to true to disable the report generation (default: `false`)|
 |copyAlsoToBaseFolder|Optional   |Set this to true to also copy all the generated reports to the base folder (default: `false`)|
-|Template      |Optional         |Use this element to define the template(s) used to generate reports. You can specify any number of templates; a report will be generated using each template specified. The following attributes are available for this element:<br>`name`: The path to the template .cshtml file, relative to the base folder<br>`outputName`: The path of the generated report, relative to the base folder|
+|Template      |Optional         |Use this element to define the template(s) used to generate reports. You can specify any number of templates; a report will be generated using each template specified. The following attributes are available for this element:<br>`name`: The path to the template .cshtml file, relative to the base folder<br>`outputName`: The path of the generated report, relative to the base folder<br>`existingFileHandlingStrategy`: Determines the behaviour if an existing file with the same name already exists. Possible values:<br>`Overwrite` (default): Overwrites existing files with the same name<br>`IncrementFilename`:Follows the Windows paradigm of adding an incremental suffix (e.g. "(1)", "(2)" etc.) to the end of file names. This will retain the existing file with its original name and result in a new file being generated with the appropriate incremental suffix. |
 
 **Note:** The report template specified in the `<Settings>` element (`reportTemplate`) is used in addition to the templates specified in the `<Report>` element.
 
