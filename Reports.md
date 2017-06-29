@@ -3,13 +3,21 @@ SpecFlow can generates reports once your tests have finished executing that incl
 The report is output to your output folder (configured in your [[profile|SpecFlowPlus-Runner-Profiles]]) and the name of the report is generated using the `projectName` and `name` defined in your profile plus a time stamp:
 `<projectName>_<name>_YYYY-MM-DDTHHMMSS`
 
-If you want to generate multiple reports from a single test run, you also need to modify your profile to include the templates and output paths for these reports. The settings for multiple reports are defined in the [[&lt;Report> element|SpecFlowPlus-Runner-Profiles#report]].
+If you want to generate multiple reports from a single test run, you also need to modify your profile to include the templates and output paths for these reports. The settings for multiple reports are defined in the [[&lt;Report> element|SpecFlowPlus-Runner-Profiles#Report]].
 
-A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet package includes a default report template named ` ReportTemplate.cshtml` located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio project. You can customise this template to meet your needs. If you customise the template, we recommend renaming the template file as well. The data available to your reports is accessible using SpecFlow+'s report API. If you edit the .cshtml template in Visual Studio, Intellisense will display a short description of the available properties and methods. You can also reference them in the [[online report API documentation|http://www.specflow.org/api/report/docs/]].
+## Report Tempaltes
 
-**Note:** The old report template for SpecFlow+ 1.2 can be found [[here|http://specflow.org/ReportTemplate_1.2.cshtml]].
+A Razor template is used to generate the reports, and the SpecFlow+ Runner NuGet package includes several report templates. The templates are located in the `\packages\[SpecRun.Runner]\templates` directory of your Visual Studio project and include the following:
 
-For some examples of how you can customise your reports, refer to the [[Customising Reports tutorial|Tutorial:-Customising-Reports]].
+* `ReportTemplate.cshtml`: The default report template, this is a standard report that outputs information on the results of the test run as HTML, and is human-readable.
+* `ReportTemplate_Json.cshtml`: Outputs the results of the test run as JSON. This format is intended for post-processing purposes.
+* ReportTemplate_Xml.cshtml: Outputs the results of the test as XML. This format is intended for post-processing purposes.
+
+You can customise the templates to meet your needs. If you customise a template, we recommend renaming the template file accordingly. For some examples of how you can customise your reports, refer to the [[Customising Reports tutorial|Tutorial:-Customising-Reports]].
+
+The data available to your reports is accessible using SpecFlow+'s report API. If you edit the .cshtml template in Visual Studio, Intellisense will display a short description of the available properties and methods. You can also reference them in the [[online report API documentation|http://www.specflow.org/api/report/docs/]].
+
+**Note:** The old HTML report template for SpecFlow+ 1.2 can be found [[here|http://specflow.org/ReportTemplate_1.2.cshtml]]. There are no XML or JSON report templates for version 1.2.
 
 ## Defining Your Own Template
 
@@ -44,4 +52,4 @@ To generate a single report for multiple assemblies:
 1. Start `runtests.cmd` located in the directory of your edited profile. Your tests are executed and the report is generated.  
 
 ## Generating Multiple Reports in a Single Test Run
-You can generate multiple reports from a single test run. To do so, you also need to modify your `.srprofile` file to reference the .cshtml templates and output paths for each reports. The settings for multiple reports are defined in the [[&lt;Report> element|SpecFlowPlus-Runner-Profiles#report]] of your profile.
+You can generate multiple reports from a single test run. To do so, you also need to modify your `.srprofile` file to reference the .cshtml templates and output paths for each reports. The settings for multiple reports are defined in the [[&lt;Report> element|SpecFlowPlus-Runner-Profiles#report]] of your profile. You can use these settings to determine the name of the report files and how to handle conflicts with existing files with the same name.
