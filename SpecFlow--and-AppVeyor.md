@@ -18,3 +18,5 @@ To configure your AppVeyor build process to execute your test using SpecFlow+ Ru
    ```
    Replace `AssemblyPath` with the appropriate path to your assembly. Replace `PackagesPath` with the path to the packages folder of your solution.
 1. Save `appveyor.yml` and use the file to build your application with AppVeyor.
+
+A sample project is available [[here|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/AppVeyor_Support]].
