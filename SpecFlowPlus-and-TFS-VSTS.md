@@ -25,7 +25,7 @@ To configure your build process in TFS with XAML:
   * Check in the DLLs in the corresponding SpecFlow, SpecRun and SpecFlow+ packages. These DLLs are located in the corresponding sub-folders of your solution's packages directory.
 1. Enter the name of your .srprofile file in the **Run Settings File** field if the name is not `TFS.srprofile` or `default.srprofile` (see above).
 
-###Known Issues
+### Known Issues
 
 * The build agents cache the test adapters, which means that the last test adapter to be used is used for each build. You can thus only use a single SpecFlow+ Runner version with the same build agent, as the cached version is always used. If you want to use a different version of SpecFlow+ Runner for different builds, you need to define separate build agents.
 * Upgrading SpecFlow to a newer version requires a restart to purge the cache.
