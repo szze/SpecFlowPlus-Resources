@@ -10,7 +10,7 @@ To configure your AppVeyor build process to execute your test using SpecFlow+ Ru
      - appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
      - nuget-restore MyProject.sln
    ```
-   Replace `MyProject.sln` with the full path to your project, relative to the location of the appveyor.yml file.
+   Replace `MyProject.sln` with the full path to your solution, relative to the location of the appveyor.yml file.
 1. Add the following `test_script` section to execute the tests and generate the test output for AppVeyor:  
    ```
    test_script:
