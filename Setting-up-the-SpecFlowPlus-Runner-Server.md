@@ -3,7 +3,8 @@ The SpecFlow+ Runner server collects execution statistics for your tests at a ce
 #Prerequisites
 Before you can set up the server, **you need to install the SpecFlow+ Runner NuGet packages** that contain the server components. Information on installing the NuGet packages can be found [[here|SpecFlow--Runner-Installation]].
 
-#Installing the Server
+#Installing the Server  
+
 To install the SpecFlow+ Runner server:
 
 1. Create a new SQL database instance used to store the execution statistics.
