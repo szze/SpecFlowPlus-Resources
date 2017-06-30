@@ -1,4 +1,4 @@
-By default, TFS looks for a profile named TFS.srprofile to execute your tests; if none is found, TFS uses default.srprofile instead. If you have changed the name of your profile, you need to enter the name of your profile in your [[run settings|Configuring-SpecFlowPlus-Runner-Visual-Studio-Test-Explorer-Integration#specflow-runner-settings]] (`<Profile>` element) and enter the path to your `.runsettings` file in the **Run Settings File** field.
+By default, TFS looks for a profile named TFS.srprofile to execute your tests; if none is found, TFS uses default.srprofile instead. If you have changed the name of your profile, you need to enter the name of your profile in your [[runner settings|Configuring-SpecFlowPlus-Runner-Visual-Studio-Test-Explorer-Integration#specflow-runner-settings]] (`<Profile>` element) and enter the path to your `.runsettings` file in the **Run Settings File** field.
 
 ## TFS/VSTS 2015 & 2017
 
