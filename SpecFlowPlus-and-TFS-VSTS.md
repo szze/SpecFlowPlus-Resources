@@ -2,7 +2,7 @@ By default, TFS looks for a profile named TFS.srprofile to execute your tests; i
 
 ## TFS/VSTS 2015 & 2017
 
-*Note: General information on running tests with your builds in TFS can be found [[here|https://msdn.microsoft.com/library/vs/alm/test/continuous-testing/test-build]].*
+*Note: General information on running tests with your builds in TFS can be found [[here|https://www.visualstudio.com/en-gb/docs/test/continuous-testing/getting-started/getting-started-with-continuous-testing]].*
 
 To configure your build process in TFS 2015 to execute tests using SpecFlow+ Runner:
 
