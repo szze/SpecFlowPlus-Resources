@@ -9,7 +9,7 @@ To configure your build process in TFS 2015 to execute tests using SpecFlow+ Run
 1. Open TFS and switch to your build definition.
 1. Click on **Add build step** to add a new step to the build definition. Click on **Test** in the list of categories and click on **Add** next to "Visual Studio Test".
 1. Configure the build step as follows:  
-  * Enter the path to your **Test Assembly**
+  * Enter the path to your **Test Assembly** (the DLL containing your compiled specifications project with the test bindings).
   * If you are using both MSTest and SpecFlow+ Runner, enter the path to NuGet package folder in the **Path to Custom Test Adapters** field. If you do not enter the path here, only your MSTest tests will be executed as TFS cannot find the SpecFlow+Runner test adapter.
   * Enter the name of your .srprofile file in the **Run Settings File** field if the name is not `TFS.srprofile` or `default.srprofile` (see above).
 1. Save your changes.
