@@ -1,12 +1,12 @@
 ***Note:*** *Don't forget to check out the [[SpecFlow FAQ|http://www.specflow.org/documentation/FAQ/]] as well.*
 
 <h1 id="Licensing">Licensing</h1>
-##How is SpecFlow+ licensed?
+## How is SpecFlow+ licensed?
 A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). The license is a perpetual license valid for the current release of SpecFlow+ at the time of purchase, and entitles you to free updates for a period of one year. 
 
 More details on SpecFlow+ licensing can be found [[here|http://www.specflow.org/plus/licensing/]].
 
-##How do I register my license for SpecFlow+?
+## How do I register my license for SpecFlow+?
 You need to register your license key once per machine (after adding SpecFlow+ to your first project). More information is available [[here|http://www.specflow.org/plus/evaluation/]] and [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Command-Line-Tool-Reference/]].
 
 <h1 id="Licensing">Troubleshooting</h1>
@@ -45,7 +45,25 @@ The installation executes a powershell script. If you do not have permission to 
 
 Once the command has executed, restart the installation process.
 
-<h2 id="upgrades">Upgrading</h2>
+<h1 id="support">Support</h1>
+
+SpecFlow is an open source project. Anyone can download and edit the source code, and SpecFlow relies on contributions from its users to fix bugs and add new features. 
+
+If you encounter problems using SpecFlow or have any questions, one of the best places to turn for help is the [[SpecFlow Google Group|https://groups.google.com/forum/#%21forum/specflow]]. Posts to this group are regularly read by contributors to the SpecFlow project. SpecFlow is also popular on [[Stack Overflow|http://stackoverflow.com/questions/tagged/specflow]], so you might find the answer to your question there as well.
+
+If you have found a bug, please first search the [[SpecFlow issues on GitHub|https://github.com/techtalk/SpecFlow/issues]] to check that this is not already a known issue. If you cannot find a matching issue on GitHub, please submit a GitHub issue including as much information and context as possible, and ideally a code sample that allows the issue to be reproduced. The easier you make it for contributors to diagnose and fix your issue, the more likely you are to see results.
+
+Please include the following information when submitting a bug report:  
+
+* Your SpecFlow version
+* The test runner and version number you are using, as well as information on how you are executing the tests (e.g. include your command line)
+* Your Visual Studio version
+* Your .NET framework version
+* A link to a project that reproduces the issue, if possible
+
+Once you have submitted an issue relating to a bug, a contributor needs to take on the issue and provide a pull request containing a fix. Depending on the nature of your issue, how well it is described and how easy it is to reproduce, a fix may be delivered quickly or take a long time. You are actively encouraged to contribute and doing so can significantly reduce the time needed to fix issues that impact on your work with SpecFlow. Because SpecFlow relies on contributions from the community, there are no guarantees that a particular issue will be fixed within a specific time frame. If you urgently need a fix, the quickest way is to provide one yourself!
+
+<h1 id="upgrades">Upgrading</h1>
 ### I am having trouble upgrading from SpecFlow+ 1.3 (or earlier) to a newer version with SpecFlow 2 support
 Make sure you follow the steps out lined in the guide on [[updating to SpecFlow 2|http://www.specflow.org/updating-to-specflow-2/]].  
 In particular:  
