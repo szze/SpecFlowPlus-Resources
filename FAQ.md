@@ -1,12 +1,13 @@
 ***Note:*** *Don't forget to check out the [[SpecFlow FAQ|http://www.specflow.org/documentation/FAQ/]] as well.*
 
 <h1 id="Licensing">Licensing</h1>
+
 ## How is SpecFlow+ licensed?
 SpecFlow+ is licensed per user. A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). 
 
 More details on SpecFlow+ licensing can be found [[here|http://www.specflow.org/plus/licensing/]].
 
-##Are SpecFlow+ licenses perpetual or subscription based?
+## Are SpecFlow+ licenses perpetual or subscription based?
 
 SpecFlow+ licenses are perpetual licenses that include 1 year of upgrades and support. Your license key will unlock all versions of SpecFlow+ released during this 1 year period, as well as any earlier versions. Once the 1-year period is over, the license key will continue to unlock older versions (i.e. those released prior to the end of the upgrade period), but will not unlock versions released after this 1-year period is over. 
 
@@ -82,6 +83,7 @@ If you are a reseller, please note that purchases made via the webshop are alway
 Payment by credit card is preferred, although payment by bank transfer is also possible. The license key will be delivered once payment has been confirmed. This may take some time in the case of international bank transfers. International bank transfers will also be subject to bank charges that will depend on your bank and the country you are based in.
 
 <h1 id="Licensing">Troubleshooting</h1>
+
 ### I'm trying to run my SpecFlow+ Runner tests in Visual Studio test window, but they fail with an assembly load error
 
 In some cases the cache folder of Visual Studio Test Adapter gets corrupted. You need to clear the cache to resolve this:
@@ -118,6 +120,7 @@ The installation executes a powershell script. If you do not have permission to 
 Once the command has executed, restart the installation process.
 
 <h1 id="upgrades">Upgrading</h1>
+
 ### I am having trouble upgrading from SpecFlow+ 1.3 (or earlier) to a newer version with SpecFlow 2 support
 Make sure you follow the steps out lined in the guide on [[updating to SpecFlow 2|http://www.specflow.org/updating-to-specflow-2/]].  
 In particular:  
