@@ -5,11 +5,11 @@ SpecFlow+ LivingDoc requires either VSTS or TFS 2017.
 
 ## Installation
 
-During the Beta preview period, you will only be able to install SpecFlow+ LivingDoc if it has been shared with your VSTS account. 
-
 To install SpecFlow+ LivingDoc:  
 
-1. Request access [[here|https://specflow.org/plus/specflow-livingdoc-private-beta/]].
-1. Once the extension has been shared with your account, log into your account. 
-1. You will see “SpecFlow + LivingDoc” under “Manage Extensions” (shopping bag icon in the upper right corner). Enable/install the extension. 
-1. You should now see the “SpecFlow+” menu item under “Test” in each of your projects. 
+1. Visit the SpecFlow+ LivingDoc page on the [[Visual Studio marketplace|https://marketplace.visualstudio.com/items?itemName=techtalk.techtalk-specflow-plus]].
+1. Click on the **Install** button if you are using VSTS. Click on the **Download** button if you are using TFS 2017. 
+1. Proceed with the installation as you would with any other extension. Refer to the Microsoft documentation for more information:  
+  [[Installing TFS Extensions|https://www.visualstudio.com/en-us/docs/marketplace/get-tfs-extensions]]  
+  [[Installing VSTS Extensions|https://www.visualstudio.com/en-us/docs/marketplace/get-vsts-extensions]]  
+1. You should now see the “SpecFlow+” menu item under “Test” in each of your projects.
