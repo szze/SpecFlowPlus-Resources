@@ -32,6 +32,7 @@
     * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
 
 * [[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]
+  * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
   * [[Generating Documentation]]
   * [[Embedding Images]]
   * [[Previewing Scenarios with Data Values]]
