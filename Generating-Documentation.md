@@ -20,6 +20,7 @@ To add the build step:
   
 
 To generate the documentation:
+
 1. Select **Test | SpecFlow+** from the menu.
 1. Choose the build definition containing the SpecFlow+ build step(s).  
   ![Build Summary](http://www.specflow.org/screenshots/Choose_Build.png)
