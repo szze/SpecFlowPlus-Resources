@@ -30,5 +30,9 @@
         * [[Excel examples file format]]
     * [[Converting Excel Cells]]  
     * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
+
+* [[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]
+  * [[Generating Documentation]]
+
 * [[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]
 * [[FAQ]]
