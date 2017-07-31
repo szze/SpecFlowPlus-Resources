@@ -9,19 +9,19 @@ To add the build step:
 1. Select **Build & Release | Builds** from the menu in TFS
 1. Click on build in the list (or add a new one).
 1. On the **Summary** page, click on a recently completed build:  
-  ![Build Summary](Screenshots/Build_Summary.png) XXX SCREENSHOT XXX
+  ![Build Summary](http://www.specflow.org/screenshots/Build_Summary.png) 
 1. The build steps are displayed in the left in the next screen:  
-  ![Build Steps](Screenshots/Build_Steps.png) XXX SCREENSHOT XXX
+  ![Build Steps](http://www.specflow.org/screenshots/Build_Steps.png)
 1. Click on **Edit build definition** to edit the steps.
 1. Add the SpecFlow+ build step to your build to generate the living documentation.
 1. Enter the path to your project file in the **Project** file path field of the **SpecFlow+ build step** and make sure the step is enabled.
 1. If you want to include Gherkin files from multiple projects, add a separate build step for each of your projects.  
-  ![SpecFlow Step](Screenshots/Build_SpecFlow_Step.png) XXX SCREENSHOT XXX
+  ![SpecFlow Step](http://www.specflow.org/screenshots/Build_SpecFlow_Step.png)
   
 
 To generate the documentation:
 1. Select **Test | SpecFlow+** from the menu.
 1. Choose the build definition containing the SpecFlow+ build step(s).  
-  ![Build Summary](Screenshots/Choose_Build.png) XXX SCREENSHOT XXX
+  ![Build Summary](http://www.specflow.org/screenshots/Choose_Build.png)
 1. Click on **Queue build**. The build is added to the queue.
 1. Once the build has completed, select **Test | SpecFlow+** from the menu to access the feature files.
