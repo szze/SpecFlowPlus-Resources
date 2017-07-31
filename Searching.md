@@ -2,7 +2,7 @@ The number of scenarios in a project can grow very quickly, so finding the right
 To search for a feature file by feature or scenario title:  
 
 1. Enter your search term in the **Filter** field. As you type, the results of the search are updated in the tree below.  
-  ![Search](Screenshots/Search.png) XXX SCREENSHOT XXX
+  ![Search](http://www.specflow.org/screenshots/Search.png)
 1. Feature and scenario titles matching the search term are displayed in blue. Other nodes that match the search criteria are displayed in black. Nodes displayed in grey do not contain the search term, but at least on child or parent item contains the search term. All other nodes (i.e. with no hits) are hidden in the tree.
 1. Click on an entry in the tree to display that entry.
 
