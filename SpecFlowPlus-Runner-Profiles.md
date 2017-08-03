@@ -9,6 +9,7 @@ The name of the profile file used by your project is defined using the `<Profile
 The `<TestProfile>` element is a container for the remaining elements.
 
 The following XML elements and attributes are available:
+
 * [[&lt;Settings>|Settings]]
 * [[&lt;Server>|Server]]
 * [[&lt;Execution>|Execution]]
