@@ -1,4 +1,4 @@
-* [[SpecFlow+ Runner|SpecFlowPlus Runner]]
+* **[[SpecFlow+ Runner|SpecFlowPlus Runner]]**
     * [[Installation|SpecFlow--Runner-Installation]]
         * [[Configuring Visual Studio Test Explorer Integration|Configuring SpecFlowPlus Runner Visual Studio Test Explorer Integration]]
         * [[Setting Up the SpecFlow+ Server|Setting-up-the-SpecFlowPlus-Runner-Server]]
@@ -30,7 +30,7 @@
   * Tips & Tricks
     * [[Sending Reports via Email|http://specflow.org/sending-reports-via-email/]]
 
-* [[SpecFlow+ Excel|SpecFlowPlus Excel]]
+* **[[SpecFlow+ Excel|SpecFlowPlus Excel]]**
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
     * [[Getting Started|http://www.specflow.org/plus/excel/getting-started/]]
     * [[Working with Generated files|Working with Generated files (SpecFlowPlus Excel)]]
@@ -42,12 +42,12 @@
     * [[Converting Excel Cells]]  
     * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
 
-* [[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]
+* **[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]**
   * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
   * [[Generating Documentation]]
   * [[Embedding Images]]
   * [[Previewing Scenarios with Data Values]]
   * [[Searching]]
 
-* [[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]
-* [[FAQ]]
+* **[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]**
+* **[[FAQ]]**
