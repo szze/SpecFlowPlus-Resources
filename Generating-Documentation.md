@@ -3,6 +3,7 @@ A default build step is included when installing the extension. This build step 
 
 **Note:** You do not need to use TFS to actually build your application. You can simply add a build definition that acquires the sources and generates the documentation.
 
+## Setup
 
 To add the build step:  
 
@@ -18,6 +19,7 @@ To add the build step:
 1. If you want to include Gherkin files from multiple projects, add a separate build step for each of your projects.  
   ![SpecFlow Step](http://www.specflow.org/screenshots/Build_SpecFlow_Step.png)
   
+## Generation
 
 To generate the documentation:
 
