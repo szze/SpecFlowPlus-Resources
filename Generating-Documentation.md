@@ -16,6 +16,7 @@ To add the build step:
 1. Click on **Edit build definition** to edit the steps.
 1. Add the SpecFlow+ build step to your build to generate the living documentation.
 1. Enter the path to your project file (.csproj) in the **Project** file path field of the **SpecFlow+ build step** and make sure the step is enabled.
+1. You can also enter a **Project Name**. This name is used by the root node in the tree. If you do not enter a name here, the name of the Visual Studio project is used instead.
 1. If you want to include Gherkin files from multiple projects, add a separate build step for each of your projects.  
   ![SpecFlow Step](http://www.specflow.org/screenshots/Build_SpecFlow_Step.png)
   
