@@ -74,8 +74,7 @@
 * Visual Studio test explorer integration - SpecRun test can be executed directly from Visual Studio 2012 without any additional configuration (the NuGet package contains all necessary integration infrastructure). See US49 in the documentation for details ("docs" folder of the NuGet package).
 * TFS integration - SpecRun tests can be executed by Team Foundation Server builds without additional configuration. 
   See US51 for details.
-* Test Targets: allow running tests multiple times with different environment or configuration settings
-  See US17 for details.
+* Test Targets: allow running tests multiple times with different environment or configuration settings. See US17 for details.
 * Service wrapper to run SpecRun server as a Windows service (SpecRun.Server.Service.exe).
 * Regex-based tag filtering - use the expression tagmatch:some-regex to filter for tags in any test filtering expression. 
   E.g. tagmatch:bug\d+ matches for tags like @bug1234 or @bug456
@@ -98,21 +97,24 @@
 **New Features**
 * Support for SpecFlow 1.9.0
 * Easier setup through SpecFlow plugin infrastructure (no assembly copy is required):
+```
   <specFlow>
     <unitTestProvider name="SpecRun" />
     <plugins>
       <add name="SpecRun" />
     </plugins>
   </specFlow>
+```
 * Easier configuration for executing the tests both with SpecRun and MsTest/NUnit: 
   use use SpecRun+NUnit or SpecRun+MsTest unit test provider name:
+```
   <specFlow>
     <unitTestProvider name="SpecRun+NUnit" />
     <plugins>
       <add name="SpecRun" />
     </plugins>
   </specFlow>
- 
+``` 
 **Bug Fixes**
 * License is checked during registration
 * System.Web.Razor assembly is missing from the NuGet package
