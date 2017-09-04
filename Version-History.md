@@ -1,4 +1,4 @@
-*Note: This overview only includes official stable releases.*
+*Note: This overview only includes official stable releases. Publicly available release candidates are not listed.*
 
 # 1.6.0 (2017-06-20)
  
