@@ -59,7 +59,7 @@
 * API for stopping the test run
 * TechTalk.SpecRun.dll is now signed
 * Error message if filter syntax is incorrect
-* Add new setting to copy the report to the base folder (<Report copyAlsoToBaseFolder="true"/>)
+* Add new setting to copy the report to the base folder (`<Report copyAlsoToBaseFolder="true"/>`)
  
 **Bug Fixes**
 * Escape '<' and '>' correctly in Visual Studio Test discovery
@@ -139,7 +139,7 @@
 * Recognize file references in test output (starting with file://) and 
   converting them to relative links in the report.
 * Support for STA/MTA apartment state through the execution settings of the 
-  profile: <Execution apartmentState="STA" />
+  profile: `<Execution apartmentState="STA" />`
  
 **Bug Fixes**
 * Better control for IIS express (default changed to useShellExecute=false, providing faster automation)
