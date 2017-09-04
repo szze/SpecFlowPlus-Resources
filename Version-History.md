@@ -13,8 +13,8 @@
 **New Features**
 * Support for SpecFlow 2.2.0
 * Duration of Scenarios and Features are displayed when using the standard report template
-* Support for Visual Studio 2017 RC (tested with 15.0.25928.0 D15REL)
-  Known Issues:
+* Support for Visual Studio 2017 RC (tested with 15.0.25928.0 D15REL)  
+  **Known Issues:**
   * No tests are found if lightweight load is enabled
   * If XUnit or MSTest test runners are used, no tests are found
 * New configuration setting to handle conflicts with existing report files with the same name (overwrite, rename)
