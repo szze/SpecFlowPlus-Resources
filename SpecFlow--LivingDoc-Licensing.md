@@ -19,9 +19,9 @@ To register your license:
   XXX SCREENSHOT XXX
 
 ## License Information
-After registering your SpecFlow+ license, you can hover over the "issued to: &lt;Licensee>" text to display additional information on your license:
+After registering your SpecFlow+ license, you can hover over the "issued to: &lt;Licensee>" text to display additional information on your license:  
 XXX SCREENSHOT XXX
-**canUpdateUntil**: This date is indicates the end of your current support period. This is normally one year after the date of purchase. XXX WHAT HAPPENS WHEN THIS DATE IS REACHED IF THE APP UPDATES ITSELF??? XXX
-**expirationDate**: This date indicates when your license expires, at which point you will no longer be able to use SpecFlow+ (except in evalution mode). **Most licenses do not have an expiration date**, in which case this value is empty.
+* **canUpdateUntil**: This date is indicates the end of your current support period. This is normally one year after the date of purchase. XXX WHAT HAPPENS WHEN THIS DATE IS REACHED IF THE APP UPDATES ITSELF??? XXX
+* **expirationDate**: This date indicates when your license expires, at which point you will no longer be able to use SpecFlow+ (except in evalution mode). **Most licenses do not have an expiration date**, in which case this value is empty.
 
 XXX VERSION MISSING XXX
