@@ -10,17 +10,16 @@ Once you have [[generated your documentation|Generating-Documentation]] using th
 
 To register your license:
 
-1. Click on **evaluation mode** at the top right of the screen.
-  A dialog is displayed:
-  XXX SCREENSHOT XXX
+1. Click on **evaluation mode** at the top right of the screen. A dialog is displayed: 
+  ![License Dialog](http://www.specflow.org/screenshots/License_dialog.png)
 1. Enter your license details in the dialog. If you purchased SpecFlow+ via SWREG, the **IssuedTo** value is the email used to complete the purchase. If you purchased the license directly from TechTalk, you should have received an email containing both the licensee (**IssuedTo**) and license key.
 1. Click on **Update**.
-1. If your license data is correct, the dialog is closed. The licensing information at the top right of the screen is updated to show the licensee:
-  XXX SCREENSHOT XXX
+1. If your license data is correct, the dialog is closed. The licensing information at the top right of the screen is updated to show the licensee:  
+  ![Successful Registration](http://www.specflow.org/screenshots/successfully_registered.png)
 
 ## License Information
 After registering your SpecFlow+ license, you can hover over the "issued to: &lt;Licensee>" text to display additional information on your license:  
-XXX SCREENSHOT XXX
+![License Details](http://www.specflow.org/screenshots/License_details.png)
 * **canUpdateUntil**: This date is indicates the end of your current support period. This is normally one year after the date of purchase. XXX WHAT HAPPENS WHEN THIS DATE IS REACHED IF THE APP UPDATES ITSELF??? XXX
 * **expirationDate**: This date indicates when your license expires, at which point you will no longer be able to use SpecFlow+ (except in evalution mode). **Most licenses do not have an expiration date**, in which case this value is empty.
 
