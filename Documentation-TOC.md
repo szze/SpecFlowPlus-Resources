@@ -47,9 +47,11 @@
 * **[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]**
   * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
   * [[Generating Documentation]]
-  * [[Embedding Images]]
-  * [[Previewing Scenarios with Data Values]]
-  * [[Searching]]
+    * [[Embedding Images]]
+  * [[Viewing the Living Documentation]]  
+    * [[Previewing Scenarios with Data Values]]
+    * [[Searching]]
+  * [[SpecFlow+ LivingDoc Licensing|SpecFlowPlus-LivingDoc-Licensing]]
 
 * **[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]**
 * **[[FAQ]]**
