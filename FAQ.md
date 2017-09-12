@@ -17,6 +17,7 @@ You can extend your license period for another year at 50% of the original licen
 In addition to having access to the latest releases and pre-releases, we provide support for technical issues during the support period. We will attempt to fix all bugs that are reported, and will prioritise these bugs according to their severity. 
 
 <h1 id="Support">Support</h1>
+
 ## How can I contact support?
 If you have a general issue, suggestion or question concerning SpecFlow+, the best place to turn is the SpecRun Google group. The advantage to the Google group is that it is publicly available, which means that any answers can be searched for in the future. It also gives other users the opportunity to contribute to discussions.
 
