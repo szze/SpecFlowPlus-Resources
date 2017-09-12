@@ -11,6 +11,7 @@ If your source code (feature files) is stored in a TFS/VSTS or GitHub repository
 
 
 To switch to a feature file:  
+
 1. Open the corresponding page in the living documentation.
 1. Click on **Show source** at the top of the page.  
   **Note:** If your feature files are stored in a source other than TFS/VSTS or GitHub, this option is not available. 
