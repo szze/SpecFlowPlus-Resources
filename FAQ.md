@@ -62,7 +62,19 @@ Note that due to external dependencies (e.g. the Gherkin parser), there may be s
 ## How do I register my license for SpecFlow+?
 You need to register your license key once per machine (after adding SpecFlow+ to your first project). More information is available [[here|http://www.specflow.org/plus/evaluation/]] and [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Command-Line-Tool-Reference/]].
 
-# Sales and Pricing
+<h1 id="Advantages">What are the advantages of SpecFlow+ Runner</h1>
+
+SpecFlow+ Runner offers a number of features that go beyond those found in other test runners. A comparison of the advantages of SpecFlow+ over SpecFlow can be found [[here|http://specflow.org/plus/]].
+
+Some of the key features of SpecFlow+ Runner are:  
+* Support for multiple [[targets]], allowing you to write a single test to target different [[environments|Environment]] (e.g. x86 and x64, various browsers).
+* [[Configuration file transformations|DeploymentTransformation]], which can also be used in conjunction with targets. This allows you to transform your configuration file for different platforms or web browsers, or set up a separate database instance for each thread using [[placeholders]].
+* Advanced reporting options using CSHTML templates. You can configure the output to meet your specific needs, both by customising the formatting and determining which data to include and how it should be laid out. 3 default templates are included to get you started that output your test reports as either HTML, JSON or XML.
+* Adaptive test scheduling mode prioritises previously failing tests over stable tests based on your execution history. Note that this feature requires you to set up a [[SpecFlow+ Runner server|Setting-up-the-SpecFlowPlus-Runner-Server]].
+* Parallelisation and isolation options for multi-threaded test execution. You can isolate threads by AppDomain, SharedAppDomain or Process.
+
+
+<h1 id="Sales">Sales and Pricing</h1>
 
 ## Are bulk discounts available?
 
