@@ -129,6 +129,6 @@ In particular:
 * If you use Visual Studio 2013 (or earlier) make sure you have removed any references to older versions of SpecFlow+ from you 'packages.config' file.
 
 ### I have multiple solutions with different versions of SpecFlow+ installed and am observing weird behaviour when switching between solutions. Why?
-When loading a solution containing SpecFlow+, Visual Studio caches the SpecFlow+ components. If you open a new solution containing a SpecFlow+ project, Visual Studio will retained the cached version of the SpecFlow+ components in memory. If the version used by the two projects is different, this means that there will be a version mismatch.
+When loading a solution containing SpecFlow+, Visual Studio caches the SpecFlow+ components. If you open a new solution containing a SpecFlow+ project, Visual Studio will retain the cached version of the SpecFlow+ components in memory. If the version used by the two projects is different, this means that there will be a version mismatch.
 
 You can avoid this issue by either upgrading all your solutions to the same version of SpecFlow+, or by restarting Visual Studio to flush the cache before opening the new solution.
