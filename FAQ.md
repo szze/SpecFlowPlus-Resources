@@ -147,3 +147,8 @@ In particular:
 When loading a solution containing SpecFlow+, Visual Studio caches the SpecFlow+ components. If you open a new solution containing a SpecFlow+ project, Visual Studio will retain the cached version of the SpecFlow+ components in memory. If the version used by the two projects is different, this means that there will be a version mismatch.
 
 You can avoid this issue by either upgrading all your solutions to the same version of SpecFlow+, or by restarting Visual Studio to flush the cache before opening the new solution.
+
+<h1 id="Misc">Miscellaneous</h1>
+
+### Do you use SpecFlow+ to develop SpecFlow+?
+Yes!
