@@ -1,4 +1,5 @@
 You can use markdown code to embed images in your feature files. These images will then be displayed when viewing the feature file in TFS/VSTS.
+**Note: Markdown is only supported in Feature and Scenario descriptions.** This means you can only place markdown between the "Feature:" row and the first scenario, or between the "Scenario:" row and the first step definition. If you place markdown elsewhere, you will receive errors when building the documentation.
 
 When embedding images, the path to the image can be specified as a relative or absolute path. You can also embed images stored externally, such as on a website. Paths are relative to the location of the feature file.
 
