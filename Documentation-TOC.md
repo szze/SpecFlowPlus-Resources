@@ -56,4 +56,4 @@
 * **[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]**
 * **[[FAQ]]**
 * **[[Known Issues]]**
-* ** [[Version History]]**
+* **[[Version History]]**
