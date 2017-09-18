@@ -67,6 +67,7 @@ You need to register your license key once per machine (after adding SpecFlow+ t
 SpecFlow+ Runner offers a number of features that go beyond those found in other test runners. A comparison of the advantages of SpecFlow+ over SpecFlow can be found [[here|http://specflow.org/plus/]].
 
 Some of the key features of SpecFlow+ Runner are:  
+
 * Support for multiple [[targets]], allowing you to write a single test to target different [[environments|Environment]] (e.g. x86 and x64, various browsers).
 * [[Configuration file transformations|DeploymentTransformation]], which can also be used in conjunction with targets. This allows you to transform your configuration file for different platforms or web browsers, or set up a separate database instance for each thread using [[placeholders]].
 * Advanced reporting options using CSHTML templates. You can configure the output to meet your specific needs, both by customising the formatting and determining which data to include and how it should be laid out. 3 default templates are included to get you started that output your test reports as either HTML, JSON or XML.
