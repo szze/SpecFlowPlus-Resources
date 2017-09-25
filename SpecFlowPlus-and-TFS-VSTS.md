@@ -13,9 +13,9 @@ To configure your build process in TFS 2015 to execute tests using SpecFlow+ Run
 1. Open TFS and switch to your build definition.
 1. Click on **Add build step** to add a new step to the build definition. Click on **Test** in the list of categories and click on **Add** next to "Visual Studio Test".
 1. Configure the build step as follows:  
-  * Enter the path to your **Test Assembly** (the DLL containing your compiled specifications project with the test bindings).
-  * If you are using both MSTest and SpecFlow+ Runner, enter the path to NuGet package folder in the **Path to Custom Test Adapters** field. If you do not enter the path here, only your MSTest tests will be executed as TFS cannot find the SpecFlow+Runner test adapter.
-  * If you have renamed your .srprofile file (i.e. the name is not `TFS.srprofile` or `default.srprofile`), enter the name of your file in the **Run Settings File** field.
+   * Enter the path to your **Test Assembly** (the DLL containing your compiled specifications project with the test bindings).
+   * If you are using both MSTest and SpecFlow+ Runner, enter the path to NuGet package folder in the **Path to Custom Test Adapters** field. If you do not enter the path here, only your MSTest tests will be executed as TFS cannot find the SpecFlow+Runner test adapter.
+   * If you have renamed your .srprofile file (i.e. the name is not `TFS.srprofile` or `default.srprofile`), enter the name of your file in the **Run Settings File** field.
 1. Save your changes.
 1. You may also want to add an additional build step to generate living documentation from your feature files, see [[Generating Documentation]].
 
@@ -26,8 +26,8 @@ To configure your build process in TFS with XAML:
 
 1. Define your build definition as described [[here|https://msdn.microsoft.com/en-us/library/ms181716%28v=vs.120%29.aspx]]
 1. In order for the tests to execute, the binaries (DLLs in the various SpecFlow packages) need to be available to the build agent. Either:
-  * Enable NuGet restore, in which cases the files are downloaded automatically
-  * Check in the DLLs in the corresponding SpecFlow, SpecRun and SpecFlow+ packages. These DLLs are located in the corresponding sub-folders of your solution's packages directory.
+   * Enable NuGet restore, in which cases the files are downloaded automatically
+   * Check in the DLLs in the corresponding SpecFlow, SpecRun and SpecFlow+ packages. These DLLs are located in the corresponding sub-folders of your solution's packages directory.
 1. Enter the name of your .srprofile file in the **Run Settings File** field if the name is not `TFS.srprofile` or `default.srprofile` (see above).
 
 ### Known Issues
