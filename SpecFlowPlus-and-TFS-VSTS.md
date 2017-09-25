@@ -1,5 +1,9 @@
 By default, TFS looks for a profile named TFS.srprofile to execute your tests; if none is found, TFS uses default.srprofile instead. If you have changed the name of your profile, you need to enter the name of your profile in your [[runner settings|Configuring-SpecFlowPlus-Runner-Visual-Studio-Test-Explorer-Integration#specflow-runner-settings]] (`<Profile>` element) and enter the path to your `.runsettings` file in the **Run Settings File** field.
 
+## SpecFlow+ LivingDoc
+
+If you are using TFS/VSTS to build your projects, you may want to includes a step to [[build your living documentation|Generating Documentation]] using SpecFlow+ LivingDoc.
+
 ## TFS/VSTS 2015 & 2017
 
 *Note: General information on running tests with your builds in TFS can be found [[here|https://www.visualstudio.com/en-gb/docs/test/continuous-testing/getting-started/getting-started-with-continuous-testing]].*
