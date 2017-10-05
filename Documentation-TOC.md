@@ -28,7 +28,7 @@
       * [[Online Report API Documentation|http://specflow.org/api/report/docs/]]
       * [[Test Execution Result Codes]]
     * [[SpecFlow+ Version 1.3 Upgrade Notes]]  
-* Tips & Tricks
+* **Tips & Tricks**
   * [[Sending Reports via Email|http://specflow.org/sending-reports-via-email/]]
 
 * **[[SpecFlow+ Excel|SpecFlowPlus Excel]]**
