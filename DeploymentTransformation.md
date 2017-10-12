@@ -1,5 +1,7 @@
 This element is used to define transformations that are applied to your configuration file. You can nest this element within a `<Target>` element, allowing you to define different configuration settings per target, e.g. for different platforms (x64/x86) or for different web browsers. You can also use `{Target}` as a placeholder for this value, in which case the placeholder is replaced with the target name. See the [[SeleniumWebTest sample project|https://github.com/techtalk/SpecFlow.Plus.Examples/tree/master/SeleniumWebTest]] for an example of using placeholders to transform a configuration file.
 
+**Note: When running tests in in multiple threads**, you need to ensure that each thread is accessing a different file, or you will encounter conflicts. Use the RelocateConfigurationFile in conjunction with the `{TestThreadID}` placeholder to achieve this.
+
 The following elements and attributes are available:
 
 |Element/Attribute  |Required/Optional|Description|
