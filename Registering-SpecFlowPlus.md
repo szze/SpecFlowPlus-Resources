@@ -1,6 +1,6 @@
 ## SpecFlow+ Runner
 
-[[Installing|SpecFlow--Runner-Installation]] SpecFlow+ Runner's NuGet packages installs SpecFlow and SpecFlow+ Runner to the `/packages` folder of your Visual Studio solution. After installing the packages, register your license by starting SpecRun.exe (in `/packages/SpecRun.Runner.1.x.y/tools`) from the command line using the following syntax:
+[[Installing|SpecFlow--Runner-Installation]] SpecFlow+ Runner's NuGet packages installs SpecFlow and SpecFlow+ Runner to the `/packages` folder of your Visual Studio solution. After installing the packages, register your license by starting SpecRun.exe (in `/packages/SpecRun.Runner.x.y.z/tools`) from the command line using the following syntax:
 
 <code>SpecRun.exe register &lt;LicenseKey> "&lt;Licensee>"</code>
 
