@@ -12,7 +12,7 @@ SpecFlow+ Runner uses [[test profiles|SpecFlowPlus Runner Test Profiles]] to con
 
 ### Processor Architecture
 
-Unless specified in the test profile, the execution uses the test processor architecture setting in Visual Studio. By default, this is set to `x86` in Visual Studio 2013. 
+Unless specified in the test profile, the execution uses the test processor architecture setting in Visual Studio. By default, this is set to `x86` in Visual Studio. 
 
 To change this setting in Visual Studio, select  **Test|Test Settings|Default Processor Architecture|** from the menu and choose the desired architecture (X86 or X64).
 
