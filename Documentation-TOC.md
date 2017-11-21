@@ -1,4 +1,4 @@
-* **[[SpecFlow+ Runner|SpecFlowPlus Runner]]**
+* ***[[SpecFlow+ Runner|SpecFlowPlus Runner]]***
     * [[Installation|SpecFlow--Runner-Installation]]
         * [[Configuring Visual Studio Test Explorer Integration|Configuring SpecFlowPlus Runner Visual Studio Test Explorer Integration]]
         * [[Setting Up the SpecFlow+ Server|Setting-up-the-SpecFlowPlus-Runner-Server]]
@@ -28,10 +28,10 @@
       * [[Online Report API Documentation|http://specflow.org/api/report/docs/]]
       * [[Test Execution Result Codes]]
     * [[SpecFlow+ Version 1.3 Upgrade Notes]]  
-* **Tips & Tricks**
+* ***Tips & Tricks***
   * [[Sending Reports via Email|http://specflow.org/sending-reports-via-email/]]
 
-* **[[SpecFlow+ Excel|SpecFlowPlus Excel]]**
+* ***[[SpecFlow+ Excel|SpecFlowPlus Excel]]***
     * [[Installation and Configuration|SpecFlowPlus Excel Installation and Configuration]]
     * [[Getting Started|http://www.specflow.org/plus/excel/getting-started/]]
     * [[Working with Generated files|Working with Generated files (SpecFlowPlus Excel)]]
@@ -43,7 +43,7 @@
     * [[Converting Excel Cells]]  
     * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
 
-* **[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]**
+* ***[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]***
   * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
   * [[Generating Documentation]]
     * [[Markdown and Embedding Images]]
@@ -52,7 +52,7 @@
     * [[Searching]]
   * [[SpecFlow+ LivingDoc Licensing|SpecFlowPlus-LivingDoc-Licensing]]
 
-* **[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]**
-* **[[FAQ]]**
-* **[[Known Issues]]**
-* **[[Version History]]**
+* ***[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]***
+* ***[[FAQ]]***
+* ***[[Known Issues]]***
+* ***[[Version History]]***
