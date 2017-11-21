@@ -1,5 +1,6 @@
 * ***[[SpecFlow+ Runner|SpecFlowPlus Runner]]***
     * [[Installation|SpecFlow--Runner-Installation]]
+        * [[Registering SpecFlow+|Registering-SpecFlowPlus]]   
         * [[Configuring Visual Studio Test Explorer Integration|Configuring SpecFlowPlus Runner Visual Studio Test Explorer Integration]]
         * [[Setting Up the SpecFlow+ Server|Setting-up-the-SpecFlowPlus-Runner-Server]]
           * [[SpecFlow+ Runner Server Data|SpecFlowPlus-Runner-Server-Data]]
