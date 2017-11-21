@@ -8,7 +8,7 @@ When running tests from the Test Explorer window, tests are executed using the f
 
 ### Profile
 
-SpecFlow+ Runner uses [[test profiles|SpecFlowPlus Runner Test Profiles]] to configure the test suite and execution details. The Test Explorer integration looks for the file `VisualStudio.srprofile` in your project. If the file does not exists, the `Default.srprofile` file is used instead.
+SpecFlow+ Runner uses [[test profiles|SpecFlowPlus-Runner-Profiles]] to configure the test suite and execution details. The Test Explorer integration looks for the file `VisualStudio.srprofile` in your project. If the file does not exists, the `Default.srprofile` file is used instead.
 
 ### Processor Architecture
 
