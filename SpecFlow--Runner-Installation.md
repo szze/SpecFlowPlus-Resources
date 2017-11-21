@@ -31,7 +31,7 @@ The method used to install the IDE Integration packages depends on your IDE:
 	<li>Add SpecFlow+ Runner to your specification project using NuGet:
 <ol>
 	<li>Right-click on your specification project (e.g. “MyProject.Specs”) and select <strong>Manage NuGet Packages for Solution</strong>.</li>
-	<li>Search for “SpecRun” and install <em>SpecRun for SpecFlow 2.0.0</em>.
+	<li>Search for “SpecRun” and install <em>SpecRun for SpecFlow</em>. The latest version is installed automatically, although you can choose to install an earlier version if needed.
         <br>
         Alternatively, you can install the package from NuGet's console (<strong>Tools&nbsp;|&nbsp;NuGet Package Manager&nbsp;|&nbsp;Package Manager Console</strong>) as follows:<br>
 <code>PM&gt; Install-Package SpecRun.SpecFlow</code></li>
