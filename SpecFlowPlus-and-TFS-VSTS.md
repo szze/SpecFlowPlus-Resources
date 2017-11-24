@@ -4,11 +4,11 @@ By default, TFS looks for a profile named TFS.srprofile to execute your tests; i
 
 If you are using TFS/VSTS to build your projects, you may want to includes a step to [[build your living documentation|Generating Documentation]] using SpecFlow+ LivingDoc.
 
-## TFS/VSTS 2015 & 2017
+## TFS/VSTS 2015+
 
 *Note: General information on running tests with your builds in TFS can be found [[here|https://www.visualstudio.com/en-gb/docs/test/continuous-testing/getting-started/getting-started-with-continuous-testing]].*
 
-To configure your build process in TFS 2015 to execute tests using SpecFlow+ Runner:
+To configure your build process to execute tests using SpecFlow+ Runner:
 
 1. Open TFS and switch to your build definition.
 1. Click on **Add build step** to add a new step to the build definition. Click on **Test** in the list of categories and click on **Add** next to "Visual Studio Test".
