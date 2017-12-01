@@ -99,7 +99,7 @@ Payment by credit card is preferred, although payment by bank transfer is also p
 
 <h1 id="Licensing">Troubleshooting</h1>
 
-### I'm trying to run my SpecFlow+ Runner tests in Visual Studio test window, but they fail with an assembly load error
+### I'm trying to run my SpecFlow+ Runner tests in Visual Studio test window, but they fail with an assembly load error ("System.IO.FileNotFoundException: Could not load file or assembly")
 
 In some cases the cache folder of Visual Studio Test Adapter gets corrupted. You need to clear the cache to resolve this:
 
