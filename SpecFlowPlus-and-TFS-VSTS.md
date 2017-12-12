@@ -4,7 +4,7 @@ By default, TFS looks for a profile named TFS.srprofile to execute your tests; i
 
 If you are using TFS/VSTS to build your projects, you may want to includes a step to [[build your living documentation|Generating Documentation]] using SpecFlow+ LivingDoc.
 
-## TFS/VSTS 2015+
+## TFS 2015+/VSTS
 
 *Note: General information on running tests with your builds in TFS can be found [[here|https://www.visualstudio.com/en-gb/docs/test/continuous-testing/getting-started/getting-started-with-continuous-testing]].*
 
