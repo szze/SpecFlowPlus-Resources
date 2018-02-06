@@ -22,5 +22,5 @@ You can combine filters using logical operators. The following operators are sup
 
 **Examples:**  
 `<Filter>@MyTag &amp; @YourTag</Filter>` executes all tests with both the `@MyTag` and `@YourTag` tags.  
-`<Filter>tagmatch:!Tag[1-9]</Filter>` executes all tests that are not tagged with any of  `@Tag1` to `@Tag9`.  
+`<Filter>!tagmatch:Tag[1-9]</Filter>` executes all tests that are not tagged with any of  `@Tag1` to `@Tag9`.  
 <`Filter>@MyTag | tagmatch:tag[1-9]</Filter>` executes all tests with either the `@MyTag` tag or tags `@Tag1` to `@Tag9`.
