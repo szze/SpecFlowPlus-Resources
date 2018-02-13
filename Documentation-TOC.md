@@ -23,6 +23,8 @@
       * [[Report]]
       * [[Placeholders]]
     * [[Command Line Arguments|SpecFlowPlus-Runner-Command-Line]]
+    * API
+      * [[TestRunContext]]
     * [[Migrating to SpecFlow+ Runner|Migrating to SpecFlow Runner]]
     * [[Reports]]
       * [[Tutorial: Customising Reports]]
