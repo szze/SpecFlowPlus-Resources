@@ -3,7 +3,7 @@
 <h1 id="Licensing">Licensing</h1>
 
 ## How is SpecFlow+ licensed?
-SpecFlow+ is licensed per user. A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). 
+SpecFlow+ is licensed per user. A single license entitles a single user to execute tests with SpecFlow+ on any number of local or remote machines (including build servers). Build servers do not require a separate license. Each user who triggers builds that involve SpecFlow+ either locally or on a build server (e.g. through checking in a Gherkin file) requires a license. Users of the LivingDoc VSTS plugin require a license as well.
 
 More details on SpecFlow+ licensing can be found [[here|http://www.specflow.org/plus/licensing/]].
 
