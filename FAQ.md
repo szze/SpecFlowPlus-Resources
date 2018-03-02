@@ -16,8 +16,8 @@ You can extend your license period for another year at 50% of the original licen
 ## What support is included during the support period?
 In addition to having access to the latest releases and pre-releases, we provide support for technical issues during the support period. We will attempt to fix all bugs that are reported, and will prioritise these bugs according to their severity. 
 
-## What level of TFS user is required to use SpecFlow+ LivingDoc?
-Any level except from "Stakeholder" works with SpecFlow+ LivingDoc on VSTS. Stakeholders are unable to access the "Test" menu, which provides access to SpecFlow+ LivingDoc.
+## What level of TFS/VSTS user is required to use SpecFlow+ LivingDoc?
+Any level except from "Stakeholder" works with SpecFlow+ LivingDoc. Stakeholders are unable to access the "Test" menu, which provides access to SpecFlow+ LivingDoc.
 
 <h1 id="Support">Support</h1>
 
