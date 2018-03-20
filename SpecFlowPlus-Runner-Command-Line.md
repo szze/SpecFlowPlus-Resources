@@ -14,9 +14,10 @@ Use `SpecRun.exe run` to run your tests using the following parameters:
 |`/outputfolder:`folder |Optional         |Specifies the output folder for your logs and report file. All paths are relative to this path. If you have specified a test profile (.srprofile) as your target, this value overrides the `outputFolder` entry in your `.srprofile` file.<br>If no output folder is defined in your test profile, or your `target` is an assembly, the output folder defaults to the base folder if not specified from the command line.|
 |`/log:`file            |Optional         |Specifies the target log file. This path is relative to your output folder.|
 |`/report:`file         |Optional         |Specifies the target report file. This path is relative to your output folder.<br>**Note:** This option only affects the name of the report file defined in the &lt;Settings> section of your profile. It does not affect the reports defined in the &lt;Report> section; to change the name of the report file for these reports, use the `outputName` attribute instead.|
-|`/filter:`filter        |Optional         |Applies a filter to your tests and only executes those that match your expression. This overrides the `filter` entry in your `.srprofile` file.|
+|`/filter:`filter        |Optional         |Applies a filter to your tests and only executes those that match your expression. This overrides the `filter` entry in your `.srprofile` file. An overview of the syntax can be found [here](Filter).|
 |`/toolIntegration:`value|Optional        |Supported values: `None, VS2010, VS2012, VS2013, TeamCity, TFS`|
 |`/debug`                |Optional        |Default: false |
+
 
 **Example:**  
 `SpecRun.exe run default.srprofile /basefolder:c:\MyProjectFolder /outputfolder:output /report:MyReport.html`  
