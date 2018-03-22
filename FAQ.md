@@ -116,7 +116,7 @@ corflags YourFolder\SpecRun.exe /32BIT+.
 
 ### The Test Explorer is not showing any feature scenario tests
 
-* If you have added SpecFlow+ Runner to your project or updated it, close and restart Visual Studio. This step is necessary to allow Visual Studio to load the SpecFlow+ Runner test adapter and locate your tests.
+* If you have added SpecFlow+ Runner to your project or updated the installed package, close and restart Visual Studio. This step is necessary to allow Visual Studio to load the SpecFlow+ Runner test adapter and locate your tests.
 * If cleaning your solution and rebuilding does not fix this issue, try deleting the contents (all folders and files) in your `%temp%\VisualStudioTestExplorerExtensions` folder.
 
 
