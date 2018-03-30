@@ -20,5 +20,6 @@ The following XML elements and attributes are available:
 * [[&lt;DeploymentTransformation>|DeploymentTransformation]]
 * [[&lt;TestThreads>|TestThreads]]
 * [[&lt;Report>|Report]]
+* [[&lt;VSTest>|VSTest]]
 
 You can also use a number of [[Placeholders]] in your profile.
