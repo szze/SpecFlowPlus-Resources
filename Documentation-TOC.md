@@ -22,6 +22,7 @@
       * [[TestThreads]]
       * [[Report]]
       * [[Placeholders]]
+      * [[VSTest]]
     * [[Command Line Arguments|SpecFlowPlus-Runner-Command-Line]]
     * API
       * [[TestRunContext]]
