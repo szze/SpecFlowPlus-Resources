@@ -80,6 +80,10 @@ Some of the key features of SpecFlow+ Runner are:
 
 <h1 id="Sales">Sales and Pricing</h1>
 
+## How much does a SpecFlow+ license cost?
+
+The list price for a single user is EUR 159. This includes 1 year of upgrades and support.
+
 ## Are bulk discounts available?
 
 We can offer discounts on larger orders (5+), with the discount depending on the number of licenses. Please contact us at support [at] specflow.org for a quote. 
