@@ -27,11 +27,22 @@ You need to register your license key once per machine (after adding SpecFlow+ t
 
 ## How much does a SpecFlow+ license cost?
 
-The list price for a single user is EUR 159. This includes 1 year of upgrades and support.
+The list price for a single user is EUR 159. This includes 1 year of upgrades and support. We can provide you with a quote in GBP or USD if you prefer. In this case, we use the current exchange rate to set the price, which is fixed for 30 days. This means the price is unaffected by any subsequent changes in the exchange rate. 
+
+## How can I order SpecFlow+
+If you are ordering less than 5 licenses, we recommend purchasing from the [[web shop|https://www.swreg.org/com/shop/138662/cart/7886888002]].
+
+If you are ordering 5 or more licenses, please contact us directly at _support [at] specflow.org_, and include us the number of licenses you are interested in and your preferred currency (EUR/USD/GBP). We will send you a quote.
 
 ## Are bulk discounts available?
 
 We can offer discounts on larger orders (5+), with the discount depending on the number of licenses. Please contact us at support [at] specflow.org for a quote. 
+
+## How can I complete payment?
+You can choose a number of payment options when purchasing from the [[web shop|https://www.swreg.org/com/shop/138662/cart/7886888002]]. 
+When ordering directly from TechTalk (via support [at] specflow.org), payment by credit card is preferred. If you accept the quote, we will send you a payment link. Payment by bank transfer is also possible, but is much slower to process.
+
+**We cannot send out license keys until payment is confirmed!**
 
 ## Do you work with resellers?
 
