@@ -58,6 +58,7 @@
   * [[SpecFlow+ LivingDoc Licensing|SpecFlowPlus-LivingDoc-Licensing]]
 
 * ***[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]***
+* ***[[Troubleshooting]]***
 * ***[[FAQ]]***
 * ***[[Known Issues]]***
 * ***[[Version History]]***
