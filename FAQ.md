@@ -112,6 +112,10 @@ The installation executes a powershell script. If you do not have permission to 
 
 Once the command has executed, restart the installation process.
 
+### I am receiving an Exception Code 0xc00000fd when executing my tests. What is causing this?
+
+0xc00000fd is the code for a stack overflow exception. This exception can occur if you access recursive code from your bindings where the recursion is not terminated (or not terminated before a stack overflow exception occurs). The error is most likely in your recursive code itself.
+
 <h1 id="upgrades">Upgrading</h1>
 
 ### I am having trouble upgrading from SpecFlow+ 1.3 (or earlier) to a newer version with SpecFlow 2 support
