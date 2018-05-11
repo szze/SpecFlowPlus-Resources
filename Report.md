@@ -13,8 +13,7 @@ The following attributes are available:
 |--------------|-----------------|
 |name          |The path to the template .cshtml file, relative to the base folder|
 |outputName    |The path of the generated report, relative to the base folder.<br><br>You can use the following placeholders in file names to ensure the name is unique:<br>`{now}`: A timestamp with the current date and time<br>`{unique_guid}`: Unique GUID|
-|existingFileHandlingStrategy| Determines the behaviour if an existing file with the same name already exists. Possible values:<br>`Overwrite` (default): Overwrites existing files with the same name|
-|IncrementFilename|Follows the Windows paradigm of adding an incremental suffix (e.g. "(1)", "(2)" etc.) to the end of file names. This will retain the existing file with its original name and result in a new file being generated with the appropriate incremental suffix. |
+|existingFileHandlingStrategy| Determines the behaviour if an existing file with the same name already exists. Possible values:<br>`Overwrite` (default): Overwrites existing files with the same name.<br>`IncrementFilename`: Follows the Windows paradigm of adding an incremental suffix (e.g. "(1)", "(2)" etc.) to the end of file names. This will retain the existing file with its original name and result in a new file being generated with the appropriate incremental suffix. |
 
 **Note:** The report template specified in the [[&lt;Settings>|Settings]] element (`reportTemplate`) is used in addition to the templates specified in the `<Report>` element.
 
