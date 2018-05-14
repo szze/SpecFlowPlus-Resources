@@ -1,5 +1,7 @@
 ***Note:*** *Don't forget to check out the [[SpecFlow FAQ|http://www.specflow.org/documentation/FAQ/]] as well.*
 
+Information on our privacy policy and the information we collect from customers can be found [[here|https://www.specflow.org/privacy-policy/]].
+
 <h1 id="Licensing">Licensing</h1>
 
 ## How is SpecFlow+ licensed?
