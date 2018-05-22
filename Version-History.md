@@ -3,6 +3,7 @@
 # 1.6.0 (2017-06-20)
  
 **Bug Fixes**
+
 * Filters for functional tests now use same syntax as everywhere else
 * XML Report template additions (scenario tags)
 * Fixed a bug that occurred when combining SharedAppDomain isolation and targets (more details [[here|https://groups.google.com/d/msg/specrun/GeVoqsHlmNY/TbnvbfSoAwAJ]])
@@ -11,6 +12,7 @@
 * Use projectName if no name is given in srProfile as project name in SpecFlow+Server
 
 **New Features**
+
 * Support for SpecFlow 2.2.0
 * Duration of Scenarios and Features are displayed when using the standard report template
 * Support for Visual Studio 2017 RC (tested with 15.0.25928.0 D15REL)  
@@ -24,33 +26,44 @@
 * Added option for CopyFolder DeploymentStep to disable cleanup of target folder before copying
  
 # 1.5.2 (2016-07-07)
+
 **Bug Fixes**
+
 * Links to custom files in reports
 * VS 2013 Debugger asks for source files of SpecFlow+Runner at stepping through bindings
  
  
 # 1.5.0 (2016-06-15)
+
 **New Features**
+
 * Generate multiple reports from a single test run
 * Formatting fixes in report output
  
  
 # 1.4.1 (2016-05-30)
+
 **Bug Fixes**
+
 * Bugfix for error when using SpecRun+MsTest/SpecRun+NUnit Unit test provider and running the tests with MsTest/NUnit.
  
  
 # 1.4.0 (2016-05-24)
+
 **New Features**
+
 * Support for SpecFlow V2's Shared AppDomain parallelization 
 * Output additional license info (expiry date, upgrade until date) when running from the console
  
 **Bug Fixes**
+
 * Under certain conditions, failed tests are not retried
 * In Visual Studio 2015 Update 2 not all tags where displayed as traits
  
 # 1.3.0 (2016-01-27)
+
 **New Features**
+
 * Visual Studio 2015 support
 * VB.Net support
 * Support for project licenses
@@ -62,6 +75,7 @@
 * Add new setting to copy the report to the base folder (`<Report copyAlsoToBaseFolder="true"/>`)
  
 **Bug Fixes**
+
 * Escape '<' and '>' correctly in Visual Studio Test discovery
 * Fixed an occurance of locking an assembly
 * Fixed an issue with adaptive test scheduling and tests with a long history
@@ -71,6 +85,7 @@
 # 1.2.0 (2013-8-16)
  
 **New Features**
+
 * Visual Studio test explorer integration - SpecRun test can be executed directly from Visual Studio 2012 without any additional configuration (the NuGet package contains all necessary integration infrastructure). See US49 in the documentation for details ("docs" folder of the NuGet package).
 * TFS integration - SpecRun tests can be executed by Team Foundation Server builds without additional configuration. 
   See US51 for details.
@@ -86,6 +101,7 @@
 * Adaptive test scheduler is not blocking until the test statistics are received from the server but start working on tests (in random order)
  
 **Bug Fixes**
+
 * Tests might be skipped when using parallel execution and test thread affinity
 * Invalid test thread affinity configuration causes skipped tests
 * When the unit test provider is configured to SpecRun+NUnit or SpecRun+MsTest, the Gherkin steps are not displayed properly in the report
@@ -94,7 +110,9 @@
 * Tests might not be scheduled properly for multuple threads when affinity is specified
  
 # 1.1.0 (2012-08-06)
+
 **New Features**
+
 * Support for SpecFlow 1.9.0
 * Easier setup through SpecFlow plugin infrastructure (no assembly copy is required):
 ```
@@ -116,11 +134,14 @@
   </specFlow>
 ``` 
 **Bug Fixes**
+
 * License is checked during registration
 * System.Web.Razor assembly is missing from the NuGet package
  
 # 1.0.0 (2012/05/31)
+
 **New Features**
+
 * Licensing: to use SpecRun in commercial projects, you have to purchase seat 
   licenses for each team member (not for the build server). 
   See more details at http://www.specrun.com.
@@ -131,17 +152,21 @@
 * Support for running NUnit tests. See NUnitSupport.txt for details.
  
 **Bug Fixes**
+
 * Tests cannot be executed from Visual Studio if the feature or scenario title contains parenthesis
  
  
 # 0.14.0 (2012/04/20)
+
 **New Features**
+
 * Recognize file references in test output (starting with file://) and 
   converting them to relative links in the report.
 * Support for STA/MTA apartment state through the execution settings of the 
   profile: `<Execution apartmentState="STA" />`
  
 **Bug Fixes**
+
 * Better control for IIS express (default changed to useShellExecute=false, providing faster automation)
 * The current directory is set to the base folder
 * File logger creates the directory for the expected log file
@@ -151,7 +176,9 @@
 * Generated testrun.cmd does not work on 32-bit machines
  
 # 0.12.0 (2011/11/25)
+
 **Bug Fixes**
+
 * TeamCity: skipped tests are reported as ignored
 * TeamCity: better handling of special quotes in scenario titles
 * TeamCity: report test steps and trace for failing tests
@@ -159,16 +186,21 @@
 * Report: javascript error for empty tests
  
 # 0.11.0 (2011/10/26)
+
 **New features**
+
 * Updated for SpecFlow 1.8.1
  
 **Bug fixes**
+
 * runtests.cmd does not work on x86 machines
 * cancelling execution hangs
 * console tracer fails with System.ArgumentOutOfRangeException
  
 # 0.10.0 (2011/10/11)
+
 **Bug fixes**
+
 * Performance problem when running many small tests
 * Tagged examples may not generated properly
 * NUnit/MsTest compatibility mode does not support categories and ignore
