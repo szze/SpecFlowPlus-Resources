@@ -1,6 +1,6 @@
 *Note: This overview only includes official stable releases. Publicly available release candidates are not listed.*
 
-# 1.7.2 2018-05-16
+# 1.7.2 (2018-05-16)
 
 **Bug fixes**
 
@@ -8,7 +8,7 @@
 * Allow slash (/) and backslash (\) again in report output name to support destination subfolders
 * Add missing entries in `SpecRunTestProfile.xsd`
 
-# 1.7.1 2018-04-28
+# 1.7.1 (2018-04-28)
 
 **Bug fixes**
 
@@ -17,7 +17,7 @@
 * Fix error with reporting test result to Visual Studio if VSTest unified mode is used
 
 
-# 1.7.0 2018-02-16
+# 1.7.0 (2018-02-16)
 
 **New Features**
 
@@ -34,7 +34,7 @@
 * Fixed log entries being written to report file if the report name is defined in a runsettings file
 * `VisualStudio.srProfile` is used if it exists and the test run is started from within Visual Studio
 
-# 1.6.3 2017-10-03
+# 1.6.3 (2017-10-03)
 
 **Bug fixes**
 
@@ -42,7 +42,7 @@
 * Fix `CommunicationObjectFaultedException` with long running scenarios (> 10min), see [[https://stackoverflow.com/questions/46307110/specrun-timeout-on-test-execution-when-performing-a-selenium-wait-longer-than-10|https://stackoverflow.com/questions/46307110/specrun-timeout-on-test-execution-when-performing-a-selenium-wait-longer-than-10]]
 
 
-# 1.6.2 2017-09-26
+# 1.6.2 (2017-09-26)
 
 **Bug fixes**
 
@@ -50,7 +50,7 @@
 * Workaround for this [[issue|https://github.com/techtalk/SpecFlow/issues/935 and https://github.com/NuGet/Home/issues/5880]]
 
 
-# 1.6.1 2017-09-12
+# 1.6.1 (2017-09-12)
 
 **New Features**
 
