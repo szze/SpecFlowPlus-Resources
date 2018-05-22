@@ -1,5 +1,68 @@
 *Note: This overview only includes official stable releases. Publicly available release candidates are not listed.*
 
+# 1.7.2 2018-05-16
+
+**Bug fixes**
+
+* Fix reading of runsettings files, see [[https://github.com/techtalk/SpecFlow/issues/1134|https://github.com/techtalk/SpecFlow/issues/1134]]
+* Allow slash (/) and backslash (\) again in report output name to support destination subfolders
+* Add missing entries in `SpecRunTestProfile.xsd`
+
+# 1.7.1 2018-04-28
+
+**Bug fixes**
+
+* Fix report filename generation so that it will not use forbidden characters in a filename
+* Fix error in test output if you have more than one report defined, see [[https://github.com/techtalk/SpecFlow/issues/1076#issuecomment-374636388|https://github.com/techtalk/SpecFlow/issues/1076#issuecomment-374636388]]
+* Fix error with reporting test result to Visual Studio if VSTest unified mode is used
+
+
+# 1.7.0 2018-02-16
+
+**New Features**
+
+* Support for SpecFlow 2.3
+* Combine test results of retried tests to one (only when executed via VSTest) - https://github.com/techtalk/SpecFlow/issues/833 https://github.com/techtalk/SpecFlow/issues/836
+* New report template for Cucumber JSON format (Name: CucumberJson)
+* Added `TestRunContext` to be available to get the location of your test assembly
+* Possibility to define the testThreadCount as 'max'. This then uses "number of cores - 1" as testThreadCount
+
+
+**Bug fixes**
+
+* `runtests.cmd` - use msbuild.exe from path and not from %windir%\Microsoft.NET\Framework\v4.0.30319
+* Fixed log entries being written to report file if the report name is defined in a runsettings file
+* `VisualStudio.srProfile` is used if it exists and the test run is started from within Visual Studio
+
+# 1.6.3 2017-10-03
+
+**Bug fixes**
+
+* Fix `CommunicationObjectFaultedException` when using process separation & DateTime, see [[https://github.com/techtalk/SpecFlow/issues/945|https://github.com/techtalk/SpecFlow/issues/945]]
+* Fix `CommunicationObjectFaultedException` with long running scenarios (> 10min), see [[https://stackoverflow.com/questions/46307110/specrun-timeout-on-test-execution-when-performing-a-selenium-wait-longer-than-10|https://stackoverflow.com/questions/46307110/specrun-timeout-on-test-execution-when-performing-a-selenium-wait-longer-than-10]]
+
+
+# 1.6.2 2017-09-26
+
+**Bug fixes**
+
+* `Thread.Current.Name` is again set to "Test Thread #<Number>" when you execute the tests in more than one thread
+* Workaround for this [[issue|https://github.com/techtalk/SpecFlow/issues/935 and https://github.com/NuGet/Home/issues/5880]]
+
+
+# 1.6.1 2017-09-12
+
+**New Features**
+
+* Support for "Run functional Tests" task on TFS/VSTS
+
+**Bug fixes**
+
+* `System.NullReferenceException` while parsing `[BeforeFeature]` hook with `FeatureContext` parameter, see [[https://github.com/techtalk/SpecFlow/issues/886|https://github.com/techtalk/SpecFlow/issues/886]]
+* Executing tests fails if the project path contains a # characters
+* Tests are duplicated/doubled up in Visual Studio Test Explorer, see [[https://github.com/techtalk/SpecFlow/issues/900|https://github.com/techtalk/SpecFlow/issues/900]]
+
+
 # 1.6.0 (2017-06-20)
  
 **Bug Fixes**
