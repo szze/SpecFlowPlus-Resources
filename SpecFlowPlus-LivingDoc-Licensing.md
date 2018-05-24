@@ -18,14 +18,17 @@ To register your license:
   ![Successful Registration](http://www.specflow.org/screenshots/successfully_registered.png)
 
 ## License Information
+
 After registering your SpecFlow+ license, you can hover over the "issued to: &lt;Licensee>" text to display additional information on your license:  
 ![License Details](http://www.specflow.org/screenshots/License_details.png)
+
 * **canUpdateUntil**: This date is indicates the end of your current support period. This is normally one year after the date of purchase. <!-- Currently this doesn't prevent you from using LivingDoc once the date is past -->
 * **expirationDate**: This date indicates when your license expires, at which point you will no longer be able to use SpecFlow+ (except in evalution mode). **Most licenses do not have an expiration date**, in which case this value is empty.
 
 <!-- VERSION INFO IS STILL MISSING FROM TOOLTIP -->
 
 ## Unregistering Your License
+
 To unregister your license:  
 1. Click on the "issued to: &lt;Licensee>" text at the top right. A dialog is opened.
 2. Leave the **Key** field empty and click on **Update**.
