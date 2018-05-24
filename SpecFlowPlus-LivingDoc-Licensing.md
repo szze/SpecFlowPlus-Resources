@@ -29,7 +29,8 @@ After registering your SpecFlow+ license, you can hover over the "issued to: &lt
 
 ## Unregistering Your License
 
-To unregister your license:  
+To unregister your license:
+
 1. Click on the "issued to: &lt;Licensee>" text at the top right. A dialog is opened.
 2. Leave the **Key** field empty and click on **Update**.
 3. The dialog is closed and the license information at the top right reverts back to "evaluation mode".
