@@ -51,7 +51,7 @@
   * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
   * [[Generating Documentation]]
     * [[Markdown and Embedding Images]]
-    * [[Documentation-Languages]]
+    * [[Documentation Languages]]
   * [[Viewing the Living Documentation]]  
     * [[Previewing Scenarios with Data Values]]
     * [[Searching]]
