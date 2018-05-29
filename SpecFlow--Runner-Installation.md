@@ -1,8 +1,10 @@
-The components in SpecFlow+ are distributed as NuGet package. There is a separate package for SpecFlow+ Runner (SpecRun) and SpecFlow+ Excel. Both components require SpecFlow to be installed as well. SpecFlow is also available as a NuGet package of  its own, but installing one of the SpecFlow+ packages automatically installs the SpecFlow NuGet package as well.
+SpecFlow+ Runner and SpecFlow+ Excel are distributed as NuGet package. Both components require SpecFlow to be installed as well. SpecFlow is also available as a NuGet package of  its own, but installing one of the SpecFlow+ packages automatically installs the SpecFlow NuGet package as well.
 
 The installation of SpecFlow and SpecFlow+ Runner is described in detail in the [[Getting Started|http://www.specflow.org/getting-started]] guide for SpecFlow. The installation of the SpecFlow components is also covered in the [[SpecFlow documentation|http://www.specflow.org/documentation/Installation/]]. 
 
 Details on installing SpecFlow+ Excel can be found [[here|http://www.specflow.org/plus/documentation/SpecFlowPlus-Excel-Installation-and-Configuration/]].
+
+Information on installing SpecFlow+ LivingDoc can be found [[here|Installing SpecFlowPlus LivingDoc]].
 
 <h2>Installation and Setup</h2>
 Installing SpecFlow consists of two steps:
@@ -42,4 +44,4 @@ The method used to install the IDE Integration packages depends on your IDE:
 
 
 <h2>Registering SpecFlow+</h2>
-For details on registering SpecFlow+ Runner, see [[Registering SpecFlow+|Registering-SpecFlowPlus]]
+For details on registering SpecFlow+ Runner, see [[Registering SpecFlow+|Registering-SpecFlowPlus]].
