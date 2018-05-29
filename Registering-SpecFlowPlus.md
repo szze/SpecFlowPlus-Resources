@@ -6,7 +6,7 @@
 
 <code>SpecRun.exe register &lt;LicenseKey> "&lt;Licensee>"</code>
 
-Replace the placeholders (&lt;LicenseKey>, &lt;Licensee>) in angled brackets with your license key and licensee.
+Replace the placeholders (&lt;LicenseKey>, &lt;Licensee>), including the angled brackets, with your license key and licensee.
 
 <b>Note:</b> If you purchased SpecFlow+ via SWREG, the licensee is the email address you used to make the purchase and that the license key was sent to.
 
