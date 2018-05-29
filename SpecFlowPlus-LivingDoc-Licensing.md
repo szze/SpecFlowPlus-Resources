@@ -10,7 +10,7 @@ Once you have [[generated your documentation|Generating-Documentation]] using th
 
 To register your license:
 
-1. Click on **evaluation mode** at the top right of the screen. A dialog is displayed: 
+1. Click on **evaluation mode** at the top right of the screen. A dialog is displayed:<br> 
   ![License Dialog](http://www.specflow.org/screenshots/License_dialog.png)
 1. Enter your license details in the dialog. If you purchased SpecFlow+ via SWREG, the **IssuedTo** value is the email used to complete the purchase. If you purchased the license directly from TechTalk, you should have received an email containing both the licensee (**IssuedTo**) and license key.
 1. Click on **Update**.
