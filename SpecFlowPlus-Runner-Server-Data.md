@@ -1,7 +1,7 @@
 The SpecFlow+ server can be used to store execution statistics for your tests. This data forms the basis for executing tests using the "Adaptive" `testSchedulingMode` in your [[profile|SpecFlowPlus-Runner-Profiles]]. Information on setting up the server can be found [[here|Setting-up-the-SpecFlowPlus-Runner-Server]].
 
 ## Adaptive Tests Scheduling
-SpecFlow+ uses the test history to determine the order that tests are executed when using the "Adaptive `testSchedulingMode`. Previously failing tests and new tests are executed before successful and stable tests.
+SpecFlow+ uses the test history to determine the order that tests are executed when using the "Adaptive" `testSchedulingMode`. Previously failing tests and new tests are executed before successful and stable tests.
 
 Use the "Adaptive" test scheduling mode to prioritise tests failing tests, particularly in combination with the `stopAfterFailures` setting.
 
