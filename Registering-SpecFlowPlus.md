@@ -19,6 +19,7 @@ Replace the placeholders (&lt;LicenseKey>, &lt;Licensee>), including the angled 
 <code>SpecFlow.Plus.Excel.Converter.exe register &lt;LicenseKey> "&lt;Licensee>"</code>
 
 Replace the placeholders (&lt;LicenseKey>, &lt;Licensee>), including the angled brackets, with your license key and licensee, for example:
+
 <code>SpecFlow.Plus.Excel.Converter.exe register KBh8227Ahb9382QAAA=== "ACME Corp."</code>
 
 <b>Note:</b> If you purchased SpecFlow+ via SWREG, the licensee is the email address you used to make the purchase and that the license key was sent to.
