@@ -15,7 +15,7 @@ To configure your build process to execute tests using SpecFlow+ Runner:
 1. Configure the build step as follows:  
    * Enter the path to your **Test Assembly** (the DLL containing your compiled specifications project with the test bindings).
    * If you are using both MSTest and SpecFlow+ Runner, enter the path to NuGet package folder in the **Path to Custom Test Adapters** field. If you do not enter the path here, only your MSTest tests will be executed as TFS cannot find the SpecFlow+Runner test adapter.
-   * If you have renamed your .srprofile file (i.e. the name is not `TFS.srprofile` or `default.srprofile`), enter the name of your file in the **Run Settings File** field.
+   * If you have renamed your .srprofile file (i.e. the name is not `TFS.srprofile` or `default.srprofile`), ensure the profile is specified in your [[.runsettings file|Configuring-SpecFlowPlus-Runner-Visual-Studio-Test-Explorer-Integration]] and enter the name of the .runsettings file in the **Run Settings File** field.
 1. Save your changes.
 1. You may also want to add an additional build step to generate living documentation from your feature files, see [[Generating Documentation]].
 
