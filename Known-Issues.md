@@ -7,4 +7,4 @@ The following are known issues with SpecFlow+, and are scheduled to be fixed:
 
 The following issues are known, and no fix is scheduled:
 
-* When using R# Build, the test discovery process is not started for the Test Explorer. R# Build is thus incompatible and cannot be used with SpecFlow+ Runner.
+* When using **R# Build**, the test discovery process is not started for the Test Explorer. R# Build is thus incompatible and cannot be used with SpecFlow+ Runner.
