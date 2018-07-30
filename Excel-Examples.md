@@ -4,7 +4,7 @@ The sample [feature file](http://www.specflow.org/media/sfp_excel/Sample-ExcelEx
 
 ## Using the Same Excel File to Describe Multiple Example Sets
 
-One Excel examples file can be used to describe multiple example sets of even multiple scenario outlines. In this case, each worksheet should contain a single example set. In general, you should create an Excel examples file for each feature file. You can specify the name of the Excel sheet explicitly in the feature file, but this is not necessary if you name your sheets the same as your scenario outline titles. For more details, see [[Prepare Feature Files for External Examples]].
+One Excel examples file can be used to describe multiple example sets or even multiple scenario outlines. In this case, each worksheet should contain a single example set. In general, you should create an Excel examples file for each feature file. You can specify the name of the Excel sheet explicitly in the feature file, but this is not necessary if you name your sheets the same as your scenario outline titles. For more details, see [[Prepare Feature Files for External Examples]].
 
 ## Converting Excel Cell Values
 
