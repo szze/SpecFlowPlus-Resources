@@ -13,7 +13,7 @@
 **Bug fixes**
 * Fixed MSBuild error MSB4066: The attribute "Update" in element <None> is unrecognized.
 
-# 1.8.0 (2018-05-16)
+# 1.8.0 (2018-08-20)
 
 **New Features**
 
