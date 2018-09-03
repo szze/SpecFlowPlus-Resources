@@ -3,14 +3,17 @@
 # 1.8.2 (2018-08-25)
 
 **Bug fixes**
+
 * Added missing report templates to the SpecRun.Runner package again
 
 # 1.8.1 (2018-08-24)
 
 **New Features**
+
 * Removed install.ps1 script to set Default.srProfile to CopyIfNewer (the MSBuild infrastructure is now used for this)
 
 **Bug fixes**
+
 * Fixed MSBuild error MSB4066: The attribute "Update" in element <None> is unrecognized.
 
 # 1.8.0 (2018-08-20)
@@ -20,6 +23,7 @@
 * Support for SpecFlow 2.4
 
 **Bug fixes**
+
 * Fixed behaviour of the test adapter for compatibility with Visual Studio 15.8
 
 
