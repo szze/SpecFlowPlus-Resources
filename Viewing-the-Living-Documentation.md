@@ -6,6 +6,8 @@ The tree on the left contains depicts the structure of your specifications. Blue
 
 Click on a scenario or feature (blue text) in the tree to display the documentation generated for that scenario or feature in the area on the right.
 
+The date of the latest build is displayed at the top. If subsequent builds have failed, the most recent failed build is also displayed. If a build is currently in progress, this information is also displayed.
+
 ## Switching to Related Feature Files
 If your source code (feature files) is stored in a TFS/VSTS or GitHub repository, you can switch directly from the living documentation to the source feature files. You can then edit the feature files directly in TFS/VSTS or on GitHub.
 
