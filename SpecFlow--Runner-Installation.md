@@ -14,13 +14,8 @@ Installing SpecFlow consists of two steps:
 </ol>
 
 <h3>Installing the IDE Integration Packages</h3>
-The method used to install the IDE Integration packages depends on your IDE:
-<ul>
-	<li><strong>Visual Studio 2010+ (including Community Edition but not Express Edition):</strong> The easiest method is to select <strong>Tools&nbsp;|&nbsp;Extensions and Updates</strong> from the menu in Visual Studio, switch to the <strong>Online</strong> search on the left and enter “SpecFlow” in the search field at the top right.<br>
+Select <strong>Tools&nbsp;|&nbsp;Extensions and Updates</strong> from the menu in Visual Studio, switch to the <strong>Online</strong> search on the left and enter “SpecFlow” in the search field at the top right.<br>
 <img src="http://www.specflow.org/media/ExtensionsAndUpdatesDialog.png" alt="ExtensionsAndUpdatesDialog" class="alignnone size-full wp-image-1037" />
-</li>
-	<li><strong>Visual Studio Express</strong>: Refer to <a href="http://www.specflow.org/documentation/Install-IDE-Integration/">Install IDE Integration</a> for direct download links and information on installing SpecFlow for other IDEs.</li>
-</ul>
 
 <h3>Setting Up your SpecFlow Project</h3>
 <p>Once you have installed the Visual Studio integration, you need to set up your solution to use SpecFlow. SpecFlow tests are usually placed in separate projects in your solution. The quickest way to set up a project is add the NuGet package to your project. For a detailed project setup guide, see the <a href="http://www.specflow.org/documentation/Setup-SpecFlow-Projects/">Setup SpecFlow Projects</a> page.</p>
