@@ -1,7 +1,17 @@
-To generate a TRX file with SpecFlow+ Runner, you will need to start your tests from the command line using `vstest.console.exe`. You will need to specify the path to `specrun.exe` (the test adapter path), and use the `/logger:trx` option to generate a TRX file.
+To generate a TRX file with SpecFlow+ Runner, you will need to start your tests from the command line using `vstest.console.exe` with the `/logger:trx` option to generate a TRX file.
 
-Execute your tests using the following syntax:
-`vstest.console.exe <MyTestAssembly.dll> /TestAdapterPath:<PATH_TO_SPECRUN.EXE> /logger:trx`
+You have to execute it in the output folder of your test project (`bin\debug\`).
 
-Replace `<MyTestAssembly.dll>` and `<PATH_TO_SPECRUN.EXE>` with the name of your test assembly and the path to `specrun.exe` (located in the `/packages/specrun<version>/tools` directory of your project).
+### since SpecFlow+Runner 1.8
+
+Execute your tests using the following syntax:  
+`vstest.console.exe <MyTestAssembly.dll> /logger:trx`
+
+### before SpecFlow+Runner 1.8
+
+You have to specify the path to the testadapter, so you execute your tests using the following syntax:  
+`vstest.console.exe <MyTestAssembly.dll> /TestAdapterPath:<PATH_TO_TESTADAPTER.EXE> /logger:trx`
+
+Replace `<MyTestAssembly.dll>` with the name of your test assembly.  
+<PATH_TO_TESTADAPTER.EXE> is the path to the `TechTalk.SpecRun.VisualStudio.TestAdapter.dll` (located in the `/packages/specrun<version>/tools` directory of your project).
 
