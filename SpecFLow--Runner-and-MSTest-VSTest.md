@@ -1,3 +1,0 @@
-You can choose to run your tests with both SpecFlow+ Runner and MSTest/VSTest (CLEAR UP THE DIFFERENCE) by entering `SPecRun+MSTest` as your `unitTestProvider` in your [[configuration|http://www.specflow.org/documentation/Configuration]].
-
-In this case, your tests are run with both SpecFlow+ Runner [b]and[/b] MSTest. Your tests will be displayed in the Test Explorer twice, once for each test runner.
