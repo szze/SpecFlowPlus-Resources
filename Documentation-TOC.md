@@ -24,6 +24,7 @@
       * [[Placeholders]]
       * [[VSTest]]
     * [[Command Line Arguments|SpecFlowPlus-Runner-Command-Line]]
+    * [[Generating a TRX File]]
     * API
       * [[TestRunContext]]
     * [[Migrating to SpecFlow+ Runner|Migrating to SpecFlow Runner]]
