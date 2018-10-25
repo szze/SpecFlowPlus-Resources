@@ -2,12 +2,12 @@ To generate a TRX file with SpecFlow+ Runner, you will need to start your tests 
 
 You have to execute it in the output folder of your test project (`bin\debug\`).
 
-### since SpecFlow+Runner 1.8
+### SpecFlow+Runner 1.8 and Later
 
 Execute your tests using the following syntax:  
 `vstest.console.exe <MyTestAssembly.dll> /logger:trx`
 
-### before SpecFlow+Runner 1.8
+### Before SpecFlow+Runner 1.8
 
 You have to specify the path to the testadapter, so you execute your tests using the following syntax:  
 `vstest.console.exe <MyTestAssembly.dll> /TestAdapterPath:<PATH_TO_TESTADAPTER.EXE> /logger:trx`
