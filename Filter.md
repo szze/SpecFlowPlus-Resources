@@ -12,7 +12,7 @@ The following filter types can be defined:
 |tagmatch: |Tag       |Matches tags by regular expression, e.g. 'tagmatch:Tag[1-3]' matches tests with the tags 'Tag1', "Tag2' or 'Tag3'.|
 |testpath:Feature: |Test      |Matches tests by feature name. You can use the `*` wildcard in feature names, e.g. `testpath:"Feature:Calcu*"` matches the features "Calculator" and "Calculus".<br>**Note**: Replace spaces in scenario names with the plus character (+) in your filter. Example:<br>Replace `Buy a book` with `Buy+a+book`.|
 |testpath:Scenario:|Test      |Matches tests by scenario name. You can use the `*` wildcard in scenario names, e.g. `testpath:"Scenario:*+two+numbers"` matches the scenarios "Add two numbers", "Subtract two numbers" and "Multiply two numbers".<br>**Note**: Replace spaces in scenario names with the plus character (+) in your filter. Example:<br>Replace `Buy a book` with `Buy+a+book`. |
-|testpath:testpath:|Target      |Matches tests by target. You can use the `*` wildcard in scenario names, e.g. `testpath:"Target:Chrom*"` matches the targets "Chrome" and "Chromium".<br>**Note**: Replace spaces in scenario names with the plus character (+) in your filter. Example:<br>Replace `32-bit envrionment` with `32-but+environment`. |
+|testpath:target:|Target      |Matches tests by target. You can use the `*` wildcard in scenario names, e.g. `testpath:"Target:Chrom*"` matches the targets "Chrome" and "Chromium".<br>**Note**: Replace spaces in scenario names with the plus character (+) in your filter. Example:<br>Replace `32-bit envrionment` with `32-but+environment`. |
 
 You can combine filters using logical operators. The following operators are supported:  
 <ul>
