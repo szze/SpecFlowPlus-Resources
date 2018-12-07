@@ -50,4 +50,6 @@ If you are absolutely sure that the reason the first test fails and all retries 
 
 Setting the test results to "Unified" with a minimum threshold allows you to treat a test as passing if a certain amount of the tests (initial test+retries) pass. This option should be used with great caution. Unless you are 100% certain that the random pass/fail behaviour is not related to your code, **do not use this option**. The option was added for a specific use case: the intial test would **always** fail due to a timeout on a remote server; this was not an issue for retried tests.
 
+Using this option will generate a TRX file where tests will be marked as passing above the pass threshold. This option is not available for SpecFlow+ reports, as the results are only unified when running tests with VSTest.
+
 Remember that a test that sometimes passes and sometimes fails can point to deeper issues with your tests or code, and should not simply be dismissed.
