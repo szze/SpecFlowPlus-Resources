@@ -41,3 +41,13 @@ Once the command has executed, restart the installation process.
 ### I am receiving an Exception Code 0xc00000fd when executing my tests. What is causing this?
 
 0xc00000fd is the code for a stack overflow exception. This exception can occur if you access recursive code from your bindings where the recursion is not terminated (or not terminated before a stack overflow exception occurs). The error is most likely in your recursive code itself.
+
+### Why are my failing tests flagged as failing when they pass on a retry?
+
+This is working as intended. If at least one test fails, the test has not passed successfully. If the initial test fails, there is at least one circumstance where the test fails. Were SpecFlow to flag these tests as passing, it would be ignoring the case where the test fails. There can be many reasons why the first test fails and the second passes - the first step is to determine why this is the case.
+
+If you are absolutely sure that the reason the first test fails and all retries pass is not an issue with your code, but with your architecture, you can run your tests with [[VSTest]] and configure a minimum pass threshold.
+
+Setting the test results to "Unified" with a minimum threshold allows you to treat a test as passing if a certain amount of the tests (initial test+retries) pass. This option should be used with great caution. Unless you are 100% certain that the random pass/fail behaviour is not related to your code, **do not use this option**. The option was added for a specific use case: the intial test would **always** fail due to a timeout on a remote server; this was not an issue for retried tests.
+
+Remember that a test that sometimes passes and sometimes fails can point to deeper issues with your tests or code, and should not simply be dismissed.
