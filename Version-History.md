@@ -1,5 +1,10 @@
 *Note: This overview only includes official stable releases. Publicly available release candidates are not listed.*
 
+# SpecFlow+ LivingDoc 0.2.11 (2018-12-20)
+
+* Further updates to React
+* Updated SpecFlow+ icon
+
 # 1.8.2 (2018-08-25)
 
 **Bug fixes**
