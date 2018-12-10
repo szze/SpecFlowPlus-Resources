@@ -1,4 +1,4 @@
-*Note: General information on configuring build steps in TeamCity can be found [[here|https://confluence.jetbrains.com/display/TCD9/Command+Line]].*
+*Note: General information on configuring build steps in TeamCity can be found [[here|https://confluence.jetbrains.com/display/TCD9/Creating+and+Editing+Build+Configurations]].*
 
 To configure your build process in TeamCity to execute tests using SpecFlow+ Runner:
 
