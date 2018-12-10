@@ -9,5 +9,6 @@ To configure your build process in TeamCity to execute tests using SpecFlow+ Run
   * **Run:** Executable with parameters
   * **Command executable:** Enter the path to SpecRun.exe here
   * **Command parameters:** Enter the command line parameters for SpecRun.exe here. Use the `BuildServerRun` option and include `/buildserver:teamcity`.  
-  Information on executing command lines in TeamCity is available [[here|https://confluence.jetbrains.com/display/TCD9/Command+Line]]. More details on the SpecFlow+ Runner's command line options can be found [[here|https://specflow.org/plus/documentation/SpecFlowPlus-Runner-Command-Line/]].
+  Information on executing command lines in TeamCity is available [[here|https://confluence.jetbrains.com/display/TCD9/Command+Line]].  
+  More details on the SpecFlow+ Runner's command line options can be found [[here|https://specflow.org/plus/documentation/SpecFlowPlus-Runner-Command-Line/]].
 5. Click on **Save**.
