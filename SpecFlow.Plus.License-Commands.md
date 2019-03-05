@@ -10,7 +10,7 @@ This command registers a license key for the current Windows user.
 
 ### Syntax
 
-`specflow-plus-license register <LicenseKey> <IssuedTo> <options>`
+`specflow-plus-license register --licenseKey <LicenseKey> --issuedTo <IssuedTo> <options>`
 
 The license key and licensee (issued to) are required to register a license. You will receive the license key and issued to value when purchasing a SpecFlow+ license. **Please keep the email with your license details in case you need to register the license again on a different machine!**
 
@@ -18,7 +18,7 @@ The license key and licensee (issued to) are required to register a license. You
 
 **Example:**
 
-`specflow-plus-license register ABCDEFG123 "John Doe"`
+`specflow-plus-license register --licenseKey ABCDEFG123 --issuedTo "John Doe"`
 
 The following additional options are available:
 
