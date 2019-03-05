@@ -22,7 +22,7 @@ The license key and licensee (issued to) are required to register a license. You
 
 The following additional options are available:
 
-**help**: Displays the help information for  the `register` command.
+**help**: Displays the help information for  the `register` command.  
 **version**: Displays the assembly version information.
 
 
