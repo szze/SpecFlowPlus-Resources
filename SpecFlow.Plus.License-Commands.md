@@ -42,7 +42,7 @@ This command displays information about the license registered on the current ma
 
 ### Syntax
 
-`specflow-plus-license about <options>`
+`specflow-plus-license about`
 
 ### Sample Output
 
