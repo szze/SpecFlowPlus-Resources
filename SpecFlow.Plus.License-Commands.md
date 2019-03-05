@@ -45,11 +45,6 @@ This command displays information about the license registered on the current ma
 
 `specflow-plus-license about <options>`
 
-The following additional options are available:
-
-**help**: Displays the help information for  the `register` command.
-**version**: Displays the assembly version information.
-
 ### Sample Output
 
 ```
@@ -73,23 +68,15 @@ The registered license is registered for John Doe and is will expire <expiration
 
 This command displays the assembly's version information.
 
-**Note:** You can also append `--version` as an option to any available command to display the help for that command.
-
-**Example:**
-`specflow-plus-license register --version`
-
 ### Syntax
 
 `specflow-plus-license version`
 
+**Note:** You can also append `--version` as an option to any available command to display the help for that command, e.g. `specflow-plus-license register --version`.
+
 ## help
 
 This command displays the help information, either for a specific command, or for all available commands.
-
-**Note:** You can also append `--help` as an option to any available command to display the help for that command.
-
-**Example:**
-`specflow-plus-license register --help`
 
 ### Syntax
 
@@ -97,6 +84,6 @@ This command displays the help information, either for a specific command, or fo
 
 The command is optional; if no command is specified, the help information for all commands is displayed.
 
-
+**Note:** You can also append `--help` as an option to any available command to display the help for that command, e.g. `specflow-plus-license register --help`.
 
 
