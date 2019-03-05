@@ -88,12 +88,11 @@ This command displays the assembly's version information.
 
 ## help
 
-This command displays the help information for a command.
+This command displays the help information, either for a specific command, or for all available commands.
 
 ### Syntax
 
 `specflow-plus-license help <command>`
-
 
 The command is optional; if no command is specified, the help information for all commands is displayed.
 
