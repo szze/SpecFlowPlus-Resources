@@ -71,7 +71,7 @@ This command displays the assembly's version information.
 
 `specflow-plus-license version`
 
-**Note:** You can also append `--version` as an option to any available command to display the help for that command, e.g. `specflow-plus-license register --version`.
+**Note:** You can also append `--version` as an option to any available command to display the version information, e.g. `specflow-plus-license register --version`.
 
 ## help
 
