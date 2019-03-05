@@ -20,11 +20,6 @@ The license key and licensee (issued to) are required to register a license. You
 
 `specflow-plus-license register --licenseKey ABCDEFG123 --issuedTo "John Doe"`
 
-The following additional options are available:
-
-**help**: Displays the help information for  the `register` command.  
-**version**: Displays the assembly version information.
-
 
 ### Migrating Previous Licenses
 
@@ -41,10 +36,6 @@ This command removes the license registered to the current Windows user.
 
 `specflow-plus-license unregister`
 
-The following additional options are available:
-
-**help**: Displays the help information for  the `register` command.
-**version**: Displays the assembly version information.
 
 ## about
 
@@ -82,6 +73,11 @@ The registered license is registered for John Doe and is will expire <expiration
 
 This command displays the assembly's version information.
 
+**Note:** You can also append `--version` as an option to any available command to display the help for that command.
+
+**Example:**
+`specflow-plus-license register --version`
+
 ### Syntax
 
 `specflow-plus-license version`
@@ -89,6 +85,11 @@ This command displays the assembly's version information.
 ## help
 
 This command displays the help information, either for a specific command, or for all available commands.
+
+**Note:** You can also append `--help` as an option to any available command to display the help for that command.
+
+**Example:**
+`specflow-plus-license register --help`
 
 ### Syntax
 
