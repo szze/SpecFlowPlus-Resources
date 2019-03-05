@@ -12,14 +12,13 @@ This command registers a license key for the current Windows user.
 
 `specflow-plus-license register --licenseKey <LicenseKey> --issuedTo <IssuedTo> <options>`
 
-The license key and licensee (issued to) are required to register a license. You will receive the license key and issued to value when purchasing a SpecFlow+ license. **Please keep the email with your license details in case you need to register the license again on a different machine!**
+The license key and licensee (issued to) are required to register a license. **If the licensee contains a space, make sure to enclose it in quotes.**
 
-**Note:** If the licensee contains a space, make sure to enclose it in quotes.
+You will receive an email containing your license key and the licensee (issued to) when purchasing a SpecFlow+ license. **Please keep the email with your license details in case you need to register the license again on a different machine!**
 
 **Example:**
 
 `specflow-plus-license register --licenseKey ABCDEFG123 --issuedTo "John Doe"`
-
 
 ### Migrating Previous Licenses
 
