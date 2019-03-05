@@ -4,7 +4,7 @@ To search for a feature file by feature or scenario title:
 1. Enter your search term in the **Filter** field. As you type, the results of the search are updated in the tree below.  
   ![Search](http://www.specflow.org/screenshots/Search.png)
 1. Folder, feature and scenario titles containing the search term are displayed in blue. Node titles displayed in grey do not contain the search term, but at least one child or parent item title contains the search term. All other nodes (i.e. with no hits) are hidden in the tree.
-1. Click on an entry in the tree to display that entry.
+1. Click on an entry in the tree to display that entry. The search term is highlighted in the content.
 
 You can also optionally search in the contents of feature files (steps, descriptions).
 To include steps and descriptions in your search:  
@@ -12,4 +12,4 @@ To include steps and descriptions in your search:
 1. Enable **Include steps and descriptions for filtering scenarios** below the **Filter** field.
 1. Enter your search term in the **Filter** field. As you type, the results of the search are updated in the tree below.
 1. Folder, feature and scenario titles containing the search term are displayed in blue. Scenario or node titles displayed in grey do not contain the search term but their contents or at least one child or parent item contains the search term. All other nodes (i.e. with no hits) are hidden in the tree.
-1. Click on an entry in the tree to display that entry.
+1. Click on an entry in the tree to display that entry. The search term is highlighted in the content.
