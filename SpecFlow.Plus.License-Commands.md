@@ -77,6 +77,9 @@ This command displays the assembly's version information.
 
 This command displays the help information, either for a specific command, or for all available commands.
 
+**Example:**
+`specflow-plus-license help register`
+
 ### Syntax
 
 `specflow-plus-license help <command>`
