@@ -1,5 +1,7 @@
 # SpecFlow+ Excel
 
+[Installation and Configuration](SpecFlowPlus-Excel-Installation-and-Configuration)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
