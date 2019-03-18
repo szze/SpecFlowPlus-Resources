@@ -19,7 +19,7 @@ SpecFlow+LivingDoc custom build step YAML example:
   timeoutInMinutes: 10
 ```
 
-* task:
+* **task:**
 
 | type | value |
 | --- | --- |
@@ -28,8 +28,8 @@ SpecFlow+LivingDoc custom build step YAML example:
 
 _where @value is the task version number_
 
-* displayName: (required)
-* projectFilePath: The project file (*.csproj) containing the feature files (required)
+* **displayName:** (required)
+* **projectFilePath:** The project file (*.csproj) containing the feature files (required)
 * projectName: The name of the project visible in the viewer
 * projectLanguage: https://docs.cucumber.io/gherkin/reference/#spoken-languages
 * workItemPrefix: The special tag you mark the scenarios with to link them to the respecting work items
