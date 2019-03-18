@@ -20,7 +20,7 @@
 
 # SpecFlow+ LivingDoc
 
-[Installing](Installing-SpecFlow-LivingDoc)
+[Installing](Installing-SpecFlowPlus-LivingDoc)
 
 [Generating Documentation](Generating-Documentation)
 
