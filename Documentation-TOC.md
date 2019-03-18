@@ -49,14 +49,14 @@
     * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
 
 * ***[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]***
-  * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
-  * [[Generating Documentation]]
-    * [[Markdown and Embedding Images]]
-    * [[Documentation Languages]]
-  * [[Viewing the Living Documentation]]  
-    * [[Previewing Scenarios with Data Values]]
-    * [[Searching]]
-  * [[SpecFlow+ LivingDoc Licensing|SpecFlowPlus-LivingDoc-Licensing]]
+   * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
+   * [[Generating Documentation]]
+        * [[Markdown and Embedding Images]]
+        * [[Documentation Languages]]
+   * [[Viewing the Living Documentation]]  
+        * [[Previewing Scenarios with Data Values]]
+        * [[Searching]]
+   * [[SpecFlow+ LivingDoc Licensing|SpecFlowPlus-LivingDoc-Licensing]]
 
 * ***[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]***
 * ***[[Troubleshooting]]***
