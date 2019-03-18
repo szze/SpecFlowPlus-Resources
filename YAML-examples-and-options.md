@@ -24,7 +24,7 @@ SpecFlow+LivingDoc custom build step YAML example:
 | SpecFlow+LivingDoc  | techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0  |
 | SpecFlow+LivingDoc Test  | techtalk.techtalk-specflow-plus-test.specflow-plus.SpecFlowPlus@0  |
 	
-* where @value is the task version number
+_where @value is the task version number_
 
 	• displayName: (required)
 	• projectFilePath: The project file (*.csproj) containing the feature files (required)
