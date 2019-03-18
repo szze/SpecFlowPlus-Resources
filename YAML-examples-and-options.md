@@ -30,12 +30,12 @@ _where @value is the task version number_
 
 * **displayName:** (required)
 * **projectFilePath:** The project file (*.csproj) containing the feature files (required)
-* projectName: The name of the project visible in the viewer
-* projectLanguage: https://docs.cucumber.io/gherkin/reference/#spoken-languages
-* workItemPrefix: The special tag you mark the scenarios with to link them to the respecting work items
-* enabled: boolean (not needed when true)
-* continueOnError: boolean  (not needed when false)
-* condition:
+* **projectName:** The name of the project visible in the viewer
+* **projectLanguage:** https://docs.cucumber.io/gherkin/reference/#spoken-languages
+* **workItemPrefix:** The special tag you mark the scenarios with to link them to the respecting work items
+* **enabled:** boolean (not needed when true)
+* **continueOnError:** boolean  (not needed when false)
+* **condition:**
 
 | type | value |
 | --- | --- |
@@ -45,4 +45,4 @@ _where @value is the task version number_
 | Only when a previous task has failed | failed() |
 | Custom conditions | (custom condition)
 
-* timeoutInMinutes: Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.
+* **timeoutInMinutes:** Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.
