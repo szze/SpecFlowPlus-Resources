@@ -17,7 +17,8 @@ SpecFlow+LivingDoc custom build step YAML example:
   condition: always()
   timeoutInMinutes: 10
 
-
+| task | value |
+| --- | --- |
 | SpecFlow+LivingDoc  | techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0  |
 | SpecFlow+LivingDoc Test  | techtalk.techtalk-specflow-plus-test.specflow-plus.SpecFlowPlus@0  |
 	
