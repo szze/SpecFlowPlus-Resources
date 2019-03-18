@@ -1,3 +1,4 @@
+Documentation TOC
 # SpecFlow+ Excel
 
 [Installation and Configuration](SpecFlowPlus-Excel-Installation-and-Configuration)
