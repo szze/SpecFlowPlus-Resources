@@ -16,6 +16,8 @@
 
 [Converting Excel Cells](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Converting-Excel-Cells)
 
+[Command Line Tool Reference](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/SpecFlowPlus-Excel-Command-Line-Tool-Reference)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
