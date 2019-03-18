@@ -4,6 +4,7 @@ https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-d
 
 SpecFlow+LivingDoc custom build step YAML example:
 
+```yaml
   steps:
 -task: techtalk.techtalk-specflow-plus-test.specflow-plus.SpecFlowPlus@0
   displayName: 'SpecFlow+ build step SpecFlow.Plus.Runner.Specs'
@@ -16,6 +17,7 @@ SpecFlow+LivingDoc custom build step YAML example:
   continueOnError: true
   condition: always()
   timeoutInMinutes: 10
+```
 
 | task | value |
 | --- | --- |
