@@ -1,6 +1,6 @@
 # SpecFlow+ LivingDoc
 
-[Installing SpecFlowPlus LivingDoc](Installing-SpecFlowPlus-LivingDoc)
+[Installing](Installing)
 
 [Generating Documentation](Generating-Documentation)
 
