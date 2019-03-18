@@ -10,6 +10,8 @@
 
 [Excel Examples](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Excel-Examples)
 
+[Prepare Feature Files for External Examples](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Prepare-Feature-Files-for-External-Examples)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
