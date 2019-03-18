@@ -56,6 +56,7 @@
    * [[Viewing the Living Documentation]]  
         * [[Previewing Scenarios with Data Values]]
         * [[Searching]]
+   * [[YAML Syntax]]
    * [[SpecFlow+ LivingDoc Licensing|SpecFlowPlus-LivingDoc-Licensing]]
 
 * ***[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]***
