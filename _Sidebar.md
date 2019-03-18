@@ -8,6 +8,8 @@
 
 [Excel Feature File Format](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Excel-Feature-File-Format)
 
+[Excel Examples](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Excel-Examples)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
