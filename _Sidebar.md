@@ -36,4 +36,4 @@
 
 [YAML Syntax](YAML-Syntax)
 
-[Licensing](SpecFlowPlus-LivingDoc-Licensing)
+[[Licensing]]
