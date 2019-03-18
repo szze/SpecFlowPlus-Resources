@@ -14,6 +14,8 @@
 
 [Excel Examples File Format](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Excel-Examples-File-Format)
 
+[Converting Excel Cells](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Converting-Excel-Cells)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
