@@ -20,6 +20,7 @@ SpecFlow+LivingDoc custom build step YAML example:
 ```
 
 * task:
+
 | type | value |
 | --- | --- |
 | SpecFlow+LivingDoc  | techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0  |
