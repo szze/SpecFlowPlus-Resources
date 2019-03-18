@@ -32,12 +32,16 @@ _where @value is the task version number_
 * projectFilePath: The project file (*.csproj) containing the feature files (required)
 * projectName: The name of the project visible in the viewer
 * projectLanguage: https://docs.cucumber.io/gherkin/reference/#spoken-languages
-	• workItemPrefix: The special tag you mark the scenarios with to link them to the respecting work items
-	• enabled: boolean (not needed when true)
-	• continueOnError: boolean  (not needed when false)
-	• condition:
-Only when all previous tasks have succeeded	(nothing)
-Even if a previous task has failed, unless the build was canceled	succeededOrFailed()
+* workItemPrefix: The special tag you mark the scenarios with to link them to the respecting work items
+* enabled: boolean (not needed when true)
+* continueOnError: boolean  (not needed when false)
+* condition:
+
+| type | value |
+| --- | --- |
+| Only when all previous tasks have succeeded | (nothing) |
+| Even if a previous task has failed, unless the build was canceled | always() |
+	succeededOrFailed()
 Even if a previous task has failed, even if the build was canceled	always()
 Only when a previous task has failed	failed()
 Custom conditions	(custom condition)
