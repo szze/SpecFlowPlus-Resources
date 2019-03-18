@@ -13,3 +13,5 @@
 [Previewing Scenarios with Data Values](Previewing-Scenarios-with-Data-Values)
 
 [Searching](Searching)
+
+[SpecFlowPlus LivingDoc Licensing](SpecFlowPlus-LivingDoc-Licensing)
