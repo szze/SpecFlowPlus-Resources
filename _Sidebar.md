@@ -1,29 +1,9 @@
-# Overview
- [Quick start](Quick-start)	 
-
- [Examples](Examples)	
-
- [Features](Features)	
-
-# Test Design	
- [Interfaces](Interfaces)	
-
- [XML specification](XML-specification)	
-
- [Test_create tool](Test_create-tool)	
-
 # SpecFlow+ LivingDoc	
- [Local test](Local-test)	
+ [Installing SpecFlowPlus LivingDoc](Installing SpecFlowPlus LivingDoc)	
 
  [Remote test](Remote-test)	
 
  [Pooling tests](Pooling-tests)	
 
- [Sample rate](Sample-rate)	
-
-# Other	
- [Analysis and diagnostics](Analysis-and-diagnostics)	
-
- [Troubleshooting](Troubleshooting)
-
+ [Sample rate](Sample-rate)
   
