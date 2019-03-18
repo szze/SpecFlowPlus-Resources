@@ -45,4 +45,4 @@ _where @value is the task version number_
 | Only when a previous task has failed | failed() |
 | Custom conditions | (custom condition)
 
-* **timeoutInMinutes:** Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server. A zero value indicates an infinite timeout.
+* **timeoutInMinutes:** Specifies the maximum time, in minutes, that a task is allowed to execute before being canceled by server (zero value indicates an infinite timeout)
