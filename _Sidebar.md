@@ -34,4 +34,4 @@
 
 [Searching](Searching)
 
-[Licensing](Licensing)
+[Licensing](SpecFlowPlus-LivingDoc-Licensing)
