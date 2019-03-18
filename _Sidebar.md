@@ -6,6 +6,8 @@
 
 [Excel Features](Excel-Features)
 
+[Excel Feature File Format](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Excel-Feature-File-Format)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
