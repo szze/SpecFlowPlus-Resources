@@ -34,4 +34,6 @@
 
 [Searching](Searching)
 
+[YAML Syntax](YAML-Syntax)
+
 [Licensing](SpecFlowPlus-LivingDoc-Licensing)
