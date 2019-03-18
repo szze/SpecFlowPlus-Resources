@@ -12,6 +12,8 @@
 
 [Prepare Feature Files for External Examples](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Prepare-Feature-Files-for-External-Examples)
 
+[Excel Examples File Format](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Excel-Examples-File-Format)
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
