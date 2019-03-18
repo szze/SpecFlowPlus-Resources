@@ -2,6 +2,8 @@
 
 [Installation and Configuration](SpecFlowPlus-Excel-Installation-and-Configuration)
 
+[Working with Generated Files](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Working-with-Generated-files-(SpecFlowPlus-Excel))
+
 # SpecFlow+ LivingDoc
 
 [Installing](Installing)
