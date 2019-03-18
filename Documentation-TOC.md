@@ -56,6 +56,7 @@
    * [[Viewing the Living Documentation]]  
         * [[Previewing Scenarios with Data Values]]
         * [[Searching]]
+        * [[Linking]]
    * [[YAML Syntax]]
    * [[Licensing]]
 
