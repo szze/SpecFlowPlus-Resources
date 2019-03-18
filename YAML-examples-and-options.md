@@ -21,7 +21,7 @@ SpecFlow+LivingDoc custom build step YAML example:
 
 * **task:**
 
-| type | value |
+| selection | YAML value |
 | --- | --- |
 | SpecFlow+LivingDoc  | techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0  |
 | SpecFlow+LivingDoc Test  | techtalk.techtalk-specflow-plus-test.specflow-plus.SpecFlowPlus@0  |
@@ -37,7 +37,7 @@ _where @value is the task version number_
 * **continueOnError:** boolean  (not needed when false)
 * **condition:**
 
-| type | value |
+| selection | YAML value |
 | --- | --- |
 | Only when all previous tasks have succeeded | (nothing) |
 | Even if a previous task has failed, unless the build was canceled | succeededOrFailed() |
