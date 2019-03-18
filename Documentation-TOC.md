@@ -49,7 +49,7 @@
     * [[Command Line Arguments|SpecFlowPlus-Excel-Command-Line-Tool-Reference]]
 
 * ***[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]***
-   * [[Installing SpecFlow+ LivingDoc|Installing SpecFlowPlus LivingDoc]]
+   * [[Installation]]
    * [[Generating Documentation]]
         * [[Markdown and Embedding Images]]
         * [[Documentation Languages]]
