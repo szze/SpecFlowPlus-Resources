@@ -5,7 +5,7 @@
 
 [[Getting Started]]
 
-[[Working with Generated Files]]
+[Working with Generated Files](Working-with-Generated-files-(SpecFlowPlus-Excel))
 
 [Excel Features](Excel-Features)
 
