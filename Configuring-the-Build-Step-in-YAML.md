@@ -1,6 +1,6 @@
 YAML is whitespace sensitive. Please copy and paste the example in a text editor with syntax highlighting (e.g. Notepad++)
 
-https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#task
+(Reference guide to Azure Pipelines YAML pipelines | https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#task)
 
 SpecFlow+LivingDoc custom build step YAML example:
 
@@ -30,7 +30,7 @@ _where @value is the task version number_
 * **projectLanguage:** https://docs.cucumber.io/gherkin/reference/#spoken-languages
 * **workItemPrefix:** The special tag you mark the scenarios with to link them to the respecting work items
 
-## Non-LivingDoc specific parameters:
+### Non-LivingDoc specific parameters:
 
 * **enabled:** boolean (not needed when true)
 * **continueOnError:** boolean  (not needed when false)
