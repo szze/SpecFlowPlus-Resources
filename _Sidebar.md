@@ -1,9 +1,11 @@
 [[Documentation TOC]]
 # SpecFlow+ Excel
 
-[Installation and Configuration](SpecFlowPlus-Excel-Installation-and-Configuration)
+[[Installation and Configuration]]
 
-[Working with Generated Files](https://github.com/techtalk/SpecFlowPlus-Resources/wiki/Working-with-Generated-files-(SpecFlowPlus-Excel))
+[[Getting Started]]
+
+[[Working with Generated Files]]
 
 [Excel Features](Excel-Features)
 
