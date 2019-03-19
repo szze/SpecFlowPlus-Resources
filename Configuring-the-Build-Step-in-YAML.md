@@ -19,20 +19,19 @@ SpecFlow+LivingDoc custom build step YAML example:
   timeoutInMinutes: 10
 ```
 
-* **task:**
-
-| selection | YAML value |
-| --- | --- |
-| SpecFlow+LivingDoc  | techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0  |
-| SpecFlow+LivingDoc Test  | techtalk.techtalk-specflow-plus-test.specflow-plus.SpecFlowPlus@0  |
-
+* **task:** techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
 _where @value is the task version number_
+
+## inputs (LivingDoc specific parameters):
 
 * **displayName:** (required)
 * **projectFilePath:** The project file (*.csproj) containing the feature files (required)
 * **projectName:** The name of the project visible in the viewer
 * **projectLanguage:** https://docs.cucumber.io/gherkin/reference/#spoken-languages
 * **workItemPrefix:** The special tag you mark the scenarios with to link them to the respecting work items
+
+## Non-LivingDoc specific parameters:
+
 * **enabled:** boolean (not needed when true)
 * **continueOnError:** boolean  (not needed when false)
 * **condition:**
