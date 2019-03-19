@@ -23,9 +23,15 @@
 
 [[Installation]]
 
+[[Generating Documentation]]
+
 [[Adding A Build Step]]
 
-[[Generating Documentation]]
+[[Configuring the Build Step in DevOps]]
+
+[[Configuring the Build Step in YAML]]
+
+[[Building the Documentation]]
 
 [[Markdown and Embedding Images]]
 
@@ -38,7 +44,5 @@
 [[Searching]]
 
 [[Linking]]
-
-[[Configuring the Build Step in YAML]]
 
 [[Licensing]]
