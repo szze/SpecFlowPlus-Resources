@@ -1,4 +1,4 @@
-Once you have [[generated your documentation|Generating-Documentation]] using the SpecFlow+ build step, select **Test|SpecFlow+** from the menu in TFS to view the most recent state of the documentation.
+Once you have [[generated your documentation|Generating-Documentation]] using the SpecFlow+ build step, select **Test Plans |SpecFlow+** (DevOps) or **Test | SpecFlow+** (TFS/VSTS) from the menu to view the most recent state of the documentation.
 
 ![Sample Output](http://www.specflow.org/screenshots/sample_dox.png)
 
