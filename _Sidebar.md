@@ -1,7 +1,7 @@
 [[Documentation TOC]]
 # SpecFlow+ Excel
 
-[[Installation and Configuration]]
+[Installation and Configuration](SpecFlowPlus-Excel-Installation-and-Configuration)
 
 [[Getting Started]]
 
