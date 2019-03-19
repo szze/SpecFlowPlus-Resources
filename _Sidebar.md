@@ -37,6 +37,6 @@
 
 [[Linking]]
 
-[[YAML Syntax]]
+[[Configuring the Build Step in YAML]]
 
 [[Licensing]]
