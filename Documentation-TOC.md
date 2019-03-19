@@ -51,13 +51,16 @@
 * ***[[SpecFlow+ LivingDoc|SpecFlowPlus LivingDoc]]***
    * [[Installation]]
    * [[Generating Documentation]]
-        * [[Markdown and Embedding Images]]
-        * [[Documentation Languages]]
+     * [[Adding a Build Step]]
+       * [[Configuring the Build Step in DevOps]]
+       * [[Configuring the Build Step in YAML]]     
+     * [[Building the Documentation]]
+     * [[Markdown and Embedding Images]]
+     * [[Documentation Languages]]
    * [[Viewing the Living Documentation]]  
         * [[Previewing Scenarios with Data Values]]
         * [[Searching]]
         * [[Linking]]
-   * [[YAML Syntax]]
    * [[Licensing]]
 
 * ***[[Sample projects on GitHub|https://github.com/techtalk/SpecFlow.Plus.Examples]]***
