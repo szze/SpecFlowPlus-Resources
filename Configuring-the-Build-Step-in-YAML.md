@@ -21,10 +21,10 @@ SpecFlow+LivingDoc custom build step YAML example:
 
 * **task:** techtalk.techtalk-specflow-plus.specflow-plus.SpecFlowPlus@0
     - _@value is the task version number_
+* **displayName:** (required)
 
 ### LivingDoc specific parameters (inputs):
 
-* **displayName:** (required)
 * **projectFilePath:** The project file (*.csproj) containing the feature files (required)
 * **projectName:** The name of the project visible in the viewer
 * **projectLanguage:** [[Gherkin languages | https://docs.cucumber.io/gherkin/reference/#overview]]
