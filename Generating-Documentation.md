@@ -1,28 +1,3 @@
-Generating living documentation from your Gherkin files with SpecFlow+ LivingDoc requires you to add the SpecFlow+ build step to your build process. This build step parses the Gherkin files in your solution and formats them for display in VSTS. 
-A default build step is included when installing the extension. **This build step only generates the documentation; it does not execute any tests or build your solution.** You will need to add an [[additional step|SpecFlowPlus-and-TFS-VSTS]] to build your solution and execute your tests.
-
-**Note:** You do not need to use TFS to actually build your application. You can simply add a build definition that acquires the sources and generates the documentation.
-
-## Setup
-
-To add the build step:  
-
-1. Select **Build & Release | Builds** from the menu in TFS
-1. Click on build in the list (or add a new one).
-1. On the **Summary** page, click on a recently completed build:  
-  ![Build Summary](http://www.specflow.org/screenshots/Build_Summary.png) 
-1. The build steps are displayed in the left in the next screen:  
-  ![Build Steps](http://www.specflow.org/screenshots/Build_Steps.png)
-1. Click on **Edit build definition** to edit the steps.
-1. Add the SpecFlow+ build step to your build to generate the living documentation.
-1. Enter the path to your project (.csproj file) or the folder containing your project in the **Project file path** field in the **SpecFlow+ build step** and make sure the step is enabled. All feature files in the selected folder and all its sub-folders are included in your living documentation.
-If you have not referenced a .csproj file and you are not using English as the default language of your Gherkin files, select the language used by your Gherkin files under **Project Language**. (If you have referenced a .csproj file, this information is read from the app.config file.)
-1. You can also enter a **Project Name**. This name is used by the root node in the tree. If you do not enter a name here, the name of the Visual Studio project is used instead.
-1. If you want to include Gherkin files from multiple projects, add a separate build step for each of your projects.  
-  ![SpecFlow Step](http://www.specflow.org/screenshots/Build_SpecFlow_Step.png)
-  
-## Generation
-
 To generate the documentation:
 
 1. Select **Test | SpecFlow+** from the menu.
