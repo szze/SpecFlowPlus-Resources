@@ -23,13 +23,15 @@
 
 [[Installation]]
 
-[Generating Documentation](Generating-Documentation)
+[[Adding A Build Step]]
 
-[Markdown and Embedding Images](Markdown-and-Embedding-Images)
+[[Generating Documentation]]
 
-[Documentation Languages](Documentation-Languages)
+[[Markdown and Embedding Images]]
 
-[Viewing the Living Documentation](Viewing-the-Living-Documentation)
+[[Documentation Languages]]
+
+[[Viewing the Living Documentation]]
 
 [[Previewing Scenarios with Data Values]]
 
