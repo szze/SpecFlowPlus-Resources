@@ -1,6 +1,6 @@
 YAML is whitespace sensitive. Please copy and paste the example in a text editor with syntax highlighting (e.g. Notepad++)
 
-(Reference guide to Azure Pipelines YAML pipelines | https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#task)
+[[Reference guide to Azure Pipelines YAML pipelines | https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#task]]
 
 SpecFlow+LivingDoc custom build step YAML example:
 
